@@ -18,7 +18,7 @@
 
 <?php 
 include "../conexion.php";
-$sql = "SELECT * from recibos order by id_rec";
+$sql = "SELECT * from recibos order by id_recibo";
 	$query = $mysqli->query($sql);
 	while($resultado = $query->fetch_assoc()) {
         $recibos[] = $resultado;
@@ -32,11 +32,11 @@ $sql = "SELECT * from recibos order by id_rec";
   
   <tr>
       <td width="10%" height="35"><p align="center"><font face="Verdana" size="4" >Item</font></i></td>
-      
-	  <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Fecha Recibo</font></i></td>
-	  <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Nombre Integrante</font></i></td>	  
+      <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >ID</font></i></td>
+	  <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Fecha Del Recibo</font></i></td>
 	  <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Descripcion</font></i></td>	  
-      <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >liquidacion $</font></i></td>	    
+	  <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Medico</font></i></td>	  
+      <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Liquidacion</font></i></td>	    
 	  </tr>
 
 
@@ -46,11 +46,11 @@ $sql = "SELECT * from recibos order by id_rec";
 
   <tr>
     <td width="10%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $i+1;?></font></i></td>	
-	
-    <td width="20%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $recibos[$i]['fech_rec'];?></font></i></td>
-	<td width="20%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $recibos[$i]['nom_rec'];?></font></i></td>
-	<td width="20%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $recibos[$i]['desc_rec'];?></font></i></td>
-	<td width="10%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $recibos[$i]['liqui_rec'];?></font></i></td>	
+	<td width="20%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $recibos[$i]['id_recibo'];?></font></i></td>
+    <td width="20%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $recibos[$i]['fecha_recibo'];?></font></i></td>
+	<td width="20%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $recibos[$i]['descripcion_recibo'];?></font></i></td>
+	<td width="20%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $recibos[$i]['clinico_recibo'];?></font></i></td>
+	<td width="10%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $recibos[$i]['liqui_recibo'];?></font></i></td>	
 	
 	</tr>
 

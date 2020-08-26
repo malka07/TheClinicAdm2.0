@@ -10,7 +10,7 @@
   <div class="row">
     <div class="col-sm-2"><h2>
 		<img border="0" src="../img/atras.png" width="48" height="48" title="Volver al menú" 
-		onclick=location.href='../admin/'; onKeyPress=location.href='../admin/'; style='cursor:pointer';/>
+		onclick=location.href='../historiales/'; onKeyPress=location.href='../historiales/'; style='cursor:pointer';/>
 	</h2>
 	</div>
 	<div class="col-sm-2"></div>
@@ -21,16 +21,16 @@
 </div>
 
     <div class="col-md-12 order-md-1">
-      <h4 class="mb-4">Alta De Recibos</h4>
+      <h4 class="mb-4">Alta De Historiales</h4>
       <form class="needs-validation" novalidate action="grabar.php" method="post">
 	  
 <?php 
    require "../conexion.php";
 
-    $sql = "SELECT * from recibos order by id_recibo";
+    $sql = "SELECT * from historiales order by id_historial";
 	$query = $mysqli->query($sql);
 	while($resultado = $query->fetch_assoc()) {
-        $recibos[] = $resultado;
+        $historiales[] = $resultado;
     }
 
     $sql = "SELECT * from clinicos order by id_clinico";
@@ -39,34 +39,31 @@
         $clinicos[] = $resultado;
     }
    
+    $sql = "SELECT * from pacientes order by id_paciente";
+    $query = $mysqli->query($sql);
+    while($resultado = $query->fetch_assoc()) {
+          $pacientes[] = $resultado;
+      } 
 
+        
 ?>
 
           <div class="col-md-6 mb-4">
-            <label for="fecha_recibo">Fecha</label>
-            <input type="date" class="form-control" name="fecha_recibo" placeholder="" value="" required>
+            <label for="fecha_historial">Fecha</label>
+            <input type="date" class="form-control" name="fecha_historial" placeholder="" value="" required>
             <div class="invalid-feedback">
-              Faltó Ingresar La Fecha Del Recibo.
+              Faltó Ingresar La Fecha Del Historial.
             </div>
           </div>
         
-        
-        <div class="col-md-6 mb-4">
-            <label for="descripcion_recibo">Descripcion</label>
-            <input type="text" class="form-control" name="descripcion_recibo" placeholder="" value="" required>
-            <div class="invalid-feedback">
-              Faltó Ingresar Una Descripcion.
-            </div>
-          </div>
-
-        <div class="col-md-6 mb-4">
-           <label for="medico">Medico</label>
-           <select class="custom-select d-block w-100" name="clinico_recibo" required>
+          <div class="col-md-6 mb-4">
+           <label for="clinico">Medico</label>
+           <select class="custom-select d-block w-100" name="id_clinico" required>
            <?php 
 				     $long = count($clinicos);
 				     for($i=0; $i< $long; $i++){
 				     echo "<option";
-				     echo " value=" .$clinicos[$i]['nombre_clinico'] .",".$clinicos[$i]['apellido_clinico'] .">";
+				     echo " value=" .$clinicos[$i]['id_clinico'] .">";				
                  echo $clinicos[$i]['nombre_clinico'];
                  echo $clinicos[$i]['apellido_clinico'];
 				     echo "</option>";
@@ -76,13 +73,44 @@
             <div class="invalid-feedback">
               Faltó Seleccionar Un Medico.
             </div>
-          </div>
+          </div>  
 
           <div class="col-md-6 mb-4">
-            <label for="liqui_recibo">Liquidacion</label>
-            <input type="text" class="form-control" name="liqui_recibo" placeholder="" value="" required>
+           <label for="paciente">Paciente</label>
+           <select class="custom-select d-block w-100" name="id_paciente" required>
+           <?php 
+				     $long = count($pacientes);
+				     for($i=0; $i< $long; $i++){
+				     echo "<option";
+				     echo " value1=" .$paciente[$i]['id_paciente'] .">";				
+                 echo $pacientes[$i]['nombre_paciente'];
+                 echo $pacientes[$i]['apellido_paciente'];
+				     echo "</option>";
+             }
+				   ?>
+            </select>
             <div class="invalid-feedback">
-              Faltó Ingresar La liquidacion.
+              Faltó Seleccionar Un Paciente.
+            </div>
+          </div>  
+        
+
+        
+        <div class="col-md-6 mb-4">
+            <label for="observacion_historial">Observaciones</label>
+            <input type="text" class="form-control" name="observacion_historial" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              Faltó Ingresar Una Observacion.
+            </div>
+          </div>
+      
+         
+
+          <div class="col-md-6 mb-4">
+            <label for="diagnostico_historial">Diagnostico</label>
+            <input type="text" class="form-control" name="diagnostico_historial" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              Faltó Ingresar El Diagnostico.
             </div>
           </div>
      

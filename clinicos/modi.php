@@ -7,12 +7,15 @@
 
 
 
- $sql = "UPDATE recibos SET fecha_recibo='" . ($_POST['fecha_recibo']) 				."'," .
-    "descripcion_recibo='" 		. $_POST['descripcion_recibo']									."'," .			
-    "clinico_recibo='" 		. $_POST['clinico_recibo']									."'," .		
-    "liqui_recibo='" 		. $_POST['liqui_recibo']									."'" .				
-		" where id_recibo =" . ($_POST['id_recibo']) ;						
-								
+$sql = "UPDATE clinicos SET nombre_clinico='" . ($_POST['nombre_clinico']) 				."'," .
+    "apellido_clinico='" 		. $_POST['apellido_clinico']									."'," .			
+    "edad_clinico='" 		. $_POST['edad_clinico']									."'," .			
+    "domicilio_clinico='" 		. $_POST['domicilio_clinico']									."'," .			
+    "telefono_clinico='" 		. $_POST['telefono_clinico']									."'," .			
+    "fech_nac_clinico='" 		. $_POST['fech_nac_clinico']									."'," .			
+		"email_clinico='" 	. $_POST['email_clinico']								."'" .			
+		" where id_clinico =" . ($_POST['id_clinico']) ;							
+            
  
 ?>								
 
@@ -21,13 +24,13 @@
   <div class="py-5 text-center">
     <img class="d-block mx-auto mb-4" src="../img/disc.jpg" alt="" width="72" height="72">
     <h2>JDL S.A</h2>
-    <p class="lead">Modificacion De Recibos y Servicios / Profesiones.</p>
+    <p class="lead">Modificacion De Clinicos y Servicios / Profesiones.</p>
   </div>
  
  <?php 
   if ($mysqli->query($sql) === TRUE) {
 
-  echo "  <a href='../admin/'> <div class='col-md-12 order-md-1'>";
+  echo "  <a href='../clinicos/'> <div class='col-md-12 order-md-1'>";
   echo    "<h4 class='mb-4'>Datos modificados correctamente</h4> </a>";
 } else {
   echo "Error: " . $sql . "<br>" . $mysqli->error;
@@ -37,7 +40,7 @@ $mysqli->close();
 
 ?>
 
-<a href="../admin">	 <hr class="mb-4">
+<a href="../clinicos">	 <hr class="mb-4">
         <button class="btn btn-success btn-lg btn-block" type="submit">Volver</button>
   <footer class="my-5 pt-5 text-muted text-center text-small"></a>
     <p class="mb-1">&copy; 2020 - JDL S.A</p>
@@ -45,7 +48,7 @@ $mysqli->close();
       <li class="list-inline-item"><a href="#">Privacidad de Datos</a></li>
       <li class="list-inline-item"><a href="#">Términos de Uso</a></li>
       <li class="list-inline-item"><a href="#">Soporte</a></li>
-    </ul>
+    </ul>-->
   </footer>
 </div>
 

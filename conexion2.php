@@ -1,7 +1,7 @@
 <?php
     
   // Variables de la conexion a la DB
-     $mysqli = new mysqli("localhost","root","","theclinicadm"); //localhost
+     $mysqli = new mysqli("sql205.byethost31.com","b31_26518949","garfio1234","b31_26518949_theclinicadm"); //localhost
   // Comprobamos la conexion
     if($mysqli->connect_errno) {
         die("Fallo la conexion");

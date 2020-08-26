@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <title>JDL S.A - TheClinicAdm</title>
+    <title>JDL S.A - Historiales Clinicos</title>
 
     
 
@@ -47,8 +47,8 @@
 	</h2>
 	</div>
     <div class="col-sm-2"><h2>
-		<img border="0" src="../img/nuevo.png" width="48" height="48" title="Ingresar Recibo" 
-		onclick=location.href='admin.php'; onKeyPress=location.href='admin.php';
+		<img border="0" src="../img/nuevo.png" width="48" height="48" title="Ingresar Asignacion" 
+		onclick=location.href='historiales.php'; onKeyPress=location.href='historiales.php';
 		style='cursor:pointer';>
 	
 	</h2></div>
@@ -67,33 +67,34 @@
     <p class="lead">Servicios Medicos E Informaticos.</p>
   </div>
     <div class="col-md-12 order-md-1">
-      <h4 class="mb-1">Admin</h4>
+      <h4 class="mb-1">Historiales Medicos</h4>
 	</div>  
 <?php 
    require "../conexion.php";
 
-    $sql = "SELECT * from recibos order by id_recibo";
+    $sql = "SELECT * from historiales order by id_historial";
 	$query = $mysqli->query($sql);
 	while($resultado = $query->fetch_assoc()) {
-        $recibos[] = $resultado;
+        $historiales[] = $resultado;
     }
   
 ?>    
         <div class="list-group">
 		
 			<?php 				
-				$long = count($recibos);
+				$long = count($historiales);
 				for($i=0; $i< $long; $i++){
 				?>
 		<div class="list-group">
 				
-				<a 	<?php echo "href=modifica.php?id_recibo=".$recibos[$i]['id_recibo'];?>
+				<a 	<?php echo "href=modifica.php?id_historial=".$historiales[$i]['id_historial'];?>
 						 class="list-group-item">
-				<h4 class="list-group-item-heading"> <?php echo $recibos[$i]['id_recibo'] ."";?> </h4>
-				<p class="list-group-item-text"><?php 	echo "Fecha De Recibo: " . $recibos[$i]['fecha_recibo'] ." - Descripcion: "; 
-                            echo $recibos[$i]['descripcion_recibo'] ." - Medico: "; 
-                            echo $recibos[$i]['clinico_recibo'] ." - Liquidacion: "; 
-                            echo $recibos[$i]['liqui_recibo'] ."";
+				<h4 class="list-group-item-heading"> <?php echo $historiales[$i]['id_historial'] ."";?> </h4>
+				<p class="list-group-item-text"><?php 	echo "Fecha: " . $historiales[$i]['fecha_historial'] ." - Medico: "; 
+                            echo $historiales[$i]['clinico_historial'] ." - Paciente: "; 
+                            echo $historiales[$i]['paciente_historial'] ." - Observaciones: "; 
+                            echo $historiales[$i]['observacion_historial'] ." - Diagnostico: ";
+                            echo $historiales[$i]['diagnostico_historial'] ."";
 														?></p>		 
 				</a>	</div>
 	<?php  } ?>

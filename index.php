@@ -1,74 +1,105 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>JDL S.A - TheClinicAdm</title>
 
-<head>
+    <!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+	<!-- JS, Popper.js, and jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
-  <title>Panel de Control</title>
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="form-validation.css" rel="stylesheet">
+  </head>
+  <body class="bg-light">
+    <div class="container">
+  <div class="py-5 text-center">
+  <div class="row">
 
   
+  
+	<div class="col-sm-2"><h2>
+		<img border="0" src="../img/cerrado.png" width="48" height="48" title="Ingresar" 
+		onclick=location.href='../panel/'; onKeyPress=location.href='../panel/'; style='cursor:pointer';/>
+	</h2></div>
+    <div class="col-sm-2"><h2></h2></div>	
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Custom styles for this template -->
-  <link href="css/simple-sidebar.css" rel="stylesheet">
 
-</head>
+  <div class="col-sm-2"><img class="d-block mx-auto mb-1" src="../img/disc.jpg" alt="" width="62" height="62"></div>
+  <div class="col-sm-2"><h2>JDL S.A</h2></div>
 
-<body>
+ 
+    <p class="col-sm-3">Servicios Medicos E Informaticos.</p>
 
-  <div class="d-flex" id="wrapper">
-
-    <!-- Sidebar -->
-    <div class="bg-light border-right" id="sidebar-wrapper">
-      <div class="sidebar-heading bg-dark text-white">Menú de Opciones</div>
-      <div class="list-group list-group-flush">
-        <a href="./tareas/" class="list-group-item list-group-item-action bg-dark text-white">Tareas</a>
-        <a href="./integrantes/" class="list-group-item list-group-item-action bg-dark text-white">Integrantes</a>
-        <a href="./admin/" class="list-group-item list-group-item-action bg-dark text-white">Admin</a>
+    <div class="col-md-12 order-md-2">
+      <h4 class="lead">Login</h4></div>  
+    
       </div>
-    </div>
-    <!-- /#sidebar-wrapper -->
+   
+<?php 
+   require "conexion.php";
 
-    <!-- Page Content -->
-    <div id="page-content-wrapper">
+  $sql = "SELECT * from logins order by id_login";
+	$query = $mysqli->query($sql);
+	while($resultado = $query->fetch_assoc()) {
+        $logins[] = $resultado;
+    }   
+?>
 
-      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-        <button class="btn btn-primary" id="menu-toggle">Ver / Ocultar</button>
+<div class="container">
+      <form class="form-horizontal" action="login.php" method="post">
+        <div class="form-group">
+          <label for="usuario_login" class="col-sm-2 control-label">Usuario</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" name="usuario_login" placeholder="Usuario" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="contraseña_login" class="col-sm-2 control-label">Contraseña</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" name="contraseña_login" placeholder="Contraseña" required>
+          </div>
+        </div>
+      
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </nav>
 
-      <div class="container-fluid">
-        <h1 class="mt-4"><img class="d-block mx-auto mb-4" src="./img/disc.jpg" alt="" width="50" height="50"></h1>
-        <p>Panel de Control.</p>
-        <p>Configuración de datos para control e incorporación de información en la app móvil.</p>
-      </div>
-    </div>
-    <!-- /#page-content-wrapper -->
+<div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-success btn-lg btn-block">Sign in</button>
+          </div>
+        </div>
 
-  </div>
-  <!-- /#wrapper -->
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Menu Toggle Script -->
-  <script>
-    $("#menu-toggle").click(function(e) {
-      e.preventDefault();
-      $("#wrapper").toggleClass("toggled");
-    });
-  </script>
-
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy; 2020 - JDL S.A</p>
+   <ul class="list-inline">
+      <li class="list-inline-item"><a href="#">Privacidad de Datos</a></li>
+      <li class="list-inline-item"><a href="#">Términos de Uso</a></li>
+      <li class="list-inline-item"><a href="#">Soporte</a></li>
+    </ul>
+  </footer>
+</div>
 </body>
-
 </html>

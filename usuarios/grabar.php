@@ -5,7 +5,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v4.0.1">
-    <title>JDL S.A - TheClinicAdm</title>
+    <title>JDL S.A - Materiales</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/checkout/">
 
@@ -42,30 +42,31 @@
   <div class="py-5 text-center">
     <img class="d-block mx-auto mb-4" src="../img/disc.jpg" alt="" width="72" height="72">
     <h2>JDL S.A</h2>
-    <p class="lead">Ingreso De Recibos y Servicios / Profesiones para la App.</p>
+    <p class="lead">Ingreso De Usuarios y Servicios / Profesiones para la App.</p>
   </div>
 
     
       
 	  
 <?php
-
-   require "../conexion.php";
-
-   $sql = "insert into recibos(
-    fecha_recibo,descripcion_recibo,clinico_recibo,liqui_recibo)
-    values" 
-    . "('".$_POST['fecha_recibo'] 	. "'," 
-    . "'" .$_POST['descripcion_recibo'] 	. "',"	
-    . "'" .$_POST['clinico_recibo'] 	. "',"	
-    . "'" .$_POST['liqui_recibo'] 	. "' "	
-    . ")";
+ require "../conexion.php";
+ $sql = "insert into usuarios(
+  nombre_usuario,apellido_usuario,edad_usuario,dni_usuario,domicilio_usuario,fecha_nac_usuario,notas_usuario)
+  values" 
+  . "('".$_POST['nombre_usuario'] 	. "'," 
+  . "'" .$_POST['apellido_usuario'] 	. "',"
+  . "'" .$_POST['edad_usuario'] 	. "',"	
+  . "'" .$_POST['dni_usuario'] 	. "',"	
+  . "'" .$_POST['domicilio_usuario'] 	. "',"
+  . "'" .$_POST['fecha_nac_usuario'] 	. "',"
+  . "'" .$_POST['notas_usuario'] 	. "' "	
+  . ")";
   
 // echo $sql;
 
 if ($mysqli->query($sql) === TRUE) {
 
-  echo "  <a href='../admin/'> <div class='col-md-12 order-md-1'>";
+  echo "  <a href='../usuarios/'> <div class='col-md-12 order-md-1'>";
   echo    "<h4 class='mb-4'>Datos guardados correctamente</h4> </a>";
 } else {
   echo "Error: " . $sql . "<br>" . $mysqli->error;
@@ -74,7 +75,7 @@ if ($mysqli->query($sql) === TRUE) {
 $mysqli->close();
 		
 ?>
-<a href="../admin">	 <hr class="mb-4">
+<a href="../usuarios">	 <hr class="mb-4">
         <button class="btn btn-success btn-lg btn-block" type="submit">Volver</button>
   <footer class="my-5 pt-5 text-muted text-center text-small"></a>
     <p class="mb-1">&copy; 2020 - JDL S.A</p>

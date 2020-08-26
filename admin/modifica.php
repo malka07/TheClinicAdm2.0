@@ -18,9 +18,9 @@
     <div class="col-sm-2">
 		<img border="0" src="../img/borrar.png" width="48" height="48" title="Eliminar" 
 						<?php echo " onclick=location.href='" 
-												. "cuidado.php?id_rec=".$_GET['id_rec'] . "'"; ?>;
+												. "cuidado.php?id_recibo=".$_GET['id_recibo'] . "'"; ?>;
 						<?php echo " onKeyPress=location.href='" 
-												. "cuidado.php?id_rec=".$_GET['id_rec'] . "'"; ?>												
+												. "cuidado.php?id_recibo=".$_GET['id_recibo'] . "'"; ?>												
 						style='cursor:pointer';/>
 	
 	</h2>
@@ -38,70 +38,66 @@
 	  
 <?php 
    require "../conexion.php";
-    $sql = "SELECT * from recibos where id_rec = " . $_GET['id_rec'];
+    $sql = "SELECT * from recibos where id_recibo = " . $_GET['id_recibo'];
 	$query = $mysqli->query($sql);
 	while($resultado = $query->fetch_assoc()) {
         $recibos[] = $resultado;
     }  
    
-    $sql = "SELECT * from integrantes order by id_int";
+    $sql = "SELECT * from clinicos order by id_clinico";
     $query = $mysqli->query($sql);
     while($resultado = $query->fetch_assoc()) {
-          $integrantes[] = $resultado;
+          $clinicos[] = $resultado;
       }
      
 	
-	echo "<input type='hidden' name='id_rec' value=" .$_GET['id_rec'] .">"; 
+      echo "<input type='hidden' name='id_recibo' value=" .$_GET['id_recibo'] .">"; 
 ?>  
 	  
       
           <div class="col-md-6 mb-4">
-            <label for="fecha">Fecha De Recibo:</label>
-            <input type="date" class="form-control" id="fecha" name="fech_rec" placeholder="" value=<?php echo "'".$recibos[0]['fech_rec']."'" ?> required>
+            <label for="fecha_recibo">Fecha De Recibo:</label>
+            <input type="date" class="form-control" id="fecha" name="fecha_recibo" placeholder="" value=<?php echo "'".$recibos[0]['fecha_recibo']."'" ?> required>
             <div class="invalid-feedback">
               Faltó Ingresar La Fecha Del Recibo.
             </div>
           </div>
 
-
           <div class="col-md-6 mb-4">
-           <label for="integrante">Nombre Integrante</label>
-           <select class="custom-select d-block w-100" name="nom_rec" placeholder="" value=<?php echo "'".$recibos[0]['nom_rec']."'" ?> required>
-           <?php 
-				     $long = count($integrantes);
-				     for($i=0; $i< $long; $i++){
-				     echo "<option";
-				     echo " value=" .$integrantes[$i]['nom_int'] .",".$integrantes[$i]['ape_int'] .">";				
-                 echo $integrantes[$i]['nom_int']." ";
-                 echo $integrantes[$i]['ape_int'];
-				     echo "</option>";
-             }
-				   ?>
-            </select>
-            <div class="invalid-feedback">
-              Faltó Seleccionar Un Integrante.
-            </div>
-          </div> 
-
-          <div class="col-md-6 mb-4">
-            <label for="descripcion">Descripcion</label>
-            <input type="text" class="form-control" id="descripcion" name="desc_rec" placeholder="" value=<?php echo "'".$recibos[0]['desc_rec']."'" ?> required>
+            <label for="descripcion_recibo">Descripcion</label>
+            <input type="text" class="form-control" id="descripcion" name="descripcion_recibo" placeholder="" value=<?php echo "'".$recibos[0]['descripcion_recibo']."'" ?> required>
             <div class="invalid-feedback">
               Faltó Ingresar Una Descripcion Del Recibo
             </div>
           </div>
       
 
-        <div class="col-md-6 mb-4">
-            <label for="Liquidacion">Liquidacion</label>
-            <input type="text" class="form-control" id="liquidacion" name="liqui_rec" placeholder="" value=<?php echo "'".$recibos[0]['liqui_rec']."'" ?> required>
+          <div class="col-md-6 mb-4">
+           <label for="medico">Medico</label>
+           <select class="custom-select d-block w-100" name="clinico_recibo" required>
+           <?php 
+				     $long = count($clinicos);
+				     for($i=0; $i< $long; $i++){
+				     echo "<option";
+				     echo " value=" .$clinicos[$i]['nombre_clinico'] .",".$clinicos[$i]['apellido_clinico'] .">";				
+                 echo $clinicos[$i]['nombre_clinico'];
+                 echo $clinicos[$i]['apellido_clinico'];
+				     echo "</option>";
+             }
+				   ?>
+            </select>
+            <div class="invalid-feedback">
+              Faltó Seleccionar Un Medico.
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <label for="liqui_recibo">Liquidacion</label>
+            <input type="text" class="form-control" id="liquidaciones" name="liqui_recibo" placeholder="" value=<?php echo "'".$recibos[0]['liqui_recibo']."'" ?> required>
             <div class="invalid-feedback">
               Faltó Ingresar La Liquidacion
             </div>
           </div>
-            
-
-         
 
 
 		</div>
