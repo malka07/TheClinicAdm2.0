@@ -67,18 +67,19 @@
 	while($resultado = $query->fetch_assoc()) {
         $logins[] = $resultado;
     }   
+
+    
 ?>
 
 <div class="container">
-      <form class="form-horizontal" action="login.php" method="post">
+      <form class="form-horizontal" action="login.php" method="POST">
         <div class="form-group">
-          <label for="usuario_login" class="col-sm-2 control-label">Usuario</label>
+          
           <div class="col-sm-10">
             <input type="text" class="form-control" name="usuario_login" placeholder="Usuario" required>
           </div>
         </div>
         <div class="form-group">
-          <label for="contraseña_login" class="col-sm-2 control-label">Contraseña</label>
           <div class="col-sm-10">
             <input type="text" class="form-control" name="contraseña_login" placeholder="Contraseña" required>
           </div>
@@ -91,6 +92,7 @@
             <button type="submit" class="btn btn-success btn-lg btn-block">Sign in</button>
           </div>
         </div>
+
 
   <footer class="my-5 pt-5 text-muted text-center text-small">
     <p class="mb-1">&copy; 2020 - JDL S.A</p>
