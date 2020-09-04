@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: sql205.byetcluster.com
--- Tiempo de generación: 25-08-2020 a las 23:04:17
+-- Tiempo de generación: 03-09-2020 a las 21:06:27
 -- Versión del servidor: 5.6.48-88.0
 -- Versión de PHP: 7.2.22
 
@@ -97,8 +97,8 @@ CREATE TABLE `historiales` (
 --
 
 INSERT INTO `historiales` (`id_historial`, `fecha_historial`, `clinico_historial`, `paciente_historial`, `observacion_historial`, `diagnostico_historial`) VALUES
-(1, '2020-08-24', '', '', '', 'al borda'),
-(2, '2020-08-16', '', '', '', 'al borda');
+(1, '2020-08-24', '1', '3', 'esta chapitanga', 'al borda como jorgito'),
+(3, '2020-07-16', '1', '3', 'esta chapitasss', 'a francia');
 
 -- --------------------------------------------------------
 
@@ -111,15 +111,16 @@ CREATE TABLE `logins` (
   `id_usuario` int(8) DEFAULT NULL,
   `usuario_login` varchar(30) DEFAULT NULL,
   `contraseña_login` varchar(50) DEFAULT NULL,
-  `id_permiso` int(4) DEFAULT NULL
+  `permiso_login` int(4) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `logins`
 --
 
-INSERT INTO `logins` (`id_login`, `id_usuario`, `usuario_login`, `contraseña_login`, `id_permiso`) VALUES
-(1, 1, 'admin', 'garfio1234', 1);
+INSERT INTO `logins` (`id_login`, `id_usuario`, `usuario_login`, `contraseña_login`, `permiso_login`) VALUES
+(1, 1, 'admin', 'garfio1234', 1),
+(2, 2, 'juan', 'sasa', 2);
 
 -- --------------------------------------------------------
 
@@ -142,7 +143,7 @@ CREATE TABLE `medicamentos` (
 --
 
 INSERT INTO `medicamentos` (`id_medicamento`, `nombre_medicamento`, `farmaco_medicamento`, `contenido_medicamento`, `formato_medicamento`, `cantidad_medicamento`, `vencimiento_medicamento`) VALUES
-(1, 'seretide discus', 'SALMETEROL ', '50g', '2', 3, '2019-01-15');
+(1, 'seretide discus', 'SALMETEROL ', '50g', '1', 3, '2019-01-15');
 
 -- --------------------------------------------------------
 
@@ -212,7 +213,8 @@ CREATE TABLE `recibos` (
 --
 
 INSERT INTO `recibos` (`id_recibo`, `fecha_recibo`, `descripcion_recibo`, `clinico_recibo`, `liqui_recibo`) VALUES
-(3, '2020-05-13', 'pago a deni', 'denise,Mark', '50.16340');
+(3, '2020-05-13', 'pago a deni', 'denise,Mark', '50.16340'),
+(4, '2020-09-22', 'pasazo a jorgito', 'denise,Mark', '800.00000');
 
 -- --------------------------------------------------------
 
@@ -317,13 +319,13 @@ ALTER TABLE `formato`
 -- AUTO_INCREMENT de la tabla `historiales`
 --
 ALTER TABLE `historiales`
-  MODIFY `id_historial` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_historial` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de la tabla `logins`
 --
 ALTER TABLE `logins`
-  MODIFY `id_login` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_login` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `medicamentos`
@@ -347,7 +349,7 @@ ALTER TABLE `permisos`
 -- AUTO_INCREMENT de la tabla `recibos`
 --
 ALTER TABLE `recibos`
-  MODIFY `id_recibo` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_recibo` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`
