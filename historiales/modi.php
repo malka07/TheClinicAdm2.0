@@ -11,7 +11,7 @@
     "clinico_historial='" 		. $_POST['clinico_historial']									."'," .			
     "paciente_historial='" 		. $_POST['paciente_historial']									."'," .		
     "observacion_historial='" 		. $_POST['observacion_historial']									."'," .		
-    "diagnostico_historial='" 		. $_POST['diagnostico_historial']									."'," .			
+    "diagnostico_historial='" 	. $_POST['diagnostico_historial']								."'" .			
 		" where id_historial =" . ($_POST['id_historial']) ;						
 								
  

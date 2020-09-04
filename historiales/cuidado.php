@@ -1,7 +1,7 @@
 ﻿<?php
 	 require "../metodos.php";
- $_GET['id_historiales'] ;	
-	echo "<input type='hidden' name='id_historiales' value=" .$_GET['id_historiales'] .">"; 
+ $_GET['id_historial'] ;	
+	echo "<input type='hidden' name='id_historial' value=" .$_GET['id_historial'] .">"; 
 
 ?>
 
@@ -31,7 +31,7 @@
 
   </div>
  
-<a href="borra.php?id_historiales=<?PHP echo $_GET['id_historiales']; ?>">	 
+<a href="borra.php?id_historial=<?PHP echo $_GET['id_historial']; ?>">	 
 <hr class="mb-4">
         <button class="btn btn-warning btn-lg btn-block" type="button">Si,Deseo Eliminar La Asignacion / servicio</button>
   <footer class="my-5 pt-5 text-muted text-center text-small"></a>

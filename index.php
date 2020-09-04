@@ -69,6 +69,7 @@
     }   
 
     
+    
 ?>
 
 <div class="container">
@@ -85,11 +86,23 @@
           </div>
         </div>
       
+        <div class="col-md-6 mb-4">
+           <input type="hidden" class="form-control" name="permiso_login" required>
+           <?php 
+				     $long = count($logins);
+				     for($i=0; $i< $long; $i++){
+				     echo "<option";
+				     echo " value=" .$logins[$i]['id_login'] .">";				
+				     echo "</option>";
+             }
+				   ?>
 
 
+
+       
 <div class="form-group">
           <div class="col-sm-offset-2 col-sm-10">
-            <button type="submit" class="btn btn-success btn-lg btn-block">Sign in</button>
+            <button type="submit" class="btn btn-success btn-lg btn-block">Ingresar</button>
           </div>
         </div>
 

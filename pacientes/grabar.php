@@ -84,7 +84,7 @@ $mysqli->close();
 <a href="../pacientes">	 <hr class="mb-4">
         <button class="btn btn-success btn-lg btn-block" type="submit">Volver</button>
   <footer class="my-5 pt-5 text-muted text-center text-small"></a>
-    <p class="mb-1">&copy; 2020 - YO Lugano</p>
+    <p class="mb-1">&copy; 2020 - TheClinicAdm</p>
  <!--   <ul class="list-inline">
       <li class="list-inline-item"><a href="#">Privacidad de Datos</a></li>
       <li class="list-inline-item"><a href="#">Términos de Uso</a></li>
