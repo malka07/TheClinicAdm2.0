@@ -71,7 +71,7 @@
 				     $long = count($pacientes);
 				     for($i=0; $i< $long; $i++){
 				     echo "<option";
-				     echo " value1=" .$paciente[$i]['id_paciente'] .">";				
+             echo " value=" .$pacientes[$i]['nombre_paciente'] .",".$pacientes[$i]['apellido_paciente'] .">";
                  echo $pacientes[$i]['nombre_paciente'];
                  echo $pacientes[$i]['apellido_paciente'];
 				     echo "</option>";
@@ -90,7 +90,7 @@
 				     $long = count($clinicos);
 				     for($i=0; $i< $long; $i++){
 				     echo "<option";
-				     echo " value=" .$clinicos[$i]['id_clinico'] .">";				
+             echo " value=" .$clinicos[$i]['nombre_clinico'] .",".$clinicos[$i]['apellido_clinico'] .">";	
                  echo $clinicos[$i]['nombre_clinico'];
                  echo $clinicos[$i]['apellido_clinico'];
 				     echo "</option>";

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: sql205.byetcluster.com
--- Tiempo de generación: 03-09-2020 a las 21:06:27
+-- Tiempo de generación: 06-09-2020 a las 00:05:58
 -- Versión del servidor: 5.6.48-88.0
 -- Versión de PHP: 7.2.22
 
@@ -97,8 +97,8 @@ CREATE TABLE `historiales` (
 --
 
 INSERT INTO `historiales` (`id_historial`, `fecha_historial`, `clinico_historial`, `paciente_historial`, `observacion_historial`, `diagnostico_historial`) VALUES
-(1, '2020-08-24', '1', '3', 'esta chapitanga', 'al borda como jorgito'),
-(3, '2020-07-16', '1', '3', 'esta chapitasss', 'a francia');
+(1, '2020-08-24', '1', '3', 'esta chapitanga', 'al borda como jorgito negro gark'),
+(3, '2020-07-16', '1', '3', 'esta chapitasss', 'hemorroides');
 
 -- --------------------------------------------------------
 
@@ -219,6 +219,28 @@ INSERT INTO `recibos` (`id_recibo`, `fecha_recibo`, `descripcion_recibo`, `clini
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `turnos`
+--
+
+CREATE TABLE `turnos` (
+  `id_turno` int(8) NOT NULL,
+  `fecha_turno` date DEFAULT NULL,
+  `horario_turno` varchar(15) NOT NULL,
+  `paciente_turno` varchar(50) DEFAULT NULL,
+  `clinico_turno` varchar(50) DEFAULT NULL,
+  `comentarios_turno` varchar(200) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `turnos`
+--
+
+INSERT INTO `turnos` (`id_turno`, `fecha_turno`, `horario_turno`, `paciente_turno`, `clinico_turno`, `comentarios_turno`) VALUES
+(1, '2020-09-07', '17:30', 'juan,de', 'denise,Mark', 'tiene problemitas :B');
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `usuarios`
 --
 
@@ -294,6 +316,12 @@ ALTER TABLE `recibos`
   ADD PRIMARY KEY (`id_recibo`);
 
 --
+-- Indices de la tabla `turnos`
+--
+ALTER TABLE `turnos`
+  ADD PRIMARY KEY (`id_turno`);
+
+--
 -- Indices de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
@@ -350,6 +378,12 @@ ALTER TABLE `permisos`
 --
 ALTER TABLE `recibos`
   MODIFY `id_recibo` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT de la tabla `turnos`
+--
+ALTER TABLE `turnos`
+  MODIFY `id_turno` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`
