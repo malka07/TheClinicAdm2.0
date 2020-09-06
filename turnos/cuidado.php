@@ -1,7 +1,7 @@
 ﻿<?php
 	 require "../metodos.php";
- $_GET['id_historial'] ;	
-	echo "<input type='hidden' name='id_historial' value=" .$_GET['id_historial'] .">"; 
+ $_GET['id_turno'] ;	
+	echo "<input type='hidden' name='id_turno' value=" .$_GET['id_turno'] .">"; 
 
 ?>
 
@@ -12,8 +12,8 @@
   <div class="row">
     <div class="col-sm-2"><h2>
 		<img border="0" src="../img/atras.png" width="48" height="48" title="Volver al menú" 
-							onclick=location.href='../historiales/'; 
-							onKeyPress=location.href='../historiales/'; 
+							onclick=location.href='../turnos/'; 
+							onKeyPress=location.href='../turnos/'; 
 							style='cursor:pointer';/>
 	</h2>
 	</div>
@@ -24,16 +24,16 @@
 </div>
 	
   <div class="py-5 text-center">
-	<p class="text-danger" >IMPORTANTE!: Al eliminar El Historial ,se eliminarán 
+	<p class="text-danger" >IMPORTANTE!: Al eliminar El Turno ,se eliminarán 
 	DEFINITIVAMENTE todos los datos relacionados a éste item. 
 	La eliminación de datos solo podrá ser revertida con la recuperación del backup 
 	correspondiente, en el caso que existiese.</p>
 
   </div>
  
-<a href="borra.php?id_historial=<?PHP echo $_GET['id_historial']; ?>">	 
+<a href="borra.php?id_turno=<?PHP echo $_GET['id_turno']; ?>">	 
 <hr class="mb-4">
-        <button class="btn btn-warning btn-lg btn-block" type="button">Si,Deseo Eliminar El Historial / servicio</button>
+        <button class="btn btn-warning btn-lg btn-block" type="button">Si,Deseo Eliminar El Turno / servicio</button>
   <footer class="my-5 pt-5 text-muted text-center text-small"></a>
     <p class="mb-1">&copy; 2020 - JDL S.A</p>
 

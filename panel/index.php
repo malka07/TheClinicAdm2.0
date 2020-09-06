@@ -29,6 +29,7 @@
       <div class="sidebar-heading bg-dark text-white">Menú de Opciones</div>
       <div class="list-group list-group-flush">
         <a href="../historiales/" class="list-group-item list-group-item-action bg-dark text-white">Historiales</a>
+        <a href="../turnos/" class="list-group-item list-group-item-action bg-dark text-white">Turnos</a>
         <a href="../admin/" class="list-group-item list-group-item-action bg-dark text-white">Admin</a>
         <a href="../usuarios/" class="list-group-item list-group-item-action bg-dark text-white">Usuarios</a>
         <a href="../pacientes/" class="list-group-item list-group-item-action bg-dark text-white">Pacientes</a>
@@ -51,7 +52,7 @@
       </nav>
 
       <div class="container-fluid">
-        <h1 class="mt-4"><img class="d-block mx-auto mb-4" src="./img/disc.jpg" alt="" width="50" height="50"></h1>
+        <h1 class="mt-4"><img class="d-block mx-auto mb-4" src="../img/disc.jpg" alt="" width="50" height="50"></h1>
         <p>Panel de Control.</p>
         <p>Configuración de datos para control e incorporación de información en la app móvil.</p>
       </div>

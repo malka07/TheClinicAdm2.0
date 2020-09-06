@@ -47,6 +47,7 @@ $sql = "SELECT * from historiales order by id_historial";
 
   <tr>
     <td width="10%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $i+1;?></font></i></td>	
+	<td width="20%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $historiales[$i]['id_historial'];?></font></i></td>
     <td width="20%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $historiales[$i]['fecha_historial'];?></font></i></td>
 	<td width="20%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $historiales[$i]['clinico_historial'];?></font></i></td>
 	<td width="20%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $historiales[$i]['paciente_historial'];?></font></i></td>

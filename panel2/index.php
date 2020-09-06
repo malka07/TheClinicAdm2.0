@@ -48,7 +48,7 @@
       </nav>
 
       <div class="container-fluid">
-        <h1 class="mt-4"><img class="d-block mx-auto mb-4" src="./img/disc.jpg" alt="" width="50" height="50"></h1>
+        <h1 class="mt-4"><img class="d-block mx-auto mb-4" src="../img/disc.jpg" alt="" width="50" height="50"></h1>
         <p>Panel de Control.</p>
         <p>Configuración de datos para control e incorporación de información en la app móvil.</p>
       </div>
