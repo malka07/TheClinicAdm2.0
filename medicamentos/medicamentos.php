@@ -77,7 +77,7 @@
 				     $long = count($formato);
 				     for($i=0; $i< $long; $i++){
 				     echo "<option";
-				     echo " value=" .$formato[$i]['id_formato'] .">";				
+				     echo " value=" .$formato[$i]['nombre_formato'] .">";				
                  echo $formato[$i]['nombre_formato'];
 				     echo "</option>";
              }

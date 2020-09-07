@@ -155,7 +155,7 @@
 				     $long = count($clinicos);
 				     for($i=0; $i< $long; $i++){
 				     echo "<option";
-				     echo " value=" .$clinicos[$i]['id_clinico'] .">";				
+				     echo " value=" .$clinicos[$i]['nombre_clinico'].",".$clinicos[$i]['apellido_clinico'] .">";				
                  echo $clinicos[$i]['nombre_clinico'];
                  echo $clinicos[$i]['apellido_clinico'];
 				     echo "</option>";

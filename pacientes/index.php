@@ -96,7 +96,7 @@
                             echo $pacientes[$i]['edad_paciente'] ." - Provincia: "; 
                             echo $pacientes[$i]['provincia_paciente'] ." - Barrio: "; 
                             echo $pacientes[$i]['barrio_paciente'] ." - Fecha De Nac.: ";
-                            echo $pacientes[$i]['fech_nac_paciente'] ." - Historia Clinica: ";
+                            echo $pacientes[$i]['fech_nac_paciente'] ." - N° Historia Clinica: ";
                             echo $pacientes[$i]['historia_paciente'] ." - Obra Social: ";
                             echo $pacientes[$i]['obra_soc_paciente'] ." - Medico: ";
                             echo $pacientes[$i]['medico_paciente'] ." - Email: ";
