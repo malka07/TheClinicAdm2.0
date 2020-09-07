@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: sql205.byetcluster.com
--- Tiempo de generación: 06-09-2020 a las 00:05:58
+-- Tiempo de generación: 07-09-2020 a las 01:29:36
 -- Versión del servidor: 5.6.48-88.0
 -- Versión de PHP: 7.2.22
 
@@ -97,8 +97,8 @@ CREATE TABLE `historiales` (
 --
 
 INSERT INTO `historiales` (`id_historial`, `fecha_historial`, `clinico_historial`, `paciente_historial`, `observacion_historial`, `diagnostico_historial`) VALUES
-(1, '2020-08-24', '1', '3', 'esta chapitanga', 'al borda como jorgito negro gark'),
-(3, '2020-07-16', '1', '3', 'esta chapitasss', 'hemorroides');
+(1, '2020-08-24', 'denise,Mark', 'juan,de', 'esta chapitanga', 'al borda como jorgito negro gark'),
+(3, '2020-07-16', 'denise,Mark', 'juan,de', 'esta chapitasss', 'hemorroides');
 
 -- --------------------------------------------------------
 
@@ -143,7 +143,7 @@ CREATE TABLE `medicamentos` (
 --
 
 INSERT INTO `medicamentos` (`id_medicamento`, `nombre_medicamento`, `farmaco_medicamento`, `contenido_medicamento`, `formato_medicamento`, `cantidad_medicamento`, `vencimiento_medicamento`) VALUES
-(1, 'seretide discus', 'SALMETEROL ', '50g', '1', 3, '2019-01-15');
+(1, 'seretide discus', 'SALMETEROL ', '50g', 'inyectable', 3, '2019-01-15');
 
 -- --------------------------------------------------------
 
@@ -164,7 +164,7 @@ CREATE TABLE `pacientes` (
   `fech_nac_paciente` date DEFAULT NULL,
   `historia_paciente` int(8) DEFAULT NULL,
   `obra_soc_paciente` varchar(15) DEFAULT NULL,
-  `medico_paciente` int(8) DEFAULT NULL,
+  `medico_paciente` varchar(50) DEFAULT NULL,
   `email_paciente` varchar(50) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
@@ -173,7 +173,7 @@ CREATE TABLE `pacientes` (
 --
 
 INSERT INTO `pacientes` (`id_paciente`, `nombre_paciente`, `apellido_paciente`, `dni_paciente`, `domicilio_paciente`, `telefono_paciente`, `edad_paciente`, `provincia_paciente`, `barrio_paciente`, `fech_nac_paciente`, `historia_paciente`, `obra_soc_paciente`, `medico_paciente`, `email_paciente`) VALUES
-(3, 'juan', 'de los palotes', 33444134, 'jose de los palotes 4321', '4369876', 24, 'GBA', 'san vicente', '2019-05-14', 1, 'osde', 1, 'easafe@hotmail.com');
+(3, 'juan', 'de los palotes', 33444134, 'jose de los palotes 4321', '4369876', 24, 'GBA', 'san vicente', '2019-05-14', 1, 'osde', 'denise,Mark', 'easafe@hotmail.com');
 
 -- --------------------------------------------------------
 
