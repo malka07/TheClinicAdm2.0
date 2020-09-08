@@ -33,29 +33,22 @@
     <!-- Custom styles for this template -->
     <link href="form-validation.css" rel="stylesheet">
   </head>
-  <body class="bg-light">
+  <body background="../img/mains.jpg">
     <div class="container">
   <div class="py-5 text-center">
   <div class="row">
 
   
-  
-	<div class="col-sm-2"><h2>
-		<img border="0" src="../img/cerrado.png" width="48" height="48" title="Ingresar" 
-		onclick=location.href='../panel/'; onKeyPress=location.href='../panel/'; style='cursor:pointer';/>
-	</h2></div>
-    <div class="col-sm-2"><h2></h2></div>	
-
 
 
   <div class="col-sm-2"><img class="d-block mx-auto mb-1" src="../img/jdlsa2.png" alt="" width="62" height="62"></div>
-  <div class="col-sm-2"><h2>JDL S.A</h2></div>
+  <div class="col-sm-3 text-white "><h2>JDL S.A</h2></div>
 
  
-    <p class="col-sm-3">Servicios Medicos E Informaticos.</p>
+    <p class="col-sm-5 text-white ">Servicios Medicos E Informaticos.</p>
 
     <div class="col-md-12 order-md-2">
-      <h4 class="lead">Login</h4></div>  
+      <h4 class="lead text-white ">Login</h4></div>  
     
       </div>
    
@@ -108,7 +101,7 @@
 
 
   <footer class="my-5 pt-5 text-muted text-center text-small">
-    <p class="mb-1">&copy; 2020 - JDL S.A</p>
+    <p class="mb-1 text-white ">&copy; 2020 - JDL S.A</p>
    <ul class="list-inline">
       <li class="list-inline-item"><a href="#">Privacidad de Datos</a></li>
       <li class="list-inline-item"><a href="#">Términos de Uso</a></li>

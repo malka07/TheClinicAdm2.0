@@ -37,7 +37,8 @@
     <!-- Custom styles for this template -->
     <link href="form-validation.css" rel="stylesheet">
   </head>
-  <body class="bg-light">
+  <body background="../img/tareas.jpg">
+
     <div class="container">
   <div class="py-5 text-center">
   <div class="row">
@@ -60,7 +61,7 @@
 	</h2></div>
     <div class="col-sm-2"><h2></h2></div>	
 
-  <div class="col-sm-2"><img class="d-block mx-auto mb-1" src="../img/disc.jpg" alt="" width="62" height="62"></div>
+  <div class="col-sm-2"><img class="d-block mx-auto mb-1" src="../img/jdlsa.png" alt="" width="62" height="62"></div>
   <div class="col-sm-2"><h2>JDL S.A</h2></div>
 </div>
     
@@ -88,9 +89,9 @@
 		<div class="list-group">
 				
 				<a 	<?php echo "href=modifica.php?id_recibo=".$recibos[$i]['id_recibo'];?>
-						 class="list-group-item">
-				<h4 class="list-group-item-heading"> <?php echo $recibos[$i]['id_recibo'] ."";?> </h4>
-				<p class="list-group-item-text"><?php 	echo "Fecha De Recibo: " . $recibos[$i]['fecha_recibo'] ." - Descripcion: "; 
+						 class="list-group-item bg-dark">
+				<h4 class="list-group-item-heading "> <?php echo $recibos[$i]['id_recibo'] ."";?> </h4>
+				<p class="list-group-item-text "><?php 	echo "Fecha De Recibo: " . $recibos[$i]['fecha_recibo'] ." - Descripcion: "; 
                             echo $recibos[$i]['descripcion_recibo'] ." - Medico: "; 
                             echo $recibos[$i]['clinico_recibo'] ." - Liquidacion: "; 
                             echo $recibos[$i]['liqui_recibo'] ."";
