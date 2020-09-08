@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: sql205.byetcluster.com
--- Tiempo de generación: 07-09-2020 a las 01:29:36
+-- Tiempo de generación: 07-09-2020 a las 22:56:36
 -- Versión del servidor: 5.6.48-88.0
 -- Versión de PHP: 7.2.22
 
@@ -97,7 +97,7 @@ CREATE TABLE `historiales` (
 --
 
 INSERT INTO `historiales` (`id_historial`, `fecha_historial`, `clinico_historial`, `paciente_historial`, `observacion_historial`, `diagnostico_historial`) VALUES
-(1, '2020-08-24', 'denise,Mark', 'juan,de', 'esta chapitanga', 'al borda como jorgito negro gark'),
+(1, '2020-08-24', 'denise,Mark', 'juan,de', 'esta chapitangagaga', 'al borda como jorgito negro gark'),
 (3, '2020-07-16', 'denise,Mark', 'juan,de', 'esta chapitasss', 'hemorroides');
 
 -- --------------------------------------------------------
@@ -120,7 +120,9 @@ CREATE TABLE `logins` (
 
 INSERT INTO `logins` (`id_login`, `id_usuario`, `usuario_login`, `contraseña_login`, `permiso_login`) VALUES
 (1, 1, 'admin', 'garfio1234', 1),
-(2, 2, 'juan', 'sasa', 2);
+(2, 2, 'juan', 'sasa', 1),
+(3, 3, 'denise', 'sasa', 1),
+(4, 4, 'carl', 'marx', 2);
 
 -- --------------------------------------------------------
 
@@ -236,7 +238,8 @@ CREATE TABLE `turnos` (
 --
 
 INSERT INTO `turnos` (`id_turno`, `fecha_turno`, `horario_turno`, `paciente_turno`, `clinico_turno`, `comentarios_turno`) VALUES
-(1, '2020-09-07', '17:30', 'juan,de', 'denise,Mark', 'tiene problemitas :B');
+(1, '2020-09-07', '17:30', 'juan,de', 'denise,Mark', 'tiene problemitas :B'),
+(2, '2020-09-17', '18:00', 'juan,de', 'denise,Mark', 'viene drogado');
 
 -- --------------------------------------------------------
 
@@ -353,7 +356,7 @@ ALTER TABLE `historiales`
 -- AUTO_INCREMENT de la tabla `logins`
 --
 ALTER TABLE `logins`
-  MODIFY `id_login` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_login` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de la tabla `medicamentos`
@@ -383,7 +386,7 @@ ALTER TABLE `recibos`
 -- AUTO_INCREMENT de la tabla `turnos`
 --
 ALTER TABLE `turnos`
-  MODIFY `id_turno` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_turno` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`
