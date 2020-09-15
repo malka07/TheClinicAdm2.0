@@ -14,30 +14,32 @@
 
 <?php
 
-require "conexion.php"; 
+  require "conexion.php"; 
  
-   $usuario_login = $_POST['usuario_login'];
-   $contraseña_login = $_POST['contraseña_login'];
-   $permiso_login = $_POST['permiso_login'];
+  $usuario_login = $_POST['usuario_login'];
+  $contraseña_login = $_POST['contraseña_login'];
+  //$permiso_login = $_POST['permiso_login']; 
 
- $consulta = mysqli_query ($mysqli, "SELECT * FROM logins WHERE usuario_login = '$usuario_login' AND contraseña_login = '$contraseña_login'");
- 
+  $consulta = mysqli_query ($mysqli, "SELECT * FROM logins WHERE usuario_login = '$usuario_login' AND contraseña_login = '$contraseña_login'");
+
+  $resultados = mysqli_fetch_assoc($consulta);
 
  if(!$consulta){ 
     echo mysqli_error($mysqli);
     exit;
   }
-   
- if($usuario_login = mysqli_fetch_assoc($consulta) || $contraseña_login = mysqli_fetch_assoc($consulta)){
-   if($permiso_login = 1){
-      header("HTTP/1.1 302 Moved Temporarily"); 
-      header("INGRESO SATISFACTORIO"); 
-      header("Location: ../panel/");  
-   }elseif ($permiso_login = 2){
-        header("HTTP/1.1 302 Moved Temporarily"); 
-        header("INGRESO SATISFACTORIO"); 
-        header("Location: ../panel2/");  
-   }
+
+ if($resultados['usuario_login'] = $usuario_login && $resultados['contraseña_login'] = $contraseña_login){
+  if($resultados['permiso_login'] == 1){
+    header("HTTP/1.1 302 Moved Temporarily"); 
+    header("INGRESO SATISFACTORIO"); 
+    header("Location: ../panel/");  
+  }
+  elseif ($resultados['permiso_login'] == 2){
+    header("HTTP/1.1 302 Moved Temporarily"); 
+    header("INGRESO SATISFACTORIO"); 
+    header("Location: ../panel2/");  
+  }
 
   }else{
  echo 'El Usuario O Contraseña Es Incorrecto, <a href="index.php">Vuelva A Intenarlo</a>.<br/>';
