@@ -20,13 +20,13 @@
 
 </head>
 
-<body>
+<body background="../img/background.jpg">
 
   <div class="d-flex" id="wrapper">
 
     <!-- Sidebar -->
-    <div class="bg-light border-right" id="sidebar-wrapper">
-      <div class="sidebar-heading bg-dark text-white">Menú de Opciones</div>
+    <div class="bg-black border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading bg-black text-white">Menú de Opciones</div>
       <div class="list-group list-group-flush">
         <a href="../historiales/" class="list-group-item list-group-item-action bg-dark text-white">Historiales</a>
         <a href="../pacientes/" class="list-group-item list-group-item-action bg-dark text-white">Pacientes</a>
@@ -39,7 +39,7 @@
     <!-- Page Content -->
     <div id="page-content-wrapper">
 
-      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+      <nav class="navbar navbar-expand-lg navbar-light bg-black border-bottom">
         <button class="btn btn-primary" id="menu-toggle">Ver / Ocultar</button>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,8 +47,12 @@
         </button>
       </nav>
 
-      <div class="container-fluid">
-        <h1 class="mt-4"><img class="d-block mx-auto mb-4" src="../img/disc.jpg" alt="" width="50" height="50"></h1>
+      <div class="col-sm-2 text-white">
+        <h2 class="mt-4">TheClinicAdm.</h2>
+	    </div>
+
+      <div class="container-fluid text-white">
+        <h1 class="mt-4"><img class="d-block mx-auto mb-4" src="../img/jdlsa.png" alt="" width="75" height="75"></h1>
         <p>Panel de Control.</p>
         <p>Configuración de datos para control e incorporación de información en la app móvil.</p>
       </div>
