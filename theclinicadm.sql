@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: sql205.byetcluster.com
--- Tiempo de generación: 07-09-2020 a las 22:56:36
+-- Tiempo de generación: 21-09-2020 a las 17:38:31
 -- Versión del servidor: 5.6.48-88.0
 -- Versión de PHP: 7.2.22
 
@@ -103,6 +103,28 @@ INSERT INTO `historiales` (`id_historial`, `fecha_historial`, `clinico_historial
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `insumos`
+--
+
+CREATE TABLE `insumos` (
+  `id_insumo` int(8) NOT NULL,
+  `fecha_insumo` date DEFAULT NULL,
+  `descripcion_insumo` varchar(30) DEFAULT NULL,
+  `precio_insumo` decimal(12,5) DEFAULT NULL,
+  `cantidad_insumo` int(4) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `insumos`
+--
+
+INSERT INTO `insumos` (`id_insumo`, `fecha_insumo`, `descripcion_insumo`, `precio_insumo`, `cantidad_insumo`) VALUES
+(1, '2020-09-14', 'guantes latex talle L (x10)', '300.00000', 5),
+(3, '2020-09-08', 'papel higienico (x12)', '1500.00000', 3);
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `logins`
 --
 
@@ -122,7 +144,8 @@ INSERT INTO `logins` (`id_login`, `id_usuario`, `usuario_login`, `contraseña_lo
 (1, 1, 'admin', 'garfio1234', 1),
 (2, 2, 'juan', 'sasa', 1),
 (3, 3, 'denise', 'sasa', 1),
-(4, 4, 'carl', 'marx', 2);
+(4, 4, 'carl', 'marx', 2),
+(5, 5, 'prueba', '1234', 1);
 
 -- --------------------------------------------------------
 
@@ -176,6 +199,28 @@ CREATE TABLE `pacientes` (
 
 INSERT INTO `pacientes` (`id_paciente`, `nombre_paciente`, `apellido_paciente`, `dni_paciente`, `domicilio_paciente`, `telefono_paciente`, `edad_paciente`, `provincia_paciente`, `barrio_paciente`, `fech_nac_paciente`, `historia_paciente`, `obra_soc_paciente`, `medico_paciente`, `email_paciente`) VALUES
 (3, 'juan', 'de los palotes', 33444134, 'jose de los palotes 4321', '4369876', 24, 'GBA', 'san vicente', '2019-05-14', 1, 'osde', 'denise,Mark', 'easafe@hotmail.com');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `pagos`
+--
+
+CREATE TABLE `pagos` (
+  `id_pago` int(8) NOT NULL,
+  `fecha_pago` date DEFAULT NULL,
+  `descripcion_pago` varchar(50) DEFAULT NULL,
+  `liqui_pago` decimal(12,5) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `pagos`
+--
+
+INSERT INTO `pagos` (`id_pago`, `fecha_pago`, `descripcion_pago`, `liqui_pago`) VALUES
+(1, '0000-00-00', 'guantes', '500.00000'),
+(2, '0000-00-00', 'guantes', '500.00000'),
+(3, '0000-00-00', 'guantes', '500.00000');
 
 -- --------------------------------------------------------
 
@@ -289,6 +334,12 @@ ALTER TABLE `historiales`
   ADD PRIMARY KEY (`id_historial`);
 
 --
+-- Indices de la tabla `insumos`
+--
+ALTER TABLE `insumos`
+  ADD PRIMARY KEY (`id_insumo`);
+
+--
 -- Indices de la tabla `logins`
 --
 ALTER TABLE `logins`
@@ -305,6 +356,12 @@ ALTER TABLE `medicamentos`
 --
 ALTER TABLE `pacientes`
   ADD PRIMARY KEY (`id_paciente`);
+
+--
+-- Indices de la tabla `pagos`
+--
+ALTER TABLE `pagos`
+  ADD PRIMARY KEY (`id_pago`);
 
 --
 -- Indices de la tabla `permisos`
@@ -353,10 +410,16 @@ ALTER TABLE `historiales`
   MODIFY `id_historial` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
+-- AUTO_INCREMENT de la tabla `insumos`
+--
+ALTER TABLE `insumos`
+  MODIFY `id_insumo` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
 -- AUTO_INCREMENT de la tabla `logins`
 --
 ALTER TABLE `logins`
-  MODIFY `id_login` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_login` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT de la tabla `medicamentos`
@@ -369,6 +432,12 @@ ALTER TABLE `medicamentos`
 --
 ALTER TABLE `pacientes`
   MODIFY `id_paciente` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT de la tabla `pagos`
+--
+ALTER TABLE `pagos`
+  MODIFY `id_pago` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de la tabla `permisos`
