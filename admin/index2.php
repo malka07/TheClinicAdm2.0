@@ -44,7 +44,7 @@
   <div class="row">
     <div class="col-sm-2"><h2>
 		<img border="0" src="../img/atras.png" width="48" height="48" title="Volver al menú" 
-		onclick=location.href='../panel/'; onKeyPress=location.href='../panel/'; style='cursor:pointer';/>
+		onclick=location.href='../admin/'; onKeyPress=location.href='../admin/'; style='cursor:pointer';/>
 	</h2></div>
 
     <div class="col-sm-2"><h2>
@@ -62,7 +62,7 @@
 	</h2></div>
 	<div class="col-sm-2"><h2>
 		<img border="0" src="../img/imprimir.png" width="48" height="48" title="Impresión" 
-		onclick=location.href='listado.php'; onKeyPress=location.href='listado.php';
+		onclick=location.href='listado2.php'; onKeyPress=location.href='listado2.php';
 		style='cursor:pointer';>
 	
 	</h2></div>
@@ -75,45 +75,44 @@
     <p class="lead">Servicios Medicos E Informaticos.</p>
 
     <div class="col-md-14 order-md-1">
-    <img border="0" src="../img/lupa.png" width="48" height="48" title="Pagos" 
-		onclick=location.href='index2.php'; onKeyPress=location.href='index2.php';
+    <img border="0" src="../img/lupa.png" width="48" height="48" title="Recibos" 
+		onclick=location.href='index.php'; onKeyPress=location.href='index.php';
 		style='cursor:pointer';>
 	</div>  
 
   </div>
     <div class="col-md-12 order-md-1">
-      <h4 class="mb-1">Recibos</h4>
+      <h4 class="mb-1">Pagos</h4>
 	</div>  
- 
+
   
-
-
+  
 
 <?php 
    require "../conexion.php";
 
-    $sql = "SELECT * from recibos order by id_recibo";
+    $sql = "SELECT * from pagos order by id_pago";
 	$query = $mysqli->query($sql);
 	while($resultado = $query->fetch_assoc()) {
-        $recibos[] = $resultado;
+        $pagos[] = $resultado;
     }
   
 ?>    
         <div class="list-group">
 		
 			<?php 				
-				$long = count($recibos);
+				$long = count($pagos);
 				for($i=0; $i< $long; $i++){
 				?>
 		<div class="list-group">
 				
-				<a 	<?php echo "href=modifica.php?id_recibo=".$recibos[$i]['id_recibo'];?>
+				<a 	<?php echo "href=modifica2.php?id_pago=".$pagos[$i]['id_pago'];?>
 						 class="list-group-item bg-dark">
-				<h4 class="list-group-item-heading "> <?php echo $recibos[$i]['id_recibo'] ."";?> </h4>
-				<p class="list-group-item-text "><?php 	echo "Fecha De Recibo: " . $recibos[$i]['fecha_recibo'] ." - Descripcion: "; 
-                            echo $recibos[$i]['descripcion_recibo'] ." - Medico: "; 
-                            echo $recibos[$i]['clinico_recibo'] ." - Liquidacion: "; 
-                            echo $recibos[$i]['liqui_recibo'] ."";
+				<h4 class="list-group-item-heading "> <?php echo $pagos[$i]['id_pago'] ."";?> </h4>
+				<p class="list-group-item-text "><?php 	echo "Fecha De Pago: " . $pagos[$i]['fecha_pago'] ." - Descripcion: "; 
+                            echo $pagos[$i]['descripcion_pago'] ." - Cantidad: "; 
+                            echo $pagos[$i]['cantidad_pago'] ." - Liquidacion: "; 
+                            echo $pagos[$i]['liqui_pago'] ."";
 														?></p>		 
 				</a>	</div>
 	<?php  } ?>

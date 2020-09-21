@@ -6,18 +6,14 @@
     <meta name="description" content="">
     <title>JDL S.A - TheClinicAdm</title>
 
-    
-
     <!-- Bootstrap core CSS -->
-	 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  
-  </head> 
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
 	<!-- JS, Popper.js, and jQuery -->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
-  
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -37,26 +33,18 @@
     <!-- Custom styles for this template -->
     <link href="form-validation.css" rel="stylesheet">
   </head>
-  <body background="../img/tareas.jpg">
-
+  <body class="bg-light">
     <div class="container">
   <div class="py-5 text-center">
   <div class="row">
     <div class="col-sm-2"><h2>
 		<img border="0" src="../img/atras.png" width="48" height="48" title="Volver al menú" 
 		onclick=location.href='../panel/'; onKeyPress=location.href='../panel/'; style='cursor:pointer';/>
-	</h2></div>
-
+	</h2>
+	</div>
     <div class="col-sm-2"><h2>
-		<img border="0" src="../img/nuevo.png" width="48" height="48" title="Ingresar Recibo Sueldo" 
-		onclick=location.href='admin.php'; onKeyPress=location.href='admin.php';
-		style='cursor:pointer';>
-	</h2></div>
-
-  
-    <div class="col-sm-2"><h2>
-		<img border="0" src="../img/nuevo.png" width="48" height="48" title="Ingresar Pago Insumo" 
-		onclick=location.href='admin2.php'; onKeyPress=location.href='admin2.php';
+		<img border="0" src="../img/nuevo.png" width="48" height="48" title="Ingresar Insumo" 
+		onclick=location.href='insumos.php'; onKeyPress=location.href='insumos.php';
 		style='cursor:pointer';>
 	
 	</h2></div>
@@ -68,54 +56,43 @@
 	</h2></div>
     <div class="col-sm-2"><h2></h2></div>	
 
-  <div class="col-sm-2"><img class="d-block mx-auto mb-1" src="../img/jdlsa.png" alt="" width="62" height="62"></div>
+  <div class="col-sm-2"><img class="d-block mx-auto mb-1" src="../img/disc.jpg" alt="" width="62" height="62"></div>
   <div class="col-sm-2"><h2>JDL S.A</h2></div>
 </div>
     
     <p class="lead">Servicios Medicos E Informaticos.</p>
-
-    <div class="col-md-14 order-md-1">
-    <img border="0" src="../img/lupa.png" width="48" height="48" title="Pagos" 
-		onclick=location.href='index2.php'; onKeyPress=location.href='index2.php';
-		style='cursor:pointer';>
-	</div>  
-
   </div>
     <div class="col-md-12 order-md-1">
-      <h4 class="mb-1">Recibos</h4>
+      <h4 class="mb-1">Insumos</h4>
 	</div>  
- 
-  
-
-
-
 <?php 
    require "../conexion.php";
 
-    $sql = "SELECT * from recibos order by id_recibo";
+    $sql = "SELECT * from insumos order by id_insumo";
 	$query = $mysqli->query($sql);
 	while($resultado = $query->fetch_assoc()) {
-        $recibos[] = $resultado;
+        $insumos[] = $resultado;
     }
   
 ?>    
         <div class="list-group">
 		
 			<?php 				
-				$long = count($recibos);
+				$long = count($insumos);
 				for($i=0; $i< $long; $i++){
 				?>
 		<div class="list-group">
 				
-				<a 	<?php echo "href=modifica.php?id_recibo=".$recibos[$i]['id_recibo'];?>
-						 class="list-group-item bg-dark">
-				<h4 class="list-group-item-heading "> <?php echo $recibos[$i]['id_recibo'] ."";?> </h4>
-				<p class="list-group-item-text "><?php 	echo "Fecha De Recibo: " . $recibos[$i]['fecha_recibo'] ." - Descripcion: "; 
-                            echo $recibos[$i]['descripcion_recibo'] ." - Medico: "; 
-                            echo $recibos[$i]['clinico_recibo'] ." - Liquidacion: "; 
-                            echo $recibos[$i]['liqui_recibo'] ."";
+    <a 	<?php echo "href=modifica.php?id_insumo=".$insumos[$i]['id_insumo'];?>
+						 class="list-group-item">
+				<h4 class="list-group-item-heading"> <?php echo $insumos[$i]['id_insumo'] ."";?> </h4>
+        <p class="list-group-item-text"><?php 	echo "Fecha: " . $insumos[$i]['fecha_insumo'] ." - Descripcion: "; 
+                            echo $insumos[$i]['descripcion_insumo'] ." - Precio: "; 
+                            echo $insumos[$i]['precio_insumo'] ." - Cantidad: "; 
+                            echo $insumos[$i]['cantidad_insumo'] ."";
 														?></p>		 
-				</a>	</div>
+				</a>
+    	</div>
 	<?php  } ?>
 	
 				

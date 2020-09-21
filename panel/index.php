@@ -37,6 +37,7 @@
         <a href="../pacientes/" class="list-group-item list-group-item-action bg-dark text-white">Pacientes</a>
         <a href="../clinicos/" class="list-group-item list-group-item-action bg-dark text-white">Clinicos</a>
         <a href="../medicamentos/" class="list-group-item list-group-item-action bg-dark text-white">Medicamentos</a>
+        <a href="../insumos/" class="list-group-item list-group-item-action bg-dark text-white">Insumos</a>
         <a href="../" class="list-group-item list-group-item-action bg-dark text-white">Salir</a>
       </div>
     </div>
