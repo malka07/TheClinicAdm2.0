@@ -40,7 +40,21 @@
     header("INGRESO SATISFACTORIO"); 
     header("Location: ../panel2/");  
   }
-
+  elseif ($resultados['permiso_login'] == 3){
+    header("HTTP/1.1 302 Moved Temporarily"); 
+    header("INGRESO SATISFACTORIO"); 
+    header("Location: ../panel3/");  
+  }
+  elseif ($resultados['permiso_login'] == 4){
+    header("HTTP/1.1 302 Moved Temporarily"); 
+    header("INGRESO SATISFACTORIO"); 
+    header("Location: ../panel4/");  
+  }
+  elseif ($resultados['permiso_login'] == 5){
+    header("HTTP/1.1 302 Moved Temporarily"); 
+    header("INGRESO SATISFACTORIO"); 
+    header("Location: ../panel5/");  
+  }
   }else{
  echo 'El Usuario O Contraseña Es Incorrecto, <a href="index.php">Vuelva A Intenarlo</a>.<br/>';
  }

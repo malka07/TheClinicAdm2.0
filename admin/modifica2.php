@@ -64,8 +64,8 @@
       
 
           <div class="col-md-6 mb-4">
-            <label for="descripcion_recibo">Descripcion</label>
-            <input type="text" class="form-control" id="descripcion" name="descripcion_recibo" placeholder="" value=<?php echo "'".$pagos[0]['descripcion_pago']."'" ?> required>
+            <label for="descripcion_pago">Descripcion</label>
+            <input type="text" class="form-control" id="descripcion" name="descripcion_pago" placeholder="" value=<?php echo "'".$pagos[0]['descripcion_pago']."'" ?> required>
             <div class="invalid-feedback">
               Faltó Ingresar Una Descripcion Del Recibo
             </div>

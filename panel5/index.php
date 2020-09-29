@@ -34,7 +34,6 @@
         <a href="../turnos/" class="list-group-item list-group-item-action bg-dark text-white">Turnos</a>
         <a href="../analisis/" class="list-group-item list-group-item-action bg-dark text-white">Analisis</a>
         <a href="../admin/" class="list-group-item list-group-item-action bg-dark text-white">Admin</a>
-        <a href="../usuarios/" class="list-group-item list-group-item-action bg-dark text-white">Usuarios</a>
         <a href="../pacientes/" class="list-group-item list-group-item-action bg-dark text-white">Pacientes</a>
         <a href="../clinicos/" class="list-group-item list-group-item-action bg-dark text-white">Clinicos</a>
         <a href="../medicamentos/" class="list-group-item list-group-item-action bg-dark text-white">Medicamentos</a>
