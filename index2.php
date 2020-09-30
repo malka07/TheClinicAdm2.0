@@ -36,7 +36,7 @@
     <!-- Custom styles for this template -->
     <link href="form-validation.css" rel="stylesheet">
   </head>
-  <body background="./img/mains.jpg">
+  <body background="../img/mains.jpg">
     <div class="container">
   <div class="py-5 text-center">
   <div class="row">
@@ -44,7 +44,7 @@
   
 
 
-  <div class="col-sm-2"><img class="d-block mx-auto mb-1" src="./img/jdlsa2.png" alt="" width="62" height="62"></div>
+  <div class="col-sm-2"><img class="d-block mx-auto mb-1" src="../img/jdlsa2.png" alt="" width="62" height="62"></div>
   <div class="col-sm-3 text-white "><h2>JDL S.A</h2></div>
 
  

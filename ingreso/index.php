@@ -10,18 +10,18 @@
   <div class="row">
     <div class="col-sm-2"><h2>
 		<img border="0" src="../img/atras.png" width="48" height="48" title="Volver al menú" 
-		onclick=location.href='../pacientes/'; onKeyPress=location.href='../pacientes/'; style='cursor:pointer';/>
+		onclick=location.href='../'; onKeyPress=location.href='../'; style='cursor:pointer';/>
 	</h2>
 	</div>
 	<div class="col-sm-2"></div>
     <div class="col-sm-2"></div>	
     <div class="col-sm-2"></div>	
-  <div class="col-sm-2"><img class="d-block mx-auto mb-1" src="../img/disc.jpg" alt="" width="62" height="62"></div>
+  <div class="col-sm-2"><img class="d-block mx-auto mb-1" src="../img/jdlsa2.png" alt="" width="62" height="62"></div>
   <div class="col-sm-2"><h2>JDL S.A</h2></div>
 </div>
 
     <div class="col-md-12 order-md-1">
-      <h4 class="mb-4">Alta De Pacientes</h4>
+      <h4 class="mb-4">Alta De Usuario</h4>
       <form class="needs-validation" novalidate action="grabar.php" method="post">
 	  
 <?php 
@@ -35,10 +35,10 @@
         $pacientes[] = $resultado;
     }
    
-    $sql = "SELECT * from clinicos order by id_clinico";
+    $sql = "SELECT * from logins order by id_login";
     $query = $mysqli->query($sql);
     while($resultado = $query->fetch_assoc()) {
-          $clinicos[] = $resultado;
+          $logins[] = $resultado;
       }
      
 
@@ -118,39 +118,29 @@
           </div>
        
           <div class="col-md-6 mb-4">
-            <label for="historia_paciente">Historial Del Paciente</label>
-            <input type="text" class="form-control" name="historia_paciente" placeholder="" value="" required>
+            
+            <input type="hidden" class="form-control" name="historia_paciente" placeholder="" value="" required>
             <div class="invalid-feedback">
               Faltó Ingresar Numero De Historial.
             </div>
           </div>
 
           <div class="col-md-6 mb-4">
-            <label for="obra_soc_paciente">Obra Social</label>
-            <input type="text" class="form-control" name="obra_soc_paciente" placeholder="" value="" required>
+            
+            <input type="hidden" class="form-control" name="obra_soc_paciente" placeholder="" value="" required>
             <div class="invalid-feedback">
               Faltó Ingresar Una Obra Social Del Paciente.
             </div>
           </div>
 
           <div class="col-md-6 mb-4">
-           <label for="medico_paciente">Medico</label>
-           <select class="custom-select d-block w-100" name="medico_paciente" required>
-           <?php 
-				     $long = count($clinicos);
-				     for($i=0; $i< $long; $i++){
-				     echo "<option";
-				     echo " value=" .$clinicos[$i]['id_clinico'] .">";				
-                 echo $clinicos[$i]['nombre_clinico'];
-                 echo $clinicos[$i]['apellido_clinico'];
-				     echo "</option>";
-             }
-				   ?>
-            </select>
+            
+            <input type="hidden" class="form-control" name="medico_paciente" placeholder="" value="" required>
             <div class="invalid-feedback">
-              Faltó Seleccionar Un Medico.
+              Faltó Ingresar Un Medico Del Paciente.
             </div>
           </div>
+      
         
         <div class="col-md-6 mb-4">
             <label for="email_paciente">Email</label>

@@ -30,15 +30,15 @@
     <div class="bg-black border-right" id="sidebar-wrapper">
       <div class="sidebar-heading bg-black text-white">Menú de Opciones</div>
       <div class="list-group list-group-flush">
-        <a href="../historiales/" class="list-group-item list-group-item-action bg-dark text-white">Historiales</a>
+        <a href="../historiales/" class="list-group-item list-group-item-action bg-dark text-white">Historiales Clinicos</a>
         <a href="../turnos/" class="list-group-item list-group-item-action bg-dark text-white">Turnos</a>
-        <a href="../analisis/" class="list-group-item list-group-item-action bg-dark text-white">Analisis</a>
-        <a href="../admin/" class="list-group-item list-group-item-action bg-dark text-white">Admin</a>
+        <a href="../analisis/" class="list-group-item list-group-item-action bg-dark text-white">Analisis Clinicos</a>
+        <a href="../admin/" class="list-group-item list-group-item-action bg-dark text-white">Administracion</a>
         <a href="../usuarios/" class="list-group-item list-group-item-action bg-dark text-white">Usuarios</a>
         <a href="../pacientes/" class="list-group-item list-group-item-action bg-dark text-white">Pacientes</a>
-        <a href="../clinicos/" class="list-group-item list-group-item-action bg-dark text-white">Clinicos</a>
+        <a href="../clinicos/" class="list-group-item list-group-item-action bg-dark text-white">Medicos</a>
         <a href="../medicamentos/" class="list-group-item list-group-item-action bg-dark text-white">Medicamentos</a>
-        <a href="../insumos/" class="list-group-item list-group-item-action bg-dark text-white">Insumos</a>
+        <a href="../insumos/" class="list-group-item list-group-item-action bg-dark text-white">Insumos Hospitalarios</a>
         <a href="../" class="list-group-item list-group-item-action bg-dark text-white">Salir</a>
       </div>
     </div>

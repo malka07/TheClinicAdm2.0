@@ -67,7 +67,7 @@
     <p class="lead">Servicios Medicos E Informaticos.</p>
   </div>
     <div class="col-md-12 order-md-1">
-      <h4 class="mb-1">Historiales Medicos</h4>
+      <h4 class="mb-1">Historiales Clinicos</h4>
 	</div>  
 <?php 
    require "../conexion.php";
