@@ -4,6 +4,10 @@
     require "../metodos.php";
 ?>
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> bf848128ff0a7b4a5b3844e21eb0f9db8ee564be
 <body background="../img/historials.jpg">
   <div class="col-md"><h2>
 		<img border="0" src="../img/atras.png" width="40" height="40" title="Volver al menú" 

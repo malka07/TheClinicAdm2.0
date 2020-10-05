@@ -99,7 +99,7 @@
 		<div class="list-group">
 				
 				<a 	<?php echo "href=modifica.php?id_historial=".$historiales[$i]['id_historial'];?>
-						 class="list-group-item">
+						 class="list-group-item bg-dark">
 				<h4 class="list-group-item-heading"> <?php echo $historiales[$i]['id_historial'] ."";?> </h4>
 				<p class="list-group-item-text"><?php 	echo "Fecha: " . $historiales[$i]['fecha_historial'] ." - Medico: "; 
                             echo $historiales[$i]['clinico_historial'] ." - Paciente: "; 
