@@ -87,7 +87,7 @@
 
           <div class="col-md-6 mb-4">
           <label for="contraseña_usuario">Contraseña</label>
-            <input type="text" class="form-control" name="contraseña_usuario" placeholder="" value="0" required>
+            <input type="text" class="form-control" name="contraseña_usuario" placeholder="" value="" required>
             <div class="invalid-feedback">
               Faltó Ingresar La Contraseña Del Usuario.
             </div>
