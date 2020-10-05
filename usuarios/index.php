@@ -91,9 +91,11 @@
                             echo $usuarios[$i]['apellido_usuario'] ." - Edad: "; 
                             echo $usuarios[$i]['edad_usuario'] ." - Direccion: "; 
                             echo $usuarios[$i]['domicilio_usuario'] ." - D.N.I: ";
-                            echo $usuarios[$i]['dni_usuario'] ." - Fecha De Nac.: ";
+                            echo $usuarios[$i]['dni_usuario'] ." - Email: ";
+                            echo $usuarios[$i]['email_usuario'] ." - Fecha De Nac.: ";
                             echo $usuarios[$i]['fecha_nac_usuario'] ." - Notas: ";
-                            echo $usuarios[$i]['notas_usuario'] ."";
+                            echo $usuarios[$i]['notas_usuario'] ." - Permiso: ";
+                            echo $usuarios[$i]['permiso_usuario'] ."";
 														?></p>		 
 				</a>
     	</div>

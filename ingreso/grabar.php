@@ -42,7 +42,7 @@
   <div class="py-5 text-center">
     <img class="d-block mx-auto mb-4" src="../img/disc.jpg" alt="" width="72" height="72">
     <h2>JDL S.A</h2>
-    <p class="lead">Ingreso De Pacientes y Servicios / Profesiones para la App.</p>
+    <p class="lead">Ingreso De Usuarios y Servicios / Profesiones para la App.</p>
   </div>
 
     
@@ -50,29 +50,26 @@
 	  
 <?php
  require "../conexion.php";
- $sql = "insert into pacientes(
-  nombre_paciente,apellido_paciente,dni_paciente,domicilio_paciente,telefono_paciente,edad_paciente,provincia_paciente,barrio_paciente,fech_nac_paciente,historia_paciente,obra_soc_paciente,medico_paciente,email_paciente)
+ $sql = "insert into usuarios(
+  nombre_usuario,apellido_usuario,edad_usuario,dni_usuario,email_usuario,contraseña_usuario,domicilio_usuario,fecha_nac_usuario,notas_usuario,permiso_usuario)
   values" 
-  . "('".$_POST['nombre_paciente'] 	. "'," 
-  . "'" .$_POST['apellido_paciente'] 	. "',"
-  . "'" .$_POST['dni_paciente'] 	. "',"	
-  . "'" .$_POST['domicilio_paciente'] 	. "',"
-  . "'" .$_POST['telefono_paciente'] 	. "',"
-  . "'" .$_POST['edad_paciente'] 	. "',"
-  . "'" .$_POST['provincia_paciente'] 	. "',"
-  . "'" .$_POST['barrio_paciente'] 	. "',"
-  . "'" .$_POST['fech_nac_paciente'] 	. "',"
-  . "'" .$_POST['historia_paciente'] 	. "',"
-  . "'" .$_POST['obra_soc_paciente'] 	. "',"
-  . "'" .$_POST['medico_paciente'] 	. "',"
-  . "'" .$_POST['email_paciente'] 	. "' "	
+  . "('".$_POST['nombre_usuario'] 	. "'," 
+  . "'" .$_POST['apellido_usuario'] 	. "',"
+  . "'" .$_POST['edad_usuario'] 	. "',"	
+  . "'" .$_POST['dni_usuario'] 	. "',"	
+  . "'" .$_POST['email_usuario'] 	. "',"	
+  . "'" .$_POST['contraseña_usuario'] 	. "',"	
+  . "'" .$_POST['domicilio_usuario'] 	. "',"
+  . "'" .$_POST['fecha_nac_usuario'] 	. "',"
+  . "'" .$_POST['notas_usuario'] 	. "',"
+  . "'" .$_POST['permiso_usuario'] 	. "' "	
   . ")";
   
 // echo $sql;
 
 if ($mysqli->query($sql) === TRUE) {
 
-  echo "  <a href='../pacientes/'> <div class='col-md-12 order-md-1'>";
+  echo "  <a href='../'> <div class='col-md-12 order-md-1'>";
   echo    "<h4 class='mb-4'>Datos guardados correctamente</h4> </a>";
 } else {
   echo "Error: " . $sql . "<br>" . $mysqli->error;
@@ -81,11 +78,11 @@ if ($mysqli->query($sql) === TRUE) {
 $mysqli->close();
 		
 ?>
-<a href="../pacientes">	 <hr class="mb-4">
+<a href="../">	 <hr class="mb-4">
         <button class="btn btn-success btn-lg btn-block" type="submit">Volver</button>
   <footer class="my-5 pt-5 text-muted text-center text-small"></a>
-    <p class="mb-1">&copy; 2020 - TheClinicAdm</p>
- <!--   <ul class="list-inline">
+    <p class="mb-1">&copy; 2020 - JDL S.A</p>
+    <ul class="list-inline">
       <li class="list-inline-item"><a href="#">Privacidad de Datos</a></li>
       <li class="list-inline-item"><a href="#">Términos de Uso</a></li>
       <li class="list-inline-item"><a href="#">Soporte</a></li>

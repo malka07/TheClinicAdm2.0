@@ -58,10 +58,10 @@
 <?php 
    require "conexion.php";
 
-  $sql = "SELECT * from logins order by id_login";
+  $sql = "SELECT * from usuarios order by id_usuario";
 	$query = $mysqli->query($sql);
 	while($resultado = $query->fetch_assoc()) {
-        $logins[] = $resultado;
+        $usuarios[] = $resultado;
     }   
 
     
@@ -73,22 +73,22 @@
         <div class="form-group">
           
           <div class="col-sm-10">
-            <input type="text" class="form-control" name="usuario_login" placeholder="Usuario" required>
+            <input type="text" class="form-control" name="dni_usuario" placeholder="DNI" required>
           </div>
         </div>
         <div class="form-group">
           <div class="col-sm-10">
-            <input type="text" class="form-control" name="contraseña_login" placeholder="Contraseña" required>
+            <input type="text" class="form-control" name="contraseña_usuario" placeholder="Contraseña" required>
           </div>
         </div>
       
         <div class="col-md-6 mb-4">
-           <input type="hidden" class="form-control" name="permiso_login" required>
+           <input type="hidden" class="form-control" name="permiso_usuario" required>
            <?php 
-				     $long = count($logins);
+				     $long = count($usuarios);
 				     for($i=0; $i< $long; $i++){
 				     echo "<option";
-				     echo " value=" .$logins[$i]['id_login'] .">";				
+				     echo " value=" .$usuarios[$i]['id_usuario'] .">";				
 				     echo "</option>";
              }
 				   ?>

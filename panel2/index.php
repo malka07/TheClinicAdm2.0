@@ -28,9 +28,9 @@
     <div class="bg-black border-right" id="sidebar-wrapper">
       <div class="sidebar-heading bg-black text-white">Menú de Opciones</div>
       <div class="list-group list-group-flush">
-        <a href="../historiales/" class="list-group-item list-group-item-action bg-dark text-white">Historiales</a>
+        <a href="../historiales/" class="list-group-item list-group-item-action bg-dark text-white">Historiales Clinicos</a>
         <a href="../pacientes/" class="list-group-item list-group-item-action bg-dark text-white">Pacientes</a>
-        <a href="../clinicos/" class="list-group-item list-group-item-action bg-dark text-white">Clinicos</a>
+        <a href="../analisis/" class="list-group-item list-group-item-action bg-dark text-white">Analisis Clinicos</a>
         <a href="../" class="list-group-item list-group-item-action bg-dark text-white">Salir</a>
       </div>
     </div>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: sql205.byetcluster.com
--- Tiempo de generación: 21-09-2020 a las 17:38:31
+-- Tiempo de generación: 05-10-2020 a las 11:27:00
 -- Versión del servidor: 5.6.48-88.0
 -- Versión de PHP: 7.2.22
 
@@ -21,6 +21,21 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `b31_26518949_theclinicadm`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `analisis`
+--
+
+CREATE TABLE `analisis` (
+  `id_analisis` int(8) NOT NULL,
+  `fecha_analisis` date DEFAULT NULL,
+  `clinico_analisis` varchar(50) DEFAULT NULL,
+  `paciente_analisis` varchar(50) DEFAULT NULL,
+  `resultados_analisis` varchar(200) DEFAULT NULL,
+  `obser_analisis` varchar(100) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -97,7 +112,7 @@ CREATE TABLE `historiales` (
 --
 
 INSERT INTO `historiales` (`id_historial`, `fecha_historial`, `clinico_historial`, `paciente_historial`, `observacion_historial`, `diagnostico_historial`) VALUES
-(1, '2020-08-24', 'denise,Mark', 'juan,de', 'esta chapitangagaga', 'al borda como jorgito negro gark'),
+(1, '2020-08-24', 'denise,Mark', 'juan,de', 'esta chapitangagaga', 'al borda como jorgito'),
 (3, '2020-07-16', 'denise,Mark', 'juan,de', 'esta chapitasss', 'hemorroides');
 
 -- --------------------------------------------------------
@@ -121,31 +136,6 @@ CREATE TABLE `insumos` (
 INSERT INTO `insumos` (`id_insumo`, `fecha_insumo`, `descripcion_insumo`, `precio_insumo`, `cantidad_insumo`) VALUES
 (1, '2020-09-14', 'guantes latex talle L (x10)', '300.00000', 5),
 (3, '2020-09-08', 'papel higienico (x12)', '1500.00000', 3);
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `logins`
---
-
-CREATE TABLE `logins` (
-  `id_login` int(8) NOT NULL,
-  `id_usuario` int(8) DEFAULT NULL,
-  `usuario_login` varchar(30) DEFAULT NULL,
-  `contraseña_login` varchar(50) DEFAULT NULL,
-  `permiso_login` int(4) DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
-
---
--- Volcado de datos para la tabla `logins`
---
-
-INSERT INTO `logins` (`id_login`, `id_usuario`, `usuario_login`, `contraseña_login`, `permiso_login`) VALUES
-(1, 1, 'admin', 'garfio1234', 1),
-(2, 2, 'juan', 'sasa', 1),
-(3, 3, 'denise', 'sasa', 1),
-(4, 4, 'carl', 'marx', 2),
-(5, 5, 'prueba', '1234', 1);
 
 -- --------------------------------------------------------
 
@@ -210,6 +200,7 @@ CREATE TABLE `pagos` (
   `id_pago` int(8) NOT NULL,
   `fecha_pago` date DEFAULT NULL,
   `descripcion_pago` varchar(50) DEFAULT NULL,
+  `cantidad_pago` int(8) DEFAULT NULL,
   `liqui_pago` decimal(12,5) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
@@ -217,10 +208,9 @@ CREATE TABLE `pagos` (
 -- Volcado de datos para la tabla `pagos`
 --
 
-INSERT INTO `pagos` (`id_pago`, `fecha_pago`, `descripcion_pago`, `liqui_pago`) VALUES
-(1, '0000-00-00', 'guantes', '500.00000'),
-(2, '0000-00-00', 'guantes', '500.00000'),
-(3, '0000-00-00', 'guantes', '500.00000');
+INSERT INTO `pagos` (`id_pago`, `fecha_pago`, `descripcion_pago`, `cantidad_pago`, `liqui_pago`) VALUES
+(1, '2020-09-07', 'pago papel (x12)', 4, '500.00000'),
+(2, '2020-09-18', 'pago papel (x10)', 4, '1500.00000');
 
 -- --------------------------------------------------------
 
@@ -239,7 +229,10 @@ CREATE TABLE `permisos` (
 
 INSERT INTO `permisos` (`id_permiso`, `nombre_permiso`) VALUES
 (1, 'admin'),
-(2, 'clínico');
+(2, 'clínico'),
+(3, 'paciente'),
+(4, 'recepcionista'),
+(5, 'administrativo');
 
 -- --------------------------------------------------------
 
@@ -260,7 +253,7 @@ CREATE TABLE `recibos` (
 --
 
 INSERT INTO `recibos` (`id_recibo`, `fecha_recibo`, `descripcion_recibo`, `clinico_recibo`, `liqui_recibo`) VALUES
-(3, '2020-05-13', 'pago a deni', 'denise,Mark', '50.16340'),
+(3, '2020-05-13', 'pago al profe', 'denise,Mark', '50.16340'),
 (4, '2020-09-22', 'pasazo a jorgito', 'denise,Mark', '800.00000');
 
 -- --------------------------------------------------------
@@ -298,22 +291,31 @@ CREATE TABLE `usuarios` (
   `apellido_usuario` varchar(30) DEFAULT NULL,
   `edad_usuario` int(8) DEFAULT NULL,
   `dni_usuario` varchar(30) DEFAULT NULL,
+  `email_usuario` varchar(50) DEFAULT NULL,
+  `contraseña_usuario` varchar(50) DEFAULT NULL,
   `domicilio_usuario` varchar(50) DEFAULT NULL,
   `fecha_nac_usuario` date DEFAULT NULL,
-  `notas_usuario` varchar(100) DEFAULT NULL
+  `notas_usuario` varchar(100) DEFAULT NULL,
+  `permiso_usuario` int(8) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `usuarios`
 --
 
-INSERT INTO `usuarios` (`id_usuario`, `nombre_usuario`, `apellido_usuario`, `edad_usuario`, `dni_usuario`, `domicilio_usuario`, `fecha_nac_usuario`, `notas_usuario`) VALUES
-(1, 'Leonardo', 'Mark', 23, '33.123.456', 'sarasa 5520 dpy', '2019-03-12', 'hackeador pro brou'),
-(3, 'denise', 'czyz', 40, '22987346', 'al ado de fas motos', '2019-10-09', 'se enoja si le sacas el hibernacion ');
+INSERT INTO `usuarios` (`id_usuario`, `nombre_usuario`, `apellido_usuario`, `edad_usuario`, `dni_usuario`, `email_usuario`, `contraseña_usuario`, `domicilio_usuario`, `fecha_nac_usuario`, `notas_usuario`, `permiso_usuario`) VALUES
+(1, 'Leonardo', 'Mark', 23, '33123456', 'ldmaques007@gmail.com', 'garfio1234', 'sarasa 5520 dpy', '2019-03-12', 'hackeador pro brou', 1),
+(3, 'denise', 'czyz', 40, '22987346', NULL, 'sasa', 'al ado de fas motos', '2019-10-09', 'se enoja si le sacas el hibernacion ', 1);
 
 --
 -- Índices para tablas volcadas
 --
+
+--
+-- Indices de la tabla `analisis`
+--
+ALTER TABLE `analisis`
+  ADD PRIMARY KEY (`id_analisis`);
 
 --
 -- Indices de la tabla `clinicos`
@@ -338,12 +340,6 @@ ALTER TABLE `historiales`
 --
 ALTER TABLE `insumos`
   ADD PRIMARY KEY (`id_insumo`);
-
---
--- Indices de la tabla `logins`
---
-ALTER TABLE `logins`
-  ADD PRIMARY KEY (`id_login`);
 
 --
 -- Indices de la tabla `medicamentos`
@@ -392,6 +388,12 @@ ALTER TABLE `usuarios`
 --
 
 --
+-- AUTO_INCREMENT de la tabla `analisis`
+--
+ALTER TABLE `analisis`
+  MODIFY `id_analisis` int(8) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT de la tabla `clinicos`
 --
 ALTER TABLE `clinicos`
@@ -416,12 +418,6 @@ ALTER TABLE `insumos`
   MODIFY `id_insumo` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT de la tabla `logins`
---
-ALTER TABLE `logins`
-  MODIFY `id_login` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
-
---
 -- AUTO_INCREMENT de la tabla `medicamentos`
 --
 ALTER TABLE `medicamentos`
@@ -443,7 +439,7 @@ ALTER TABLE `pagos`
 -- AUTO_INCREMENT de la tabla `permisos`
 --
 ALTER TABLE `permisos`
-  MODIFY `id_permiso` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_permiso` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT de la tabla `recibos`
@@ -455,7 +451,7 @@ ALTER TABLE `recibos`
 -- AUTO_INCREMENT de la tabla `turnos`
 --
 ALTER TABLE `turnos`
-  MODIFY `id_turno` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_turno` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`

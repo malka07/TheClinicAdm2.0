@@ -10,17 +10,17 @@
   <div class="row">
     <div class="col-sm-2"><h2>
 		<img border="0" src="../img/atras.png" width="48" height="48" title="Volver al menú" 
-							onclick=location.href='../historiales/'; 
-							onKeyPress=location.href='../historiales/'; 
+							onclick=location.href='../analisis/'; 
+							onKeyPress=location.href='../analisis/'; 
 							style='cursor:pointer';/>
 	</h2>
 	</div>
     <div class="col-sm-2">
 		<img border="0" src="../img/borrar.png" width="48" height="48" title="Eliminar" 
 						<?php echo " onclick=location.href='" 
-												. "cuidado.php?id_historial=".$_GET['id_historial'] . "'"; ?>;
+												. "cuidado.php?id_analisis=".$_GET['id_analisis'] . "'"; ?>;
 						<?php echo " onKeyPress=location.href='" 
-												. "cuidado.php?id_historial=".$_GET['id_historial'] . "'"; ?>												
+												. "cuidado.php?id_analisis=".$_GET['id_analisis'] . "'"; ?>												
 						style='cursor:pointer';/>
 	
 	</h2>
@@ -38,10 +38,10 @@
 	  
 <?php 
    require "../conexion.php";
-    $sql = "SELECT * from historiales where id_historial = " . $_GET['id_historial'];
+    $sql = "SELECT * from analisis where id_analisis = " . $_GET['id_analisis'];
 	$query = $mysqli->query($sql);
 	while($resultado = $query->fetch_assoc()) {
-        $historiales[] = $resultado;
+        $analisis[] = $resultado;
     }  
    
     $sql = "SELECT * from clinicos order by id_clinico";
@@ -56,20 +56,20 @@
             $pacientes[] = $resultado;
         }
 	
-	echo "<input type='hidden' name='id_historial' value=" .$_GET['id_historial'] .">"; 
+	echo "<input type='hidden' name='id_analisis' value=" .$_GET['id_analisis'] .">"; 
 ?>  
 	  
     <div class="col-md-6 mb-4">
-            <label for="fecha_historial">Fecha</label>
-            <input type="date" class="form-control" name="fecha_historial" placeholder="" value=<?php echo "'".$historiales[0]['fecha_historial']."'" ?> required>
+            <label for="fecha_analsis">Fecha</label>
+            <input type="date" class="form-control" name="fecha_analsis" placeholder="" value=<?php echo "'".$analisis[0]['fecha_analsis']."'" ?> required>
             <div class="invalid-feedback">
-              Faltó Ingresar La Fecha Del Historial.
+              Faltó Ingresar La Fecha Del Analisis.
             </div>
           </div>
         
           <div class="col-md-6 mb-4">
-           <label for="clinico">Medico</label>
-           <select class="custom-select d-block w-100" name="clinico_historial" required>
+           <label for="clinico_analisis">Medico</label>
+           <select class="custom-select d-block w-100" name="clinico_analisis" required>
            <?php 
 				     $long = count($clinicos);
 				     for($i=0; $i< $long; $i++){
@@ -87,8 +87,8 @@
           </div>  
 
           <div class="col-md-6 mb-4">
-           <label for="paciente">Paciente</label>
-           <select class="custom-select d-block w-100" name="paciente_historial" required>
+           <label for="paciente_analisis">Paciente</label>
+           <select class="custom-select d-block w-100" name="paciente_analisis" required>
            <?php 
 				     $long = count($pacientes);
 				     for($i=0; $i< $long; $i++){
@@ -108,8 +108,8 @@
 
         
         <div class="col-md-6 mb-4">
-            <label for="observacion_historial">Observaciones</label>
-            <input type="text" class="form-control" name="observacion_historial" placeholder="" value=<?php echo "'".$historiales[0]['observacion_historial']."'" ?> required>
+            <label for="resultados_analisis">Resultados</label>
+            <input type="text" class="form-control" name="resultados_analisis" placeholder="" value=<?php echo "'".$analisis[0]['resultados_analisis']."'" ?> required>
             <div class="invalid-feedback">
               Faltó Ingresar Una Observacion.
             </div>
@@ -118,8 +118,8 @@
          
 
           <div class="col-md-6 mb-4">
-            <label for="diagnostico_historial">Diagnostico</label>
-            <input type="text" class="form-control" name="diagnostico_historial" placeholder="" value=<?php echo "'".$historiales[0]['diagnostico_historial']."'" ?> required>
+            <label for="obser_analisis">Observaciones</label>
+            <input type="text" class="form-control" name="obser_analisis" placeholder="" value=<?php echo "'".$analisis[0]['obser_analisis']."'" ?> required>
             <div class="invalid-feedback">
               Faltó Ingresar El Diagnostico.
             </div>

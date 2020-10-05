@@ -48,7 +48,7 @@
 	</div>
     <div class="col-sm-2"><h2>
 		<img border="0" src="../img/nuevo.png" width="48" height="48" title="Ingresar Asignacion" 
-		onclick=location.href='historiales.php'; onKeyPress=location.href='historiales.php';
+		onclick=location.href='analisis.php'; onKeyPress=location.href='analisis.php';
 		style='cursor:pointer';>
 	
 	</h2></div>
@@ -72,29 +72,29 @@
 <?php 
    require "../conexion.php";
 
-    $sql = "SELECT * from historiales order by id_historial";
+    $sql = "SELECT * from analisis order by id_analisis";
 	$query = $mysqli->query($sql);
 	while($resultado = $query->fetch_assoc()) {
-        $historiales[] = $resultado;
+        $analisis[] = $resultado;
     }
   
 ?>    
         <div class="list-group">
 		
 			<?php 				
-				$long = count($historiales);
+				$long = count($analisis);
 				for($i=0; $i< $long; $i++){
 				?>
 		<div class="list-group">
 				
-				<a 	<?php echo "href=modifica.php?id_historial=".$historiales[$i]['id_historial'];?>
+				<a 	<?php echo "href=modifica.php?id_analisis=".$analisis[$i]['id_analisis'];?>
 						 class="list-group-item">
-				<h4 class="list-group-item-heading"> <?php echo $historiales[$i]['id_historial'] ."";?> </h4>
-				<p class="list-group-item-text"><?php 	echo "Fecha: " . $historiales[$i]['fecha_historial'] ." - Medico: "; 
-                            echo $historiales[$i]['clinico_historial'] ." - Paciente: "; 
-                            echo $historiales[$i]['paciente_historial'] ." - Observaciones: "; 
-                            echo $historiales[$i]['observacion_historial'] ." - Diagnostico: ";
-                            echo $historiales[$i]['diagnostico_historial'] ."";
+				<h4 class="list-group-item-heading"> <?php echo $analisis[$i]['id_analisis'] ."";?> </h4>
+				<p class="list-group-item-text"><?php 	echo "Fecha: " . $analisis[$i]['fecha_analisis'] ." - Medico: "; 
+                            echo $analisis[$i]['clinico_analisis'] ." - Paciente: "; 
+                            echo $analisis[$i]['paciente_analisis'] ." - Resultados: "; 
+                            echo $analisis[$i]['resultados_analisis'] ." - Observaciones: ";
+                            echo $analisis[$i]['obser_analisis'] ."";
 														?></p>		 
 				</a>	</div>
 	<?php  } ?>

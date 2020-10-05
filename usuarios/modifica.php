@@ -45,6 +45,12 @@
          $usuarios[] = $resultado;
      }  
      
+     
+     $sql = "SELECT * from permisos order by id_permiso";
+	$query = $mysqli->query($sql);
+	while($resultado = $query->fetch_assoc()) {
+        $permisos[] = $resultado;
+    }  
 	
 	echo "<input type='hidden' name='id_usuario' value=" .$_GET['id_usuario'] .">"; 
 ?>  
@@ -83,6 +89,22 @@
               Faltó Ingresar El DNI Del Usuario.
             </div>
           </div>
+
+          <div class="col-md-6 mb-4">
+            <label for="email_usuario">DNI:</label>
+            <input type="text" class="form-control" id="dni" name="email_usuario" placeholder="" value=<?php echo "'".$usuarios[0]['email_usuario']."'" ?> required>
+            <div class="invalid-feedback">
+              Faltó Ingresar El Email Del Usuario.
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <label for="contraseña_usuario">Contraseña:</label>
+            <input type="text" class="form-control" id="dni" name="contraseña_usuario" placeholder="" value=<?php echo "'".$usuarios[0]['contraseña_usuario']."'" ?> required>
+            <div class="invalid-feedback">
+              Faltó Ingresar La Contraseña Del Usuario.
+            </div>
+          </div>
          
           <div class="col-md-6 mb-4">
             <label for="domicilio_usuario">Direccion:</label>
@@ -108,12 +130,33 @@
               Faltó Ingresar Alguna Nota.
             </div>
           </div>
+
+          <div class="col-md-6 mb-4">
+           <label for="permiso_usuario">Permiso:</label>
+           <select class="custom-select d-block w-100" name="permiso_usuario" required>
+           <?php 
+				     $long = count($permisos);
+				     for($i=0; $i< $long; $i++){
+				     echo "<option";
+             echo " value=" .$permisos[$i]['id_permiso'].",".$permisos[$i]['nombre_permiso'] .">";				
+                 echo $permisos[$i]['nombre_permiso'];
+              
+				     echo "</option>";
+             }
+				   ?>
+            </select>
+            <div class="invalid-feedback">
+              Faltó Seleccionar Un Permiso.
+            </div>
+          </div>  
+
 		</div>
         <hr class="mb-4">
         <button class="btn btn-primary btn-lg btn-block" type="submit">Modificar</button>
       </form>
     </div>
   </div>
+  
 
   <footer class="my-5 pt-5 text-muted text-center text-small">
     <p class="mb-1">&copy; 2020 - JDL S.A</p>

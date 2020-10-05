@@ -42,7 +42,7 @@
   <div class="py-5 text-center">
     <img class="d-block mx-auto mb-4" src="../img/disc.jpg" alt="" width="72" height="72">
     <h2>JDL S.A</h2>
-    <p class="lead">Ingreso De Historiales y Servicios / Profesiones para la App.</p>
+    <p class="lead">Ingreso De Analisis Clinicos y Servicios / Profesiones para la App.</p>
   </div>
 
     
@@ -52,21 +52,21 @@
 
    require "../conexion.php";
 
-   $sql = "insert into historiales(
-    fecha_historial,clinico_historial,paciente_historial,observacion_historial,diagnostico_historial)
+   $sql = "insert into analisis(
+    fecha_analisis,clinico_analisis,paciente_analisis,resultados_analisis,obser_analisis)
     values" 
-    . "('".$_POST['fecha_historial'] 	. "'," 
-    . "'" .$_POST['clinico_historial'] 	. "',"	
-    . "'" .$_POST['paciente_historial'] 	. "',"	
-    . "'" .$_POST['observacion_historial'] 	. "',"	
-    . "'" .$_POST['diagnostico_historial'] 	. "' "	
+    . "('".$_POST['fecha_analisis'] 	. "'," 
+    . "'" .$_POST['clinico_analisis'] 	. "',"	
+    . "'" .$_POST['paciente_analisis'] 	. "',"	
+    . "'" .$_POST['resultados_analisis'] 	. "',"	
+    . "'" .$_POST['obser_analisis'] 	. "' "	
     . ")";
   
 // echo $sql;
 
 if ($mysqli->query($sql) === TRUE) {
 
-  echo "  <a href='../historiales/'> <div class='col-md-12 order-md-1'>";
+  echo "  <a href='../analisis/'> <div class='col-md-12 order-md-1'>";
   echo    "<h4 class='mb-4'>Datos guardados correctamente</h4> </a>";
 } else {
   echo "Error: " . $sql . "<br>" . $mysqli->error;
@@ -75,7 +75,7 @@ if ($mysqli->query($sql) === TRUE) {
 $mysqli->close();
 		
 ?>
-<a href="../historiales">	 <hr class="mb-4">
+<a href="../analisis">	 <hr class="mb-4">
         <button class="btn btn-success btn-lg btn-block" type="submit">Volver</button>
   <footer class="my-5 pt-5 text-muted text-center text-small"></a>
     <p class="mb-1">&copy; 2020 - JDL S.A</p>

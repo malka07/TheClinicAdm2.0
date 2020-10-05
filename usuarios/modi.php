@@ -11,9 +11,12 @@ $sql = "UPDATE usuarios SET nombre_usuario='" . ($_POST['nombre_usuario']) 				.
     "apellido_usuario='" 		. $_POST['apellido_usuario']									."'," .			
     "edad_usuario='" 		. $_POST['edad_usuario']									."'," .			
     "dni_usuario='" 		. $_POST['dni_usuario']									."'," .			
+    "email_usuario='" 		. $_POST['email_usuario']									."'," .			
+    "contraseña_usuario='" 		. $_POST['contraseña_usuario']									."'," .			
     "domicilio_usuario='" 		. $_POST['domicilio_usuario']									."'," .			
-    "fecha_nac_usuario='" 		. $_POST['fecha_nac_usuario']									."'," .			
-		"notas_usuario='" 	. $_POST['notas_usuario']								."'" .			
+    "fecha_nac_usuario='" 		. $_POST['fecha_nac_usuario']									."'," .		
+    "notas_usuario='" 		. $_POST['notas_usuario']									."'," .			
+		"permiso_usuario='" 	. $_POST['permiso_usuario']								."'" .			
 		" where id_usuario =" . ($_POST['id_usuario']) ;							
             
  

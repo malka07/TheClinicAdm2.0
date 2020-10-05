@@ -39,51 +39,60 @@
   </head>
   <body background="../img/tareas.jpg">
 
-    <div class="container">
-  <div class="py-5 text-center">
-  <div class="row">
-    <div class="col-sm-2"><h2>
-		<img border="0" src="../img/atras.png" width="48" height="48" title="Volver al menú" 
+  <div class="col-md"><h2>
+		<img border="0" src="../img/atras.png" width="40" height="40" title="Volver al menú" 
 		onclick=location.href='../panel/'; onKeyPress=location.href='../panel/'; style='cursor:pointer';/>
+    <label for="boton_atras"><h6>Atrás</h6></label>
 	</h2></div>
+    <div class="container">
+    
+  <div class="py-5 text-center">
+  
+  <div class="col-md"><img class="d-block mx-auto mb-1" src="../img/jdlsa2.png" alt="" width="62" height="62"></div>
+  <div class="col-md"><h5>JDL S.A</h5></div>
+  <p class="lead"><h4><strong>Servicios Médicos e Informáticos</strong></h4></p>
+  <hr>
+  <div class="row">
+    
 
-    <div class="col-sm-2"><h2>
-		<img border="0" src="../img/nuevo.png" width="48" height="48" title="Ingresar Recibo Sueldo" 
+    <div class="col-sm-1 "><h2>
+		<img border="0" src="../img/add.png" width="48" height="48" title="Ingresar Recibo Sueldo" 
 		onclick=location.href='admin.php'; onKeyPress=location.href='admin.php';
 		style='cursor:pointer';>
+    <label for="descripcion_recibo"><h6>Ingresar recibo sueldo</h6></label>
 	</h2></div>
-
   
-    <div class="col-sm-2"><h2>
-		<img border="0" src="../img/nuevo.png" width="48" height="48" title="Ingresar Pago Insumo" 
+    <div class="col-sm-1"><h2>
+		<img border="0" src="../img/add.png" width="48" height="48" title="Ingresar Pago Insumo" 
 		onclick=location.href='admin2.php'; onKeyPress=location.href='admin2.php';
 		style='cursor:pointer';>
-	
+    <label for="descripcion_pago"><h6>Ingresar pago insumo</h6></label>
 	</h2></div>
-	<div class="col-sm-2"><h2>
-		<img border="0" src="../img/imprimir.png" width="48" height="48" title="Impresión" 
+	<div class="col-sm-1"><h2>
+		<img border="0" src="../img/check.png" width="48" height="48" title="Listado" 
 		onclick=location.href='listado.php'; onKeyPress=location.href='listado.php';
 		style='cursor:pointer';>
-	
+    <label for="descripcion_pago"><h6>Listado en tabla</h6></label>
 	</h2></div>
     <div class="col-sm-2"><h2></h2></div>	
 
-  <div class="col-sm-2"><img class="d-block mx-auto mb-1" src="../img/jdlsa.png" alt="" width="62" height="62"></div>
-  <div class="col-sm-2"><h2>JDL S.A</h2></div>
+  
 </div>
     
-    <p class="lead">Servicios Medicos E Informaticos.</p>
+    
 
-    <div class="col-md-14 order-md-1">
-    <img border="0" src="../img/lupa.png" width="48" height="48" title="Pagos" 
+    <div class="col-sm-12 order-md-1">
+    <img border="0" src="../img/arrow.png" width="60" height="60" title="Ver pagos a proveedores" 
 		onclick=location.href='index2.php'; onKeyPress=location.href='index2.php';
 		style='cursor:pointer';>
+    <label for="pago_proveedores"><h5>Ver pagos a proveedores</h5></label>
 	</div>  
 
   </div>
     <div class="col-md-12 order-md-1">
       <h4 class="mb-1">Recibos</h4>
 	</div>  
+ 
  
   
 

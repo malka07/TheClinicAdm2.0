@@ -10,7 +10,7 @@
   <div class="row">
     <div class="col-sm-2"><h2>
 		<img border="0" src="../img/atras.png" width="48" height="48" title="Volver al menú" 
-		onclick=location.href='../historiales/'; onKeyPress=location.href='../historiales/'; style='cursor:pointer';/>
+		onclick=location.href='../analisis/'; onKeyPress=location.href='../analisis/'; style='cursor:pointer';/>
 	</h2>
 	</div>
 	<div class="col-sm-2"></div>
@@ -21,16 +21,16 @@
 </div>
 
     <div class="col-md-12 order-md-1">
-      <h4 class="mb-4">Alta De Historiales</h4>
+      <h4 class="mb-4">Alta De Analisis Clinicos</h4>
       <form class="needs-validation" novalidate action="grabar.php" method="post">
 	  
 <?php 
    require "../conexion.php";
 
-    $sql = "SELECT * from historiales order by id_historial";
+    $sql = "SELECT * from analisis order by id_analisis";
 	$query = $mysqli->query($sql);
 	while($resultado = $query->fetch_assoc()) {
-        $historiales[] = $resultado;
+        $analisis[] = $resultado;
     }
 
     $sql = "SELECT * from clinicos order by id_clinico";
@@ -49,15 +49,15 @@
 ?>
 
           <div class="col-md-6 mb-4">
-            <label for="fecha_historial">Fecha</label>
-            <input type="date" class="form-control" name="fecha_historial" placeholder="" value="" required>
+            <label for="fecha_analisis">Fecha</label>
+            <input type="date" class="form-control" name="fecha_analisis" placeholder="" value="" required>
             <div class="invalid-feedback">
-              Faltó Ingresar La Fecha Del Historial.
+              Faltó Ingresar La Fecha Del Analisi Clinico.
             </div>
           </div>
         
           <div class="col-md-6 mb-4">
-           <label for="clinico">Medico</label>
+           <label for="clinico_analisis">Medico</label>
            <select class="custom-select d-block w-100" name="id_clinico" required>
            <?php 
 				     $long = count($clinicos);
@@ -97,20 +97,20 @@
 
         
         <div class="col-md-6 mb-4">
-            <label for="observacion_historial">Observaciones</label>
-            <input type="text" class="form-control" name="observacion_historial" placeholder="" value="" required>
+            <label for="resultados_analisis">Resultados</label>
+            <input type="text" class="form-control" name="resultados_analisis" placeholder="" value="" required>
             <div class="invalid-feedback">
-              Faltó Ingresar Una Observacion.
+              Faltó Ingresar Un Resultado.
             </div>
           </div>
       
          
 
           <div class="col-md-6 mb-4">
-            <label for="diagnostico_historial">Diagnostico</label>
-            <input type="text" class="form-control" name="diagnostico_historial" placeholder="" value="" required>
+            <label for="obser_analisis">Diagnostico</label>
+            <input type="text" class="form-control" name="obser_analisis" placeholder="" value="" required>
             <div class="invalid-feedback">
-              Faltó Ingresar El Diagnostico.
+              Faltó Ingresar Una Observacion.
             </div>
           </div>
      

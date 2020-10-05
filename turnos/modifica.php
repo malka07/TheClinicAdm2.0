@@ -55,6 +55,12 @@
       while($resultado = $query->fetch_assoc()) {
             $pacientes[] = $resultado;
         }
+      
+        $sql = "SELECT * from horarios order by id_horario";
+      $query = $mysqli->query($sql);
+      while($resultado = $query->fetch_assoc()) {
+            $horarios[] = $resultado;
+        }
 	
 	echo "<input type='hidden' name='id_turno' value=" .$_GET['id_turno'] .">"; 
 ?>  
@@ -68,12 +74,23 @@
           </div>
           
           <div class="col-md-6 mb-4">
-            <label for="horario_turno">Horario</label>
-            <input type="text" class="form-control" name="horario_turno" placeholder="" value=<?php echo "'".$turnos[0]['horario_turno']."'" ?> required>
+           <label for="horario">Horario</label>
+           <select class="custom-select d-block w-100" name="horario_turno" required>
+           <?php 
+				     $long = count($horarios);
+				     for($i=0; $i< $long; $i++){
+				     echo "<option";
+             echo " value=" .$horarios[$i]['id_horario'] .",".$horarios[$i]['tiempo_horario'] .">";
+                 echo $horarios[$i]['tiempo_horario'];
+                 
+				     echo "</option>";
+             }
+				   ?>
+            </select>
             <div class="invalid-feedback">
-              Faltó Ingresar El Horario Del Turno.
+              Faltó Seleccionar Un Horario del Turno.
             </div>
-          </div>
+          </div>  
 
           <div class="col-md-6 mb-4">
            <label for="paciente">Paciente</label>

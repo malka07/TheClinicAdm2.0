@@ -27,7 +27,7 @@
       <div class="sidebar-heading bg-black text-white">Menú de Opciones</div>
       <div class="list-group list-group-flush">
         <a href="../turnos/" class="list-group-item list-group-item-action bg-dark text-white">Turnos</a>
-        <a href="../analisis/" class="list-group-item list-group-item-action bg-dark text-white">Analisis</a>
+        <a href="../analisis/" class="list-group-item list-group-item-action bg-dark text-white">Analisis Clinicos</a>
         <a href="../" class="list-group-item list-group-item-action bg-dark text-white">Salir</a>
       </div>
     </div>

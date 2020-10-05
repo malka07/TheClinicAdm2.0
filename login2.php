@@ -16,11 +16,11 @@
 
   require "conexion.php"; 
  
-  $usuario_login = $_POST['usuario_login'];
-  $contraseña_login = $_POST['contraseña_login'];
+  $dni_usuario = $_POST['dni_usuario'];
+  $contraseña_usuario = $_POST['contraseña_usuario'];
   //$permiso_login = $_POST['permiso_login']; 
 
-  $consulta = mysqli_query ($mysqli, "SELECT * FROM logins WHERE usuario_login = '$usuario_login' AND contraseña_login = '$contraseña_login'");
+  $consulta = mysqli_query ($mysqli, "SELECT * FROM usuarios WHERE dni_usuario = '$dni_usuario' AND contraseña_usuario = '$contraseña_usuario'");
 
   $resultados = mysqli_fetch_assoc($consulta);
 
@@ -29,28 +29,28 @@
     exit;
   }
 
- if($resultados['usuario_login'] = $usuario_login && $resultados['contraseña_login'] = $contraseña_login){
-  if($resultados['permiso_login'] == 1){
+  if($resultados['dni_usuario'] = $dni_usuario && $resultados['contraseña_usuario'] = $contraseña_usuario){
+    if($resultados['permiso_usuario'] == 1){
     header("HTTP/1.1 302 Moved Temporarily"); 
     header("INGRESO SATISFACTORIO"); 
     header("Location: ../panel/");  
   }
-  elseif ($resultados['permiso_login'] == 2){
+  elseif ($resultados['permiso_usuario'] == 2){
     header("HTTP/1.1 302 Moved Temporarily"); 
     header("INGRESO SATISFACTORIO"); 
     header("Location: ../panel2/");  
   }
-  elseif ($resultados['permiso_login'] == 3){
+  elseif ($resultados['permiso_usuario'] == 3){
     header("HTTP/1.1 302 Moved Temporarily"); 
     header("INGRESO SATISFACTORIO"); 
     header("Location: ../panel3/");  
   }
-  elseif ($resultados['permiso_login'] == 4){
+  elseif ($resultados['permiso_usuario'] == 4){
     header("HTTP/1.1 302 Moved Temporarily"); 
     header("INGRESO SATISFACTORIO"); 
     header("Location: ../panel4/");  
   }
-  elseif ($resultados['permiso_login'] == 5){
+  elseif ($resultados['permiso_usuario'] == 5){
     header("HTTP/1.1 302 Moved Temporarily"); 
     header("INGRESO SATISFACTORIO"); 
     header("Location: ../panel5/");  

@@ -16,12 +16,12 @@
 	<div class="col-sm-2"></div>
     <div class="col-sm-2"></div>	
     <div class="col-sm-2"></div>	
-  <div class="col-sm-2"><img class="d-block mx-auto mb-1" src="../img/jdlsa2.png" alt="" width="62" height="62"></div>
+  <div class="col-sm-2"><img class="d-block mx-auto mb-1" src="../img/disc.jpg" alt="" width="62" height="62"></div>
   <div class="col-sm-2"><h2>JDL S.A</h2></div>
 </div>
 
     <div class="col-md-12 order-md-1">
-      <h4 class="mb-4">Alta De Usuario</h4>
+      <h4 class="mb-4">Alta De Usuarios</h4>
       <form class="needs-validation" novalidate action="grabar.php" method="post">
 	  
 <?php 
@@ -29,127 +29,103 @@
 
   
 
-    $sql = "SELECT * from pacientes order by id_paciente";
+    $sql = "SELECT * from usuarios order by id_usuario";
 	$query = $mysqli->query($sql);
 	while($resultado = $query->fetch_assoc()) {
-        $pacientes[] = $resultado;
+        $usuarios[] = $resultado;
     }
    
-    $sql = "SELECT * from logins order by id_login";
-    $query = $mysqli->query($sql);
-    while($resultado = $query->fetch_assoc()) {
-          $logins[] = $resultado;
-      }
-     
+    $sql = "SELECT * from permisos order by id_permiso";
+	$query = $mysqli->query($sql);
+	while($resultado = $query->fetch_assoc()) {
+        $permisos[] = $resultado;
+    }
 
 ?>
 
           <div class="col-md-6 mb-4">
-            <label for="nombre_paciente">Nombre</label>
-            <input type="text" class="form-control" name="nombre_paciente" placeholder="" value="" required>
+            <label for="nombre">Nombre</label>
+            <input type="text" class="form-control" name="nombre_usuario" placeholder="" value="" required>
             <div class="invalid-feedback">
-              Faltó Ingresar El Nombre Del Paciente.
+              Faltó Ingresar El Nombre Del Usuario.
             </div>
           </div>
      
         
         <div class="col-md-6 mb-4">
-            <label for="apellido_paciente">Apellido</label>
-            <input type="text" class="form-control" name="apellido_paciente" placeholder="" value="" required>
+            <label for="apellido">Apellido</label>
+            <input type="text" class="form-control" name="apellido_usuario" placeholder="" value="" required>
             <div class="invalid-feedback">
-              Faltó Ingresar El Apellido Del Paciente.
-            </div>
-          </div>
-
-          <div class="col-md-6 mb-4">
-            <label for="dni_paciente">D.N.I</label>
-            <input type="text" class="form-control" name="dni_paciente" placeholder="" value="" required>
-            <div class="invalid-feedback">
-              Faltó Ingresar El DNI Del Paciente.
-            </div>
-          </div> 
-        
-          <div class="col-md-6 mb-4">
-            <label for="domicilio_paciente">Direccion</label>
-            <input type="text" class="form-control" name="domicilio_paciente" placeholder="" value="" required>
-            <div class="invalid-feedback">
-              Faltó Ingresar El Domicilio Del Paciente.
-            </div>
-          </div>
-
-          <div class="col-md-6 mb-4">
-            <label for="telefono_paciente">Telefono</label>
-            <input type="text" class="form-control" name="telefono_paciente" placeholder="" value="" required>
-            <div class="invalid-feedback">
-              Faltó Ingresar El Telefono Del Paciente.
-            </div>
-          </div>
-        
-        <div class="col-md-6 mb-4">
-            <label for="edad_paciente">Edad</label>
-            <input type="text" class="form-control" name="edad_paciente" placeholder="" value="" required>
-            <div class="invalid-feedback">
-              Faltó Ingresar La Edad Del Paciente.
-            </div>
-          </div>
-  
-          <div class="col-md-6 mb-4">
-            <label for="provincia_paciente">Provincia</label>
-            <input type="text" class="form-control" name="provincia_paciente" placeholder="" value="" required>
-            <div class="invalid-feedback">
-              Faltó Ingresar La Provincia Del Paciente.
-            </div>
-          </div>
-
-          <div class="col-md-6 mb-4">
-            <label for="barrio_paciente">Barrio</label>
-            <input type="text" class="form-control" name="barrio_paciente" placeholder="" value="" required>
-            <div class="invalid-feedback">
-              Faltó Ingresar El Barrio Del Paciente.
-            </div>
-          </div>
-           
-          <div class="col-md-6 mb-4">
-            <label for="fech_nac_paciente">Fecha De Nacimiento</label>
-            <input type="date" class="form-control" name="fech_nac_paciente" placeholder="" value="" required>
-            <div class="invalid-feedback">
-              Faltó Ingresar La Fecha De Nacimiento Del Paciente.
-            </div>
-          </div>
-       
-          <div class="col-md-6 mb-4">
-            
-            <input type="hidden" class="form-control" name="historia_paciente" placeholder="" value="" required>
-            <div class="invalid-feedback">
-              Faltó Ingresar Numero De Historial.
-            </div>
-          </div>
-
-          <div class="col-md-6 mb-4">
-            
-            <input type="hidden" class="form-control" name="obra_soc_paciente" placeholder="" value="" required>
-            <div class="invalid-feedback">
-              Faltó Ingresar Una Obra Social Del Paciente.
-            </div>
-          </div>
-
-          <div class="col-md-6 mb-4">
-            
-            <input type="hidden" class="form-control" name="medico_paciente" placeholder="" value="" required>
-            <div class="invalid-feedback">
-              Faltó Ingresar Un Medico Del Paciente.
+              Faltó Ingresar El Apellido Del Usuario.
             </div>
           </div>
       
         
         <div class="col-md-6 mb-4">
-            <label for="email_paciente">Email</label>
-            <input type="text" class="form-control" name="email_paciente" placeholder="" value="" required>
+            <label for="edad">Edad</label>
+            <input type="text" class="form-control" name="edad_usuario" placeholder="" value="" required>
             <div class="invalid-feedback">
-              Faltó Ingresar El Email Del Paciente.
+              Faltó Ingresar La Edad Del Usuario.
+            </div>
+          </div>
+  
+          <div class="col-md-6 mb-4">
+            <label for="dni">DNI</label>
+            <input type="text" class="form-control" name="dni_usuario" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              Faltó Ingresar El DNI Del Usuario.
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <label for="email_usuario">Email</label>
+            <input type="text" class="form-control" name="email_usuario" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              Faltó Ingresar El Email Del Usuario.
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+          <label for="contraseña_usuario">Contraseña</label>
+            <input type="text" class="form-control" name="contraseña_usuario" placeholder="" value="0" required>
+            <div class="invalid-feedback">
+              Faltó Ingresar La Contraseña Del Usuario.
+            </div>
+          </div>
+
+           <div class="col-md-6 mb-4">
+            <label for="domicilio">Direccion</label>
+            <input type="text" class="form-control" name="domicilio_usuario" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              Faltó Ingresar La Direccion Del Usuario.
             </div>
           </div>
         
+
+          <div class="col-md-6 mb-4">
+            <label for="fecha_nac">Fecha De Nacimiento</label>
+            <input type="date" class="form-control" name="fecha_nac_usuario" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              Faltó Ingresar La Fecha De Nacimiento Del Integrante.
+            </div>
+          </div>
+       
+        
+        <div class="col-md-6 mb-4">
+            
+            <input type="hidden" class="form-control" name="notas_usuario" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              Faltó Ingresar Alguna Nota Adicional.
+            </div>
+          </div>
+        
+          <div class="col-md-6 mb-4">
+           
+            <input type="hidden" class="form-control" name="permiso_usuario" placeholder="" value="2" required>
+            <div class="invalid-feedback">
+              Faltó Ingresar El Permiso Del Usuario.
+            </div>
+          </div>
 
   
      

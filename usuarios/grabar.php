@@ -51,15 +51,18 @@
 <?php
  require "../conexion.php";
  $sql = "insert into usuarios(
-  nombre_usuario,apellido_usuario,edad_usuario,dni_usuario,domicilio_usuario,fecha_nac_usuario,notas_usuario)
+  nombre_usuario,apellido_usuario,edad_usuario,dni_usuario,email_usuario,contraseña_usuario,domicilio_usuario,fecha_nac_usuario,notas_usuario,permiso_usuario)
   values" 
   . "('".$_POST['nombre_usuario'] 	. "'," 
   . "'" .$_POST['apellido_usuario'] 	. "',"
   . "'" .$_POST['edad_usuario'] 	. "',"	
   . "'" .$_POST['dni_usuario'] 	. "',"	
+  . "'" .$_POST['email_usuario'] 	. "',"	
+  . "'" .$_POST['contraseña_usuario'] 	. "',"	
   . "'" .$_POST['domicilio_usuario'] 	. "',"
   . "'" .$_POST['fecha_nac_usuario'] 	. "',"
-  . "'" .$_POST['notas_usuario'] 	. "' "	
+  . "'" .$_POST['notas_usuario'] 	. "',"
+  . "'" .$_POST['permiso_usuario'] 	. "' "	
   . ")";
   
 // echo $sql;

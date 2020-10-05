@@ -17,10 +17,10 @@
  
 ?>								
 
-  <body class="bg-light">
+<body background="../img/tek.jpg">
     <div class="container">
   <div class="py-5 text-center">
-    <img class="d-block mx-auto mb-4" src="../img/disc.jpg" alt="" width="72" height="72">
+    <img class="d-block mx-auto mb-4" src="../img/jdlsa.png" alt="" width="72" height="72">
     <h2>JDL S.A</h2>
     <p class="lead">Modificacion De Historiales y Servicios / Profesiones.</p>
   </div>

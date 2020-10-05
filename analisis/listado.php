@@ -4,7 +4,7 @@
 <meta name="GENERATOR" content="Microsoft FrontPage 5.0">
 <meta name="ProgId" content="FrontPage.Editor.Document">
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-<title>Listado De Historiales</title>
+<title>Listado De Analisis Clinicos</title>
 
 </head>
 
@@ -12,19 +12,19 @@
 <div class="row">
     <div class="col-sm-2"><h2>
 		<img border="0" src="../img/atras.png" width="48" height="48" title="Volver al menú" 
-		onclick=location.href='../historiales/'; onKeyPress=location.href='../historiales/'; style='cursor:pointer';/>
+		onclick=location.href='../analisis/'; onKeyPress=location.href='../analisis/'; style='cursor:pointer';/>
 	</h2>
 	</div>
 
 <?php 
 include "../conexion.php";
-$sql = "SELECT * from historiales order by id_historial";
+$sql = "SELECT * from analisis order by id_analisis";
 	$query = $mysqli->query($sql);
 	while($resultado = $query->fetch_assoc()) {
-        $historiales[] = $resultado;
+        $analisis[] = $resultado;
     }
 ?>
-<p align="center"> <font face="Verdana" size="5" color="#666666"><u>Listado De Historiales</u></font></i></p>
+<p align="center"> <font face="Verdana" size="5" color="#666666"><u>Listado De Analisis Clinicos</u></font></i></p>
 
 <div align="center">
   <center>
@@ -36,23 +36,23 @@ $sql = "SELECT * from historiales order by id_historial";
 	  <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Fecha</font></i></td>
 	  <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Medico</font></i></td>	  
 	  <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Paciente</font></i></td>	  
-      <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Observaciones</font></i></td>	    
-	  <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Diagnostico</font></i></td>	
+      <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Resultados</font></i></td>	    
+	  <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Observaciones</font></i></td>	
 	  </tr>
 
 
-	<?php $long = count($historiales);
+	<?php $long = count($analisis);
 				for($i=0; $i< $long; $i++){		 
 				?>
 
   <tr>
     <td width="10%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $i+1;?></font></i></td>	
-	<td width="20%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $historiales[$i]['id_historial'];?></font></i></td>
-    <td width="20%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $historiales[$i]['fecha_historial'];?></font></i></td>
-	<td width="20%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $historiales[$i]['clinico_historial'];?></font></i></td>
-	<td width="20%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $historiales[$i]['paciente_historial'];?></font></i></td>
-	<td width="10%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $historiales[$i]['observacion_historial'];?></font></i></td>	
-	<td width="10%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $historiales[$i]['diagnostico_historial'];?></font></i></td>
+	<td width="20%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $analisis[$i]['id_analisis'];?></font></i></td>
+    <td width="20%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $analisis[$i]['fecha_analisis'];?></font></i></td>
+	<td width="20%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $analisis[$i]['clinico_analisis'];?></font></i></td>
+	<td width="20%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $analisis[$i]['paciente_analisis'];?></font></i></td>
+	<td width="10%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $analisis[$i]['resultados_analisis'];?></font></i></td>	
+	<td width="10%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $analisis[$i]['obser_analisis'];?></font></i></td>
 	</tr>
 
   <?php  } ?>

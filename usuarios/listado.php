@@ -37,9 +37,12 @@ $sql = "SELECT * from usuarios order by id_usuario";
       <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Apellido</font></i></td>
       <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Edad</font></i></td> 
       <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >DNI</font></i></td> 
+      <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Email</font></i></td>
+      <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Contraseña</font></i></td> 
       <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Domicilio</font></i></td>
       <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Fecha De Nacimiento</font></i></td>
       <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Notas</font></i></td>
+      <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Permiso</font></i></td>
 	  </tr>
 
 
@@ -54,9 +57,12 @@ $sql = "SELECT * from usuarios order by id_usuario";
     <td width="20%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $usuarios[$i]['apellido_usuario'];?></font></i></td>
     <td width="20%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $usuarios[$i]['edad_usuario'];?></font></i></td>
     <td width="20%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $usuarios[$i]['dni_usuario'];?></font></i></td>
+    <td width="20%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $usuarios[$i]['email_usuario'];?></font></i></td>
+    <td width="20%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $usuarios[$i]['contraseña_usuario'];?></font></i></td>
     <td width="20%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $usuarios[$i]['domicilio_usuario'];?></font></i></td>
     <td width="20%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $usuarios[$i]['fecha_nac_usuario'];?></font></i></td>
     <td width="20%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $usuarios[$i]['notas_usuario'];?></font></i></td>
+    <td width="20%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $usuarios[$i]['permiso_usuario'];?></font></i></td>
 
 	</tr>
 

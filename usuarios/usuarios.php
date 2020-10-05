@@ -35,6 +35,11 @@
         $usuarios[] = $resultado;
     }
    
+    $sql = "SELECT * from permisos order by id_permiso";
+	$query = $mysqli->query($sql);
+	while($resultado = $query->fetch_assoc()) {
+        $permisos[] = $resultado;
+    }
 
 ?>
 
@@ -72,6 +77,22 @@
             </div>
           </div>
 
+          <div class="col-md-6 mb-4">
+            <label for="email_usuario">Email</label>
+            <input type="text" class="form-control" name="email_usuario" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              Faltó Ingresar El Email Del Usuario.
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            
+            <input type="hidden" class="form-control" name="contraseña_usuario" placeholder="" value="0" required>
+            <div class="invalid-feedback">
+              Faltó Ingresar La Contraseña Del Usuario.
+            </div>
+          </div>
+
            <div class="col-md-6 mb-4">
             <label for="domicilio">Direccion</label>
             <input type="text" class="form-control" name="domicilio_usuario" placeholder="" value="" required>
@@ -98,6 +119,24 @@
             </div>
           </div>
         
+          <div class="col-md-6 mb-4">
+           <label for="permiso_usuario">Permiso</label>
+           <select class="custom-select d-block w-100" name="id_permiso" required>
+           <?php 
+				     $long = count($permisos);
+				     for($i=0; $i< $long; $i++){
+				     echo "<option";
+             echo " value=" .$permisos[$i]['id_permiso'].",".$permisos[$i]['nombre_permiso'] .">";				
+                 echo $permisos[$i]['nombre_permiso'];
+              
+				     echo "</option>";
+             }
+				   ?>
+            </select>
+            <div class="invalid-feedback">
+              Faltó Seleccionar Un Permiso.
+            </div>
+          </div>  
 
   
      
