@@ -55,7 +55,7 @@
     
 
     <div class="col-sm-1 "><h2>
-		<img border="0" src="../img/add.png" width="48" height="48" title="Ingresar Asignacion" 
+		<img border="0" src="../img/add.png" width="48" height="48" title="Ingresar Historial" 
 		onclick=location.href='historiales.php'; onKeyPress=location.href='historiales.php';
 		style='cursor:pointer';>
     <label for="ingresar_asignacion"><h6>Ingresar asignación</h6></label>
