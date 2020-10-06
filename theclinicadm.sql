@@ -3,7 +3,11 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: sql205.byetcluster.com
+<<<<<<< HEAD
 -- Tiempo de generación: 05-10-2020 a las 18:17:00
+=======
+-- Tiempo de generación: 05-10-2020 a las 22:33:04
+>>>>>>> 709cd8c1f57f91ac1d76faee5df4ff05e228caea
 -- Versión del servidor: 5.6.48-88.0
 -- Versión de PHP: 7.2.22
 
@@ -48,18 +52,20 @@ CREATE TABLE `clinicos` (
   `nombre_clinico` varchar(30) DEFAULT NULL,
   `apellido_clinico` varchar(30) DEFAULT NULL,
   `edad_clinico` int(8) DEFAULT NULL,
+  `dni_clinico` int(8) DEFAULT NULL,
   `domicilio_clinico` varchar(15) DEFAULT NULL,
   `telefono_clinico` int(15) DEFAULT NULL,
   `fech_nac_clinico` date DEFAULT NULL,
-  `email_clinico` varchar(30) DEFAULT NULL
+  `email_clinico` varchar(30) DEFAULT NULL,
+  `esp_clinico` int(8) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `clinicos`
 --
 
-INSERT INTO `clinicos` (`id_clinico`, `nombre_clinico`, `apellido_clinico`, `edad_clinico`, `domicilio_clinico`, `telefono_clinico`, `fech_nac_clinico`, `email_clinico`) VALUES
-(1, 'denise', 'Mark', 23, 'juan de los p', 4321, '2018-11-29', 'qweffe@hotmail.com');
+INSERT INTO `clinicos` (`id_clinico`, `nombre_clinico`, `apellido_clinico`, `edad_clinico`, `dni_clinico`, `domicilio_clinico`, `telefono_clinico`, `fech_nac_clinico`, `email_clinico`, `esp_clinico`) VALUES
+(1, 'denise', 'Mark', 23, NULL, 'juan de los p', 4321, '2018-11-29', 'qweffe@hotmail.com', NULL);
 
 -- --------------------------------------------------------
 
@@ -69,7 +75,6 @@ INSERT INTO `clinicos` (`id_clinico`, `nombre_clinico`, `apellido_clinico`, `eda
 
 CREATE TABLE `especialidades` (
   `id_esp_clinicos` int(8) NOT NULL,
-  `id_clinico` int(8) DEFAULT NULL,
   `nombre_especialidad` varchar(30) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
@@ -266,16 +271,17 @@ CREATE TABLE `pagos` (
   `fecha_pago` date DEFAULT NULL,
   `descripcion_pago` varchar(50) DEFAULT NULL,
   `cantidad_pago` int(8) DEFAULT NULL,
-  `liqui_pago` decimal(12,5) DEFAULT NULL
+  `liqui_pago` decimal(12,5) DEFAULT NULL,
+  `dni_pago` int(8) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `pagos`
 --
 
-INSERT INTO `pagos` (`id_pago`, `fecha_pago`, `descripcion_pago`, `cantidad_pago`, `liqui_pago`) VALUES
-(1, '2020-09-07', 'pago papel (x12)', 4, '500.00000'),
-(2, '2020-09-18', 'pago papel (x10)', 4, '1500.00000');
+INSERT INTO `pagos` (`id_pago`, `fecha_pago`, `descripcion_pago`, `cantidad_pago`, `liqui_pago`, `dni_pago`) VALUES
+(1, '2020-09-07', 'pago papel (x12)', 4, '500.00000', NULL),
+(2, '2020-09-18', 'pago papel (x10)', 4, '1500.00000', NULL);
 
 -- --------------------------------------------------------
 
