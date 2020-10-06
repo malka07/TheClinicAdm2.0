@@ -67,7 +67,7 @@
 
 if ($mysqli->query($sql) === TRUE) {
 
-  echo "  <a href='../historiales/'> <div class='col-md-12 order-md-1'>";
+  echo "  <a href='javascript:history.go(-1)'> <div class='col-md-12 order-md-1'>";
   echo    "<h4 class='mb-4'>Datos guardados correctamente</h4> </a>";
 } else {
   echo "Error: " . $sql . "<br>" . $mysqli->error;
@@ -76,7 +76,7 @@ if ($mysqli->query($sql) === TRUE) {
 $mysqli->close();
 		
 ?>
-<a href="../historiales">	 <hr class="mb-4">
+<a href="javascript:history.go(-1)">	 <hr class="mb-4">
         <button class="btn btn-success btn-lg btn-block" type="submit">Volver</button>
   <footer class="my-5 pt-5 text-muted text-center text-small"></a>
     <p class="mb-1">&copy; 2020 - JDL S.A</p>
