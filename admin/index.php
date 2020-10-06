@@ -59,14 +59,14 @@
 		<img border="0" src="../img/add.png" width="48" height="48" title="Ingresar Recibo De Sueldo" 
 		onclick=location.href='admin.php'; onKeyPress=location.href='admin.php';
 		style='cursor:pointer';>
-    <label for="descripcion_recibo"><h6>Ingresar recibo sueldo</h6></label>
+    <label for="descripcion_recibo"><h6>Ingresar Recibo Sueldo</h6></label>
 	</h2></div>
   
     <div class="col-sm-1"><h2>
 		<img border="0" src="../img/add.png" width="48" height="48" title="Ingresar Pago De Insumo" 
 		onclick=location.href='admin2.php'; onKeyPress=location.href='admin2.php';
 		style='cursor:pointer';>
-    <label for="descripcion_pago"><h6>Ingresar pago insumo</h6></label>
+    <label for="descripcion_pago"><h6>Ingresar Pago Insumo</h6></label>
 	</h2></div>
 	<div class="col-sm-1"><h2>
 		<img border="0" src="../img/check.png" width="48" height="48" title="Listado" 
