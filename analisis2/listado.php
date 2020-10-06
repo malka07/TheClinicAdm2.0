@@ -8,7 +8,7 @@
 
 </head>
 
-<body background="../img/analisis.jpg">
+<body background="../img/analisis2.jpg">
 <div class="row">
     <div class="col-sm-2"><h2>
 		<img border="0" src="../img/atras.png" width="48" height="48" title="Volver al menú" 

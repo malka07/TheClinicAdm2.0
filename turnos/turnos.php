@@ -8,7 +8,7 @@
     <div class="col-sm-2"></div>	
     <div class="col-sm-2"></div>	
 
-  <body background="../img/turnos2.jpg">
+<body background="../img/turnos2.jpg">
 <div class="col-sm-2"><h2>
 <img border="0" src="../img/atras.png" width="48" height="48" title="Volver al menú" 
 onclick=location.href='../turnos/'; onKeyPress=location.href='../turnos/'; style='cursor:pointer';/>
@@ -21,7 +21,7 @@ onclick=location.href='../turnos/'; onKeyPress=location.href='../turnos/'; style
   <div class="col-md"><img class="d-block mx-auto mb-1" src="../img/jdlsa.png" alt="" width="62" height="62"></div>
 </div>
 <div class="col-md-12 order-md-1">
-      <h4 class="mb-4">Alta De Turnos</h4>
+      <h4 class="mb-4">Alta de Turnos</h4>
       <form class="needs-validation" novalidate action="grabar.php" method="post">
 	  
 <?php 

@@ -4,37 +4,42 @@
     require "../metodos.php";
 ?>
 
-  <body class="bg-light">
+<body background="../img/medico2.jpg">
+  <div class="col-md"><h2>
+		<img border="0" src="../img/atras.png" width="40" height="40" title="Volver a médicos" 
+		onclick=location.href='../clinicos/'; onKeyPress=location.href='../clinicos/'; style='cursor:pointer';/>
+    <label for="boton_atras"><h6>Atrás</h6></label>
+	</h2></div>
     <div class="container">
+    
   <div class="py-5 text-center">
+  
+  <div class="col-md"><img class="d-block mx-auto mb-1" src="../img/jdlsa2.png" alt="" width="62" height="62"></div>
+  <div class="col-md"><h5>JDL S.A</h5></div>
+  <p class="lead "><h4><strong>Servicios Médicos e Informáticos</strong></h4></p>
+  <hr>
   <div class="row">
-    <div class="col-sm-2"><h2>
-		<img border="0" src="../img/atras.png" width="48" height="48" title="Volver al menú" 
-							onclick=location.href='../clinicos/'; 
-							onKeyPress=location.href='../clinicos/'; 
-							style='cursor:pointer';/>
-	</h2>
-	</div>
+</h2></div>
+
     <div class="col-sm-2">
-		<img border="0" src="../img/borrar.png" width="48" height="48" title="Eliminar" 
-						<?php echo " onclick=location.href='" 
+		<img border="0" src="../img/delete.png" width="48" height="48" title="Eliminar" 
+            <?php echo " onclick=location.href='" 
 												. "cuidado.php?id_clinico=".$_GET['id_clinico'] . "'"; ?>;
 						<?php echo " onKeyPress=location.href='" 
 												. "cuidado.php?id_clinico=".$_GET['id_clinico'] . "'"; ?>												
 						style='cursor:pointer';/>
+            <label for="boton_eliminar"><h6>Eliminar registro</h6></label>
 	
 	</h2>
 	</div>
 	<div class="col-sm-2"></div>
     <div class="col-sm-2"><h2></h2></div>	
-
-  <div class="col-sm-2"><img class="d-block mx-auto mb-1" src="../img/disc.jpg" alt="" width="62" height="62"></div>
-  <div class="col-sm-2"><h2>JDL S.A</h2></div>
 </div>
 
     <div class="col-md-12 order-md-1">
-      <h4 class="mb-4">Modificar Datos Del Medico</h4>
+      <h4 class="mb-4">Modificar datos del Médico</h4>
       <form class="needs-validation" novalidate action="modi.php" method="POST">
+
 	  
 <?php 
    
@@ -45,11 +50,9 @@
          $clinicos[] = $resultado;
      }  
      
-	
 	echo "<input type='hidden' name='id_clinico' value=" .$_GET['id_clinico'] .">"; 
 ?>  
 	  
-        
           <div class="col-md-6 mb-4">
             <label for="nombre_clinico">Nombre:</label>
             <input type="text" class="form-control" id="nombre" name="nombre_clinico" placeholder="" value=<?php echo "'".$clinicos[0]['nombre_clinico']."'" ?> required>

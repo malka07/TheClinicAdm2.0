@@ -7,14 +7,13 @@
 <title>Listado De Medicos</title>
 
 </head>
-
-<body>
+<body background="../img/medico2.jpg">
 <div class="row">
-    <div class="col-sm-2"><h2>
-		<img border="0" src="../img/atras.png" width="48" height="48" title="Volver al menú" 
-		onclick=location.href='../clinicos/'; onKeyPress=location.href='../clinicos/'; style='cursor:pointer';/>
-	</h2>
-	</div>
+	<div class="col-md"><h2>
+		<img border="0" src="../img/atras.png" width="48" height="48" title="Volver a médicos" 
+    onclick=location.href='../clinicos/'; onKeyPress=location.href='../clinicos/'; style='cursor:pointer';/>
+	</h2></div>
+
 
 <?php 
 include "../conexion.php";

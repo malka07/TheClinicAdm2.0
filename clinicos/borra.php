@@ -5,13 +5,15 @@
 $sql = "delete from clinicos where id_clinico=" . $_GET['id_clinico'] ;		
 ?>
 
-  <body class="bg-light">
+<body background="../img/medico2.jpg">
     <div class="container">
   <div class="py-5 text-center">
-    <img class="d-block mx-auto mb-4" src="../img/disc.jpg" alt="" width="72" height="72">
-    <h2>JDL S.A</h2>
-    <p class="lead">Eliminar Medicos / Servicios.</p>
+  <div class="col-md"><img class="d-block mx-auto mb-1" src="../img/jdlsa2.png" alt="" width="62" height="62"></div>
+  <div class="col-md"><h5>JDL S.A</h5></div>
+    <p class="lead"><h4><strong>Eliminar Médico / Servicios</strong></h4></p>
   </div>
+
+
  <?php 
   if ($mysqli->query($sql) === TRUE) {
 

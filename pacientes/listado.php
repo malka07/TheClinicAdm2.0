@@ -8,13 +8,13 @@
 
 </head>
 
-<body>
+<body background="../img/pacientes2.jpg">
 <div class="row">
     <div class="col-sm-2"><h2>
 		<img border="0" src="../img/atras.png" width="48" height="48" title="Volver al menú" 
-		onclick=location.href='../pacientes/'; onKeyPress=location.href='../pacientes/'; style='cursor:pointer';/>
-	</h2>
-	</div>
+    onclick=location.href='../pacientes/'; onKeyPress=location.href='../pacientes/'; style='cursor:pointer';/>
+</h2></div>
+
 
 <?php 
 include "../conexion.php";
