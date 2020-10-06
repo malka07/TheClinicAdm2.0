@@ -56,7 +56,7 @@
 	</h2></div>
     <div class="col-sm-2"><h2></h2></div>	
 
-  <div class="col-sm-2"><img class="d-block mx-auto mb-1" src="../img/disc.jpg" alt="" width="62" height="62"></div>
+  <div class="col-sm-2"><img class="d-block mx-auto mb-1" src="../img/jdlsa.png" alt="" width="62" height="62"></div>
   <div class="col-sm-2"><h2>JDL S.A</h2></div>
 </div>
     

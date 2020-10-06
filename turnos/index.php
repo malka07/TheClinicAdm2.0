@@ -52,28 +52,13 @@
   <p class="lead "><h4><strong>Servicios Médicos e Informáticos</strong></h4></p>
   <hr>
   <div class="row">
-<<<<<<< HEAD
-    <div class="col-sm-2"><h2>
-		<img border="0" src="../img/atras.png" width="48" height="48" title="Volver al menú" 
-		onclick=location.href='javascript:history.go(-1)'; onKeyPress=location.href='javascript:history.go(-1)'; style='cursor:pointer';/>
-    
-	</h2>
-	</div>
-    <div class="col-sm-2"><h2>
-		<img border="0" src="../img/nuevo.png" width="48" height="48" title="Ingresar Turno" 
-=======
 
     <div class="col-sm-1"><h2>
 		<img border="0" src="../img/add.png" width="48" height="48" title="Ingresar Turno" 
->>>>>>> ba3be31605cced5b86d7a78feb69307b52a13d24
 		onclick=location.href='turnos.php'; onKeyPress=location.href='turnos.php';
   
 		style='cursor:pointer';>
-<<<<<<< HEAD
-	  <label for="ingresar_turno"><h6>Ingresar Un Turno</h6></label>
-=======
-    <label for="ingresar_turno"><h6>Ingresar turno</h6></label>
->>>>>>> ba3be31605cced5b86d7a78feb69307b52a13d24
+	  <label for="ingresar Turno"><h6>Ingresar Un Turno</h6></label>
 	</h2></div>
   
 	<div class="col-sm-1 "><h2>
