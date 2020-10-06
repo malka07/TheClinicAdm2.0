@@ -96,10 +96,10 @@
 				?>
 		<div class="list-group">
 				
-				<a 	<?php echo "href=modifica.php?id_turno=".$turnos[$i]['id_turno'];?>
-						 class="list-group-item">
-				<h4 class="list-group-item-heading"> <?php echo $turnos[$i]['id_turno'] ."";?> </h4>
-				<p class="list-group-item-text"><?php 	echo "Fecha: " . $turnos[$i]['fecha_turno'] ." - Horario: "; 
+				<a 
+						 class="list-group-item bg-dark">
+				<h4 class="list-group-item-heading text-info"> <?php echo $turnos[$i]['id_turno'] ."";?> </h4>
+				<p class="list-group-item-text text-info"><?php 	echo "Fecha: " . $turnos[$i]['fecha_turno'] ." - Horario: "; 
                             echo $turnos[$i]['horario_turno'] ." - Paciente: "; 
                             echo $turnos[$i]['paciente_turno'] ." - Clinico: "; 
                             echo $turnos[$i]['clinico_turno'] ." - Comentarios: ";
