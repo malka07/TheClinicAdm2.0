@@ -8,7 +8,7 @@
 
     <div class="col-sm-2"><h2>
 		<img border="0" src="../img/atras.png" width="48" height="48" title="Volver al menú" 
-		onclick=location.href='../historiales/'; onKeyPress=location.href='../historiales/'; style='cursor:pointer';/>
+		onclick=location.href='javascript:history.go(-1)'; onKeyPress=location.href='javascript:history.go(-1)'; style='cursor:pointer';/>
     <label for="boton_atras"><h6>Atrás</h6></label>
 	</h2>
 	</div>
@@ -23,7 +23,7 @@
 </div>
 
     <div class="col-md-12 order-md-1">
-      <h4 class="mb-4">Alta De Historiales</h4>
+      <h4 class="mb-4">Alta De Historiales Clinicos</h4>
       <form class="needs-validation" novalidate action="grabar.php" method="post">
 	  
 <?php 

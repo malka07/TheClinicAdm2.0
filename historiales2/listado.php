@@ -12,7 +12,7 @@
 <div class="row">
 <div class="col-md"><h2>
 		<img border="0" src="../img/atras.png" width="40" height="40" title="Volver al menú" 
-		onclick=location.href='../historiales/'; onKeyPress=location.href='../historiales/'; style='cursor:pointer';/>
+		onclick=location.href='javascript:history.go(-1)'; onKeyPress=location.href='javascript:history.go(-1)'; style='cursor:pointer';/>
 		
 	</h2></div>
 

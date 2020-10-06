@@ -40,7 +40,7 @@
   <body background="../img/historial.jpg">
   <div class="col-md"><h2>
 		<img border="0" src="../img/atras.png" width="42" height="42" title="Volver al menú" 
-		onclick=location.href='../panel/'; onKeyPress=location.href='../panel/'; style='cursor:pointer';/>
+		onclick=location.href='javascript:history.go(-1)'; onKeyPress=location.href='javascript:history.go(-1)'; style='cursor:pointer';/>
     <label for="boton_atras"><h6>Atrás</h6></label>
 	</h2></div>
     <div class="container">
@@ -58,7 +58,7 @@
 		<img border="0" src="../img/add.png" width="48" height="48" title="Ingresar Historial" 
 		onclick=location.href='historiales.php'; onKeyPress=location.href='historiales.php';
 		style='cursor:pointer';>
-    <label for="ingresar_asignacion"><h6>Ingresar asignación</h6></label>
+    <label for="ingresar_asignacion"><h6>Ingresar Historial Clinico</h6></label>
 	</h2></div>
   
 	<div class="col-sm-1 "><h2>
@@ -98,10 +98,10 @@
 				?>
 		<div class="list-group">
 				
-				<a 	<?php echo "href=modifica.php?id_historial=".$historiales[$i]['id_historial'];?>
+				<a 
 						 class="list-group-item bg-dark">
-				<h4 class="list-group-item-heading"> <?php echo $historiales[$i]['id_historial'] ."";?> </h4>
-				<p class="list-group-item-text"><?php 	echo "Fecha: " . $historiales[$i]['fecha_historial'] ." - Medico: "; 
+				<h4 class="list-group-item-heading text-info"> <?php echo $historiales[$i]['id_historial'] ."";?> </h4>
+				<p class="list-group-item-text text-info"><?php 	echo "Fecha: " . $historiales[$i]['fecha_historial'] ." - Medico: "; 
                             echo $historiales[$i]['clinico_historial'] ." - Paciente: "; 
                             echo $historiales[$i]['paciente_historial'] ." - Observaciones: "; 
                             echo $historiales[$i]['observacion_historial'] ." - Diagnostico: ";
@@ -112,7 +112,7 @@
 	
 				
 		</div>
-        <a href="../panel/">	 <hr class="mb-4">
+        <a href="javascript:history.go(-1)">	 <hr class="mb-4">
         <button class="btn btn-success btn-lg btn-block" type="submit">Volver</button>
   <footer class="my-5 pt-5 text-muted text-center text-small"></a>
      
