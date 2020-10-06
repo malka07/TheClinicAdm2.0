@@ -37,7 +37,7 @@
     <!-- Custom styles for this template -->
     <link href="form-validation.css" rel="stylesheet">
   </head>
-  <body class="bg-light">
+  <body background="../img/pacientes2.jpg">
     <div class="container">
   <div class="py-5 text-center">
     <img class="d-block mx-auto mb-4" src="../img/disc.jpg" alt="" width="72" height="72">

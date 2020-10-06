@@ -4,7 +4,7 @@
     require "../metodos.php";
 ?>
 
-  <body class="bg-light">
+<body background="../img/pacientes2.jpg">
     <div class="container">
  <div class="py-5 text-center">
   <div class="row">
