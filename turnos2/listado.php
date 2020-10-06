@@ -4,7 +4,7 @@
 <meta name="GENERATOR" content="Microsoft FrontPage 5.0">
 <meta name="ProgId" content="FrontPage.Editor.Document">
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-<title>Listado De Analisis Clinicos</title>
+<title>Listado De Turnos</title>
 
 </head>
 
@@ -18,13 +18,13 @@
 
 <?php 
 include "../conexion.php";
-$sql = "SELECT * from analisis order by id_analisis";
+$sql = "SELECT * from turnos order by id_turno";
 	$query = $mysqli->query($sql);
 	while($resultado = $query->fetch_assoc()) {
-        $analisis[] = $resultado;
+        $turnos[] = $resultado;
     }
 ?>
-<p align="center"> <font face="Verdana" size="5" color="#666666"><u>Listado De Analisis Clinicos</u></font></i></p>
+<p align="center"> <font face="Verdana" size="5" color="#666666"><u>Listado De Turnos</u></font></i></p>
 
 <div align="center">
   <center>
@@ -34,25 +34,25 @@ $sql = "SELECT * from analisis order by id_analisis";
       <td width="10%" height="35"><p align="center"><font face="Verdana" size="4" >Item</font></i></td>
       <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >ID</font></i></td>
 	  <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Fecha</font></i></td>
-	  <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Medico</font></i></td>	  
+	  <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Horario</font></i></td>	  
 	  <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Paciente</font></i></td>	  
-      <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Resultados</font></i></td>	    
-	  <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Observaciones</font></i></td>	
+      <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Medico</font></i></td>	    
+	  <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Comentarios</font></i></td>	
 	  </tr>
 
 
-	<?php $long = count($analisis);
+	<?php $long = count($turnos);
 				for($i=0; $i< $long; $i++){		 
 				?>
 
   <tr>
     <td width="10%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $i+1;?></font></i></td>	
-	<td width="20%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $analisis[$i]['id_analisis'];?></font></i></td>
-    <td width="20%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $analisis[$i]['fecha_analisis'];?></font></i></td>
-	<td width="20%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $analisis[$i]['clinico_analisis'];?></font></i></td>
-	<td width="20%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $analisis[$i]['paciente_analisis'];?></font></i></td>
-	<td width="10%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $analisis[$i]['resultados_analisis'];?></font></i></td>	
-	<td width="10%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $analisis[$i]['obser_analisis'];?></font></i></td>
+	<td width="20%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $turnos[$i]['id_turno'];?></font></i></td>
+    <td width="20%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $turnos[$i]['fecha_turno'];?></font></i></td>
+	<td width="10%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $turnos[$i]['horario_turno'];?></font></i></td>	
+	<td width="20%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $turnos[$i]['paciente_turno'];?></font></i></td>
+	<td width="20%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $turnos[$i]['clinico_turno'];?></font></i></td>
+	<td width="10%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $turnos[$i]['comentarios_turno'];?></font></i></td>
 	</tr>
 
   <?php  } ?>

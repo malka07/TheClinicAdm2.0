@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: sql205.byetcluster.com
--- Tiempo de generación: 05-10-2020 a las 11:27:00
+-- Tiempo de generación: 05-10-2020 a las 18:17:00
 -- Versión del servidor: 5.6.48-88.0
 -- Versión de PHP: 7.2.22
 
@@ -114,6 +114,71 @@ CREATE TABLE `historiales` (
 INSERT INTO `historiales` (`id_historial`, `fecha_historial`, `clinico_historial`, `paciente_historial`, `observacion_historial`, `diagnostico_historial`) VALUES
 (1, '2020-08-24', 'denise,Mark', 'juan,de', 'esta chapitangagaga', 'al borda como jorgito'),
 (3, '2020-07-16', 'denise,Mark', 'juan,de', 'esta chapitasss', 'hemorroides');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `horarios`
+--
+
+CREATE TABLE `horarios` (
+  `id_horario` int(8) NOT NULL,
+  `tiempo_horario` varchar(30) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `horarios`
+--
+
+INSERT INTO `horarios` (`id_horario`, `tiempo_horario`) VALUES
+(1, '00:00'),
+(2, '00:30'),
+(3, '01:00'),
+(4, '01:30'),
+(5, '02:00'),
+(6, '02:30'),
+(7, '03:00'),
+(8, '08:30'),
+(9, '04:00'),
+(10, '04:30'),
+(11, '05:00'),
+(12, '05:30'),
+(13, '06:00'),
+(14, '06:30'),
+(15, '07:00'),
+(16, '07:30'),
+(17, '08:00'),
+(18, '08:30'),
+(19, '09:00'),
+(20, '09:30'),
+(21, '10:00'),
+(22, '10:30'),
+(23, '11:00'),
+(24, '11:30'),
+(25, '12:00'),
+(26, '12:30'),
+(27, '13:00'),
+(28, '13:30'),
+(29, '14:00'),
+(30, '14:30'),
+(31, '15:00'),
+(32, '15:30'),
+(33, '16:00'),
+(34, '16:30'),
+(35, '17:00'),
+(36, '17:30'),
+(37, '18:00'),
+(38, '18:30'),
+(39, '19:00'),
+(40, '19:30'),
+(41, '20:00'),
+(42, '20:00'),
+(43, '21:00'),
+(44, '21:30'),
+(45, '22:00'),
+(46, '22:30'),
+(47, '23:00'),
+(48, '23:30');
 
 -- --------------------------------------------------------
 
@@ -305,7 +370,9 @@ CREATE TABLE `usuarios` (
 
 INSERT INTO `usuarios` (`id_usuario`, `nombre_usuario`, `apellido_usuario`, `edad_usuario`, `dni_usuario`, `email_usuario`, `contraseña_usuario`, `domicilio_usuario`, `fecha_nac_usuario`, `notas_usuario`, `permiso_usuario`) VALUES
 (1, 'Leonardo', 'Mark', 23, '33123456', 'ldmaques007@gmail.com', 'garfio1234', 'sarasa 5520 dpy', '2019-03-12', 'hackeador pro brou', 1),
-(3, 'denise', 'czyz', 40, '22987346', NULL, 'sasa', 'al ado de fas motos', '2019-10-09', 'se enoja si le sacas el hibernacion ', 1);
+(3, 'denise', 'czyz', 40, '22987354', NULL, 'sasa', 'al ado de fas motos', '2019-10-09', 'se enoja si le sacas el hibernacion ', 1),
+(4, 'carl', 'marx', 42, '22987346', 'sasa@marx.com', 'sasa', 'al ado de fas motos', '2015-06-10', 'se enoja si le sacas el invernacion ', 3),
+(5, 'Noemi', 'Rearte', 20, '123455765', 'Ncsas@hotmail.com', 'sasa', 'Juan de los palotes 1234', '2020-06-02', '', 2);
 
 --
 -- Índices para tablas volcadas
@@ -334,6 +401,12 @@ ALTER TABLE `formato`
 --
 ALTER TABLE `historiales`
   ADD PRIMARY KEY (`id_historial`);
+
+--
+-- Indices de la tabla `horarios`
+--
+ALTER TABLE `horarios`
+  ADD PRIMARY KEY (`id_horario`);
 
 --
 -- Indices de la tabla `insumos`
@@ -412,6 +485,12 @@ ALTER TABLE `historiales`
   MODIFY `id_historial` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
+-- AUTO_INCREMENT de la tabla `horarios`
+--
+ALTER TABLE `horarios`
+  MODIFY `id_horario` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
+
+--
 -- AUTO_INCREMENT de la tabla `insumos`
 --
 ALTER TABLE `insumos`
@@ -457,7 +536,7 @@ ALTER TABLE `turnos`
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id_usuario` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_usuario` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

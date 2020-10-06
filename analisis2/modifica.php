@@ -15,16 +15,7 @@
 							style='cursor:pointer';/>
 	</h2>
 	</div>
-    <div class="col-sm-2">
-		<img border="0" src="../img/borrar.png" width="48" height="48" title="Eliminar" 
-						<?php echo " onclick=location.href='" 
-												. "cuidado.php?id_analisis=".$_GET['id_analisis'] . "'"; ?>;
-						<?php echo " onKeyPress=location.href='" 
-												. "cuidado.php?id_analisis=".$_GET['id_analisis'] . "'"; ?>												
-						style='cursor:pointer';/>
-	
-	</h2>
-	</div>
+    
 	<div class="col-sm-2"></div>
     <div class="col-sm-2"><h2></h2></div>	
 

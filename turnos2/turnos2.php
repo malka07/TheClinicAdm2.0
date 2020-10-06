@@ -21,16 +21,16 @@
 </div>
 
     <div class="col-md-12 order-md-1">
-      <h4 class="mb-4">Alta De Analisis Clinicos</h4>
+      <h4 class="mb-4">Alta De Turnos</h4>
       <form class="needs-validation" novalidate action="grabar.php" method="post">
 	  
 <?php 
    require "../conexion.php";
 
-    $sql = "SELECT * from analisis order by id_analisis";
+    $sql = "SELECT * from turnos order by id_turno";
 	$query = $mysqli->query($sql);
 	while($resultado = $query->fetch_assoc()) {
-        $analisis[] = $resultado;
+        $turnos[] = $resultado;
     }
 
     $sql = "SELECT * from clinicos order by id_clinico";
@@ -45,25 +45,58 @@
           $pacientes[] = $resultado;
       } 
 
+      $sql = "SELECT * from horarios order by id_horario";
+      $query = $mysqli->query($sql);
+      while($resultado = $query->fetch_assoc()) {
+            $horarios[] = $resultado;
+        }   
+
         
 ?>
 
           <div class="col-md-6 mb-4">
-            <label for="fecha_analisis">Fecha</label>
-            <input type="date" class="form-control" name="fecha_analisis" placeholder="" value="" required>
+            <label for="fecha_turno">Fecha</label>
+            <input type="date" class="form-control" name="fecha_turno" placeholder="" value="" required>
             <div class="invalid-feedback">
-              Faltó Ingresar La Fecha Del Analisi Clinico.
+              Faltó Ingresar La Fecha Del Turno.
             </div>
           </div>
         
           <div class="col-md-6 mb-4">
-           <label for="clinico_analisis">Medico</label>
-           <select class="custom-select d-block w-100" name="id_clinico" required>
+           <label for="horario">Horario</label>
+           <select class="custom-select d-block w-100" name="horario_turno" required>
+           <?php 
+				     $long = count($horarios);
+				     for($i=0; $i< $long; $i++){
+				     echo "<option";
+             echo " value=" .$horarios[$i]['id_horario'] .",".$horarios[$i]['tiempo_horario'] .">";
+                 echo $horarios[$i]['tiempo_horario'];
+                 
+				     echo "</option>";
+             }
+				   ?>
+            </select>
+            <div class="invalid-feedback">
+              Faltó Seleccionar Un Horario del Turno.
+            </div>
+          </div>  
+
+          <div class="col-md-6 mb-4">
+            
+            <input type="hidden" class="form-control" name="paciente_turno" placeholder="" value=<?php echo "'".$turnos[0]['paciente_turno']."'" ?> required>
+            <div class="invalid-feedback">
+              Faltó Ingresar El Paciente Del Turno.
+            </div>
+          </div>
+        
+          <div class="col-md-6 mb-4">
+           <label for="clinico">Medico</label>
+           <select class="custom-select d-block w-100" name="clinico_turno" required>
            <?php 
 				     $long = count($clinicos);
 				     for($i=0; $i< $long; $i++){
 				     echo "<option";
-             echo " value=" .$clinicos[$i]['nombre_clinico'].",".$clinicos[$i]['apellido_clinico'] .">";				
+             echo " value=" .$clinicos[$i]['nombre_clinico'] .",".$clinicos[$i]['apellido_clinico'] .">";	
                  echo $clinicos[$i]['nombre_clinico'];
                  echo $clinicos[$i]['apellido_clinico'];
 				     echo "</option>";
@@ -75,44 +108,16 @@
             </div>
           </div>  
 
-          <div class="col-md-6 mb-4">
-           <label for="paciente">Paciente</label>
-           <select class="custom-select d-block w-100" name="id_paciente" required>
-           <?php 
-				     $long = count($pacientes);
-				     for($i=0; $i< $long; $i++){
-				     echo "<option";
-				     echo " value=" .$pacientes[$i]['nombre_paciente'].",".$pacientes[$i]['apellido_paciente'] .">";				
-                 echo $pacientes[$i]['nombre_paciente'];
-                 echo $pacientes[$i]['apellido_paciente'];
-				     echo "</option>";
-             }
-				   ?>
-            </select>
-            <div class="invalid-feedback">
-              Faltó Seleccionar Un Paciente.
-            </div>
-          </div>  
-        
-
         
         <div class="col-md-6 mb-4">
-            <label for="resultados_analisis">Resultados</label>
-            <input type="text" class="form-control" name="resultados_analisis" placeholder="" value="" required>
+            <label for="comentarios_turno">Comentarios</label>
+            <input type="text" class="form-control" name="comentarios_turno" placeholder="" value="" required>
             <div class="invalid-feedback">
-              Faltó Ingresar Un Resultado.
+              Faltó Ingresar Un Comentarios.
             </div>
           </div>
       
-         
-
-          <div class="col-md-6 mb-4">
-            <label for="obser_analisis">Diagnostico</label>
-            <input type="text" class="form-control" name="obser_analisis" placeholder="" value="" required>
-            <div class="invalid-feedback">
-              Faltó Ingresar Una Observacion.
-            </div>
-          </div>
+    
      
 
      
