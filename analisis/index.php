@@ -53,7 +53,7 @@
   <hr>
   <div class="row">
   
-    <div class="col-sm-2"><h2>
+    <div class="col-sm-1"><h2>
 		<img border="0" src="../img/add.png" width="48" height="48" title="Ingresar Análisis clinico" 
 		onclick=location.href='analisis.php'; onKeyPress=location.href='analisis.php';
 		style='cursor:pointer';>

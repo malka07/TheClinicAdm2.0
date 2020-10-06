@@ -4,13 +4,9 @@
     require "../metodos.php";
 ?>
 
-<<<<<<< HEAD
-=======
-
->>>>>>> bf848128ff0a7b4a5b3844e21eb0f9db8ee564be
 <body background="../img/historials.jpg">
   <div class="col-md"><h2>
-		<img border="0" src="../img/atras.png" width="40" height="40" title="Volver al menú" 
+		<img border="0" src="../img/atras.png" width="40" height="40" title="Volver a historiales" 
 		onclick=location.href='../historiales/'; onKeyPress=location.href='../historiales/'; style='cursor:pointer';/>
     <label for="boton_atras"><h6>Atrás</h6></label>
 	</h2></div>
@@ -23,9 +19,8 @@
   <p class="lead "><h4><strong>Servicios Médicos e Informáticos</strong></h4></p>
   <hr>
   <div class="row">
+	</h2></div>
 
-	</h2>
-	</div>
     <div class="col-sm-2">
 		<img border="0" src="../img/delete.png" width="48" height="48" title="Eliminar" 
 						<?php echo " onclick=location.href='" 

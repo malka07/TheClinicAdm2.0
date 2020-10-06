@@ -17,7 +17,7 @@
  
 ?>								
 
-<body background="../img/tek.jpg">
+<body background="../img/historials.jpg">
     <div class="container">
   <div class="py-5 text-center">
     <img class="d-block mx-auto mb-4" src="../img/jdlsa.png" alt="" width="72" height="72">
