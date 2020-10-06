@@ -102,7 +102,7 @@
     </div>
 </div>
 
-<a href="../ingreso/">	 <hr class="col-sm-offset-2 col-sm-10">
+<a href="./ingreso/">	 <hr class="col-sm-offset-2 col-sm-10">
         <button type="button" class="btn btn-success btn-lg btn-block" >Crear Usuario</button>
 
 
