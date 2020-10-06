@@ -36,6 +36,7 @@
     </style>
     <!-- Custom styles for this template -->
     <link href="form-validation.css" rel="stylesheet">
+    
   </head>
   <body background="../img/historials.jpg">
     <div class="container">
@@ -46,9 +47,6 @@
     <p class="lead"><h4><strong>Ingreso de Historiales y Servicios / Profesiones para la App</strong></h4></p>
   </div>
 
-    
-      
-	  
 <?php
 
    require "../conexion.php";

@@ -8,7 +8,7 @@
 
   <body background="../img/tek.jpg">
   <div class="col-sm-2"><h2>
-		<img border="0" src="../img/atras.png" width="48" height="48" title="Volver al menú" 
+		<img border="0" src="../img/atras.png" width="48" height="48" title="Volver a Historiales" 
 							onclick=location.href='../historiales/'; 
 							onKeyPress=location.href='../historiales/'; 
 							style='cursor:pointer';/>

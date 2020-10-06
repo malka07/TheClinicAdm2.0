@@ -11,7 +11,7 @@
 <body background="../img/historials.jpg">
 <div class="row">
 <div class="col-md"><h2>
-		<img border="0" src="../img/atras.png" width="40" height="40" title="Volver al menú" 
+		<img border="0" src="../img/atras.png" width="48" height="48" title="Volver a historiales" 
 		onclick=location.href='../historiales/'; onKeyPress=location.href='../historiales/'; style='cursor:pointer';/>
 		
 	</h2></div>

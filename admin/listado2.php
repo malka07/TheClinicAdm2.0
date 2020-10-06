@@ -7,14 +7,12 @@
 <title>Listado De Pagos</title>
 
 </head>
-
-<body>
+<body background="../img/admin2.jpg">
 <div class="row">
     <div class="col-sm-2"><h2>
 		<img border="0" src="../img/atras.png" width="48" height="48" title="Volver al menú" 
 		onclick=location.href='../admin/'; onKeyPress=location.href='../admin/'; style='cursor:pointer';/>
-	</h2>
-	</div>
+	</h2></div>
 
 	<div class="row">
     <div class="col-sm-2"><h2>

@@ -4,25 +4,24 @@
     require "../metodos.php";
 ?>
 
-  <body class="bg-light">
-    <div class="container">
- <div class="py-5 text-center">
-  <div class="row">
+<body background="../img/admin2.jpg">
     <div class="col-sm-2"><h2>
 		<img border="0" src="../img/atras.png" width="48" height="48" title="Volver al menú" 
-		onclick=location.href='../admin/'; onKeyPress=location.href='../admin/'; style='cursor:pointer';/>
-	</h2>
-	</div>
-	<div class="col-sm-2"></div>
-    <div class="col-sm-2"></div>	
-    <div class="col-sm-2"></div>	
-  <div class="col-sm-2"><img class="d-block mx-auto mb-1" src="../img/jdlsa2.png" alt="" width="62" height="62"></div>
-  <div class="col-sm-2"><h2>JDL S.A</h2></div>
+    onclick=location.href='../admin/'; onKeyPress=location.href='../admin/'; style='cursor:pointer';/>
+    <label for="boton_atras"><h6>Atrás</h6></label>
+    </h2></div>
+
+  <div class="container">
+ <div class="py-5 text-center">
+  <div class="row">
+
+  <div class="col-md"><img class="d-block mx-auto mb-1" src="../img/jdlsa.png" alt="" width="62" height="62"></div>
 </div>
 
     <div class="col-md-12 order-md-1">
-      <h4 class="mb-4">Alta De Recibos</h4>
+      <h4 class="mb-4">Alta De Recibos de Sueldo</h4>
       <form class="needs-validation" novalidate action="grabar.php" method="post">
+
 	  
 <?php 
    require "../conexion.php";
@@ -46,13 +45,13 @@
             <label for="fecha_recibo">Fecha</label>
             <input type="date" class="form-control" name="fecha_recibo" placeholder="" value="" required>
             <div class="invalid-feedback">
-              Faltó Ingresar La Fecha Del Recibo.
+              Faltó ingresar la fecha del Recibo.
             </div>
           </div>
         
         
         <div class="col-md-6 mb-4">
-            <label for="descripcion_recibo">Descripcion</label>
+            <label for="descripcion_recibo">Descripción</label>
             <input type="text" class="form-control" name="descripcion_recibo" placeholder="" value="" required>
             <div class="invalid-feedback">
               Faltó Ingresar Una Descripcion.
@@ -60,7 +59,7 @@
           </div>
 
         <div class="col-md-6 mb-4">
-           <label for="medico">Medico</label>
+           <label for="medico">Médico</label>
            <select class="custom-select d-block w-100" name="clinico_recibo" required>
            <?php 
 				     $long = count($clinicos);
@@ -74,15 +73,15 @@
 				   ?>
             </select>
             <div class="invalid-feedback">
-              Faltó Seleccionar Un Medico.
+              Faltó seleccionar un Médico.
             </div>
           </div>
 
           <div class="col-md-6 mb-4">
-            <label for="liqui_recibo">Liquidacion</label>
+            <label for="liqui_recibo">Liquidación</label>
             <input type="text" class="form-control" name="liqui_recibo" placeholder="" value="" required>
             <div class="invalid-feedback">
-              Faltó Ingresar La liquidacion.
+              Faltó ingresar la liquidación.
             </div>
           </div>
      

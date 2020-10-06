@@ -17,12 +17,12 @@
  
 ?>								
 
-<body background="../img/tek.jpg">
+<body background="../img/historials.jpg">
     <div class="container">
   <div class="py-5 text-center">
     <img class="d-block mx-auto mb-4" src="../img/jdlsa.png" alt="" width="72" height="72">
     <h2>JDL S.A</h2>
-    <p class="lead">Modificacion De Historiales y Servicios / Profesiones.</p>
+    <p class="lead">Modificación de Historiales y Servicios / Profesiones</p>
   </div>
  
  <?php 

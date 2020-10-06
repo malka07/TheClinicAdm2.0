@@ -4,17 +4,15 @@
 <meta name="GENERATOR" content="Microsoft FrontPage 5.0">
 <meta name="ProgId" content="FrontPage.Editor.Document">
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-<title>Listado De Analisis Clinicos</title>
+<title>Listado De Análisis Clínicos</title>
 
 </head>
-
-<body>
+<body background="../img/analisis2.jpg">
 <div class="row">
-    <div class="col-sm-2"><h2>
-		<img border="0" src="../img/atras.png" width="48" height="48" title="Volver al menú" 
+<div class="col-md"><h2>
+		<img border="0" src="../img/atras.png" width="48" height="48" title="Volver a Análisis Clínicos" 
 		onclick=location.href='../analisis/'; onKeyPress=location.href='../analisis/'; style='cursor:pointer';/>
-	</h2>
-	</div>
+	</h2></div>
 
 <?php 
 include "../conexion.php";

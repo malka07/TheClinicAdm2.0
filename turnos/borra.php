@@ -5,13 +5,18 @@
 $sql = "delete from turnos where id_turno=" . $_GET['id_turno'] ;		
 ?>
 
-  <body class="bg-light">
+<body background="../img/turnos2.jpg">
     <div class="container">
   <div class="py-5 text-center">
-    <img class="d-block mx-auto mb-4" src="../img/disc.jpg" alt="" width="72" height="72">
-    <h2>JDL S.A</h2>
-    <p class="lead">Eliminar Turnos / Servicios.</p>
+  <div class="col-md"><img class="d-block mx-auto mb-1" src="../img/jdlsa2.png" alt="" width="62" height="62"></div>
+  <div class="col-md"><h5>JDL S.A</h5></div>
+    <p class="lead"><h4><strong>Eliminar Turnos / Servicios</strong></h4></p>
   </div>
+  <div class="container">
+  <div class="py-5 text-center">
+    <p class="lead"></p>
+  </div>  
+  
  <?php 
   if ($mysqli->query($sql) === TRUE) {
 

@@ -37,10 +37,10 @@
     <!-- Custom styles for this template -->
     <link href="form-validation.css" rel="stylesheet">
   </head>
-  <body background="../img/tareas.jpg">
+  <body background="../img/admin.jpg">
 
   <div class="col-md"><h2>
-		<img border="0" src="../img/atras.png" width="40" height="40" title="Volver al menú" 
+		<img border="0" src="../img/atras.png" width="48" height="48" title="Volver al menú" 
 		onclick=location.href='../panel/'; onKeyPress=location.href='../panel/'; style='cursor:pointer';/>
     <label for="boton_atras"><h6>Atrás</h6></label>
 	</h2></div>
@@ -75,11 +75,7 @@
     <label for="descripcion_pago"><h6>Listado en tabla</h6></label>
 	</h2></div>
     <div class="col-sm-2"><h2></h2></div>	
-
-  
 </div>
-    
-    
 
     <div class="col-sm-12 order-md-1">
     <img border="0" src="../img/arrow.png" width="60" height="60" title="Ver pagos a proveedores" 

@@ -16,13 +16,14 @@
  
 ?>								
 
-  <body class="bg-light">
+<body background="../img/analisis2.jpg">
     <div class="container">
   <div class="py-5 text-center">
-    <img class="d-block mx-auto mb-4" src="../img/disc.jpg" alt="" width="72" height="72">
+    <img class="d-block mx-auto mb-4" src="../img/jdlsa.png" alt="" width="72" height="72">
     <h2>JDL S.A</h2>
-    <p class="lead">Modificacion De Recibos y Servicios / Profesiones.</p>
+    <p class="lead">Modificación de Recibos y Servicios / Profesiones</p>
   </div>
+
  
  <?php 
   if ($mysqli->query($sql) === TRUE) {

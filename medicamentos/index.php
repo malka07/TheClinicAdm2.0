@@ -33,7 +33,7 @@
     <!-- Custom styles for this template -->
     <link href="form-validation.css" rel="stylesheet">
   </head>
-  <body class="bg-light">
+  <body background="../img/medicamentos.jpg">
     <div class="container">
   <div class="py-5 text-center">
   <div class="row">
