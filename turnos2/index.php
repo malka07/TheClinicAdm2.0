@@ -37,45 +37,48 @@
     <!-- Custom styles for this template -->
     <link href="form-validation.css" rel="stylesheet">
   </head>
-  <body class="bg-light">
-    <div class="container">
-  <div class="py-5 text-center">
-  <div class="row">
-    <div class="col-sm-2"><h2>
+  <body background="../img/turnos.jpg">
+  <div class="col-md"><h2>
 		<img border="0" src="../img/atras.png" width="48" height="48" title="Volver al menú" 
 		onclick=location.href='javascript:history.go(-1)'; onKeyPress=location.href='javascript:history.go(-1)'; style='cursor:pointer';/>
-    
-	</h2>
-	</div>
-
-  
- 
-
-
-  
-    <div class="col-sm-2"><h2>
-		<img border="0" src="../img/nuevo.png" width="48" height="48" title="Ingresar Turno" 
-		onclick=location.href='turnos2.php'; onKeyPress=location.href='turnos2.php';
-		style='cursor:pointer';>
-	
+    <label for="boton_atras"><h6>Atrás</h6></label>
 	</h2></div>
-	<div class="col-sm-2"><h2>
-		<img border="0" src="../img/imprimir.png" width="48" height="48" title="Impresión" 
+    <div class="container">
+    
+  <div class="py-5 text-center">
+  
+  <div class="col-md"><img class="d-block mx-auto mb-1" src="../img/jdlsa2.png" alt="" width="62" height="62"></div>
+  <div class="col-md"><h5>JDL S.A</h5></div>
+  <p class="lead "><h4><strong>Servicios Médicos e Informáticos</strong></h4></p>
+  <hr>
+  <div class="row">
+
+    <div class="col-sm-1"><h2>
+		<img border="0" src="../img/add.png" width="48" height="48" title="Ingresar Turno" 
+		onclick=location.href='turnos2.php'; onKeyPress=location.href='turnos2.php';
+  
+		style='cursor:pointer';>
+	  <label for="ingresar Turno"><h6>Ingresar Un Turno</h6></label>
+	</h2></div>
+  
+	<div class="col-sm-1 "><h2>
+    <img border="0" src="../img/check.png" width="48" height="48" title="Listado" 
 		onclick=location.href='listado.php'; onKeyPress=location.href='listado.php';
 		style='cursor:pointer';>
-	
+    <label for="listado_tabla"><h6>Listado en tabla</h6></label>
 	</h2></div>
     <div class="col-sm-2"><h2></h2></div>	
 
-  <div class="col-sm-2"><img class="d-block mx-auto mb-1" src="../img/jdlsa.png" alt="" width="62" height="62"></div>
-  <div class="col-sm-2"><h2>JDL S.A</h2></div>
-</div>
-    
-    <p class="lead">Servicios Medicos E Informaticos.</p>
+
+    </div>
+    <div class="col-sm-3">
+      <h4 class="mb-1"> </h4>
+	</div>
   </div>
     <div class="col-md-12 order-md-1">
-      <h4 class="mb-1">Turnos Medicos</h4>
-	</div>  
+      <h4 class="mb-1">Turnos Médicos</h4>
+	</div>
+
 <?php 
 
 

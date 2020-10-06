@@ -18,18 +18,8 @@
     <p class="lead "><h4><strong>Servicios Médicos e Informáticos</strong></h4></p>
   <hr>
   <div class="row">
-<<<<<<< HEAD
   </h2></div>
 
-=======
-    <div class="col-sm-2"><h2>
-		<img border="0" src="../img/atras.png" width="48" height="48" title="Volver al menú" 
-							onclick=location.href='javascript:history.go(-1)'; 
-							onKeyPress=location.href='javascript:history.go(-1)'; 
-							style='cursor:pointer';/>
-	</h2>
-	</div>
->>>>>>> c7d1112cd30233d57e38efbd3b7d6f75aa756d85
     <div class="col-sm-2">
 		<img border="0" src="../img/delete.png" width="48" height="48" title="Eliminar" 
 						<?php echo " onclick=location.href='" 
