@@ -38,38 +38,22 @@
     <link href="form-validation.css" rel="stylesheet">
   </head>
   <body background="../img/analisis.jpg">
-  <div class="col-md text-light"><h2>
-		<img border="0" src="../img/atrasb.png" width="48" height="48" title="Volver al menú" 
-		onclick=location.href='../panel/'; onKeyPress=location.href='../panel/'; style='cursor:pointer';/>
+  <div class="col-md"><h2>
+		<img border="0" src="../img/atras.png" width="42" height="42" title="Volver al menú" 
+		onclick=location.href='javascript:history.go(-1)'; onKeyPress=location.href='javascript:history.go(-1)'; style='cursor:pointer';/>
     <label for="boton_atras"><h6>Atrás</h6></label>
 	</h2></div>
     <div class="container">
     
-  <div class="py-5 text-center text-light">
+  <div class="py-5 text-center">
   
   <div class="col-md"><img class="d-block mx-auto mb-1" src="../img/jdlsa2.png" alt="" width="62" height="62"></div>
   <div class="col-md"><h5>JDL S.A</h5></div>
   <p class="lead "><h4><strong>Servicios Médicos e Informáticos</strong></h4></p>
   <hr>
   <div class="row">
-<<<<<<< HEAD
-  <div class="col-sm-1 "><h2>
-		<img border="0" src="../img/add.png" width="48" height="48" title="Ingresar análisis" 
-		onclick=location.href='analisis.php'; onKeyPress=location.href='analisis.php';>
-    <label for="ingresar_analisis"><h6>Ingresar análisis</h6></label>
-=======
-    <div class="col-sm-2"><h2>
-		<img border="0" src="../img/atras.png" width="48" height="48" title="Volver al menú" 
-		onclick=location.href='javascript:history.go(-1)'; onKeyPress=location.href='javascript:history.go(-1)'; style='cursor:pointer';/>
-	</h2>
-	</div>
-    <div class="col-sm-2"><h2>
-		<img border="0" src="../img/nuevo.png" width="48" height="48" title="Ingresar Asignacion" 
-		onclick=location.href='analisis.php'; onKeyPress=location.href='analisis.php';
-		style='cursor:pointer';>
-	
->>>>>>> c7d1112cd30233d57e38efbd3b7d6f75aa756d85
-	</h2></div>
+    
+
   
 	<div class="col-sm-1 "><h2>
 		<img border="0" src="../img/check.png" width="48" height="48" title="Listado" 
@@ -88,11 +72,8 @@
   
   </div>
     <div class="col-sm-3">
-      <h4 class="mb-1 text-light">Análisis Clínicos</h4>
-	</div>    
-
-
-   
+      <h4 class="mb-1">Analisis Clinicos</h4>
+	</div>  
 <?php 
    require "../conexion.php";
 

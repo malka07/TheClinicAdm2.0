@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <title>JDL S.A - Historiales Clinicos</title>
+    <title>JDL S.A - Turnos Clinicos</title>
 
     
 
@@ -37,88 +37,73 @@
     <!-- Custom styles for this template -->
     <link href="form-validation.css" rel="stylesheet">
   </head>
-  <body background="../img/analisis.jpg">
-  <div class="col-md text-light"><h2>
-		<img border="0" src="../img/atrasb.png" width="48" height="48" title="Volver al menú" 
-		onclick=location.href='../panel/'; onKeyPress=location.href='../panel/'; style='cursor:pointer';/>
-    <label for="boton_atras"><h6>Atrás</h6></label>
-	</h2></div>
+  <body class="bg-light">
     <div class="container">
-    
-  <div class="py-5 text-center text-light">
-  
-  <div class="col-md"><img class="d-block mx-auto mb-1" src="../img/jdlsa2.png" alt="" width="62" height="62"></div>
-  <div class="col-md"><h5>JDL S.A</h5></div>
-  <p class="lead "><h4><strong>Servicios Médicos e Informáticos</strong></h4></p>
-  <hr>
+  <div class="py-5 text-center">
   <div class="row">
-<<<<<<< HEAD
-  <div class="col-sm-1 "><h2>
-		<img border="0" src="../img/add.png" width="48" height="48" title="Ingresar análisis" 
-		onclick=location.href='analisis.php'; onKeyPress=location.href='analisis.php';>
-    <label for="ingresar_analisis"><h6>Ingresar análisis</h6></label>
-=======
     <div class="col-sm-2"><h2>
 		<img border="0" src="../img/atras.png" width="48" height="48" title="Volver al menú" 
 		onclick=location.href='javascript:history.go(-1)'; onKeyPress=location.href='javascript:history.go(-1)'; style='cursor:pointer';/>
+    
 	</h2>
 	</div>
+
+  
+ 
+
+
+  
     <div class="col-sm-2"><h2>
-		<img border="0" src="../img/nuevo.png" width="48" height="48" title="Ingresar Asignacion" 
-		onclick=location.href='analisis.php'; onKeyPress=location.href='analisis.php';
+		<img border="0" src="../img/nuevo.png" width="48" height="48" title="Ingresar Turno" 
+		onclick=location.href='turnos2.php'; onKeyPress=location.href='turnos2.php';
 		style='cursor:pointer';>
 	
->>>>>>> c7d1112cd30233d57e38efbd3b7d6f75aa756d85
 	</h2></div>
-  
-	<div class="col-sm-1 "><h2>
-		<img border="0" src="../img/check.png" width="48" height="48" title="Listado" 
+	<div class="col-sm-2"><h2>
+		<img border="0" src="../img/imprimir.png" width="48" height="48" title="Impresión" 
 		onclick=location.href='listado.php'; onKeyPress=location.href='listado.php';
 		style='cursor:pointer';>
-    <label for="listado_tabla"><h6>Listado en tabla</h6></label>
+	
 	</h2></div>
     <div class="col-sm-2"><h2></h2></div>	
 
-
-    </div>
-    <div class="col-sm-3">
-      <h4 class="mb-1"> </h4>
-	</div>
-
-  
+  <div class="col-sm-2"><img class="d-block mx-auto mb-1" src="../img/jdlsa.png" alt="" width="62" height="62"></div>
+  <div class="col-sm-2"><h2>JDL S.A</h2></div>
+</div>
+    
+    <p class="lead">Servicios Medicos E Informaticos.</p>
   </div>
-    <div class="col-sm-3">
-      <h4 class="mb-1 text-light">Análisis Clínicos</h4>
-	</div>    
-
-
-   
+    <div class="col-md-12 order-md-1">
+      <h4 class="mb-1">Turnos Medicos</h4>
+	</div>  
 <?php 
+
+
    require "../conexion.php";
 
-    $sql = "SELECT * from analisis order by id_analisis";
+    $sql = "SELECT * from turnos order by id_turno";
 	$query = $mysqli->query($sql);
 	while($resultado = $query->fetch_assoc()) {
-        $analisis[] = $resultado;
+        $turnos[] = $resultado;
     }
   
 ?>    
         <div class="list-group">
 		
 			<?php 				
-				$long = count($analisis);
+				$long = count($turnos);
 				for($i=0; $i< $long; $i++){
 				?>
 		<div class="list-group">
 				
-				<a 	<?php echo "href=modifica.php?id_analisis=".$analisis[$i]['id_analisis'];?>
-						 class="list-group-item bg-dark">
-				<h4 class="list-group-item-heading"> <?php echo $analisis[$i]['id_analisis'] ."";?> </h4>
-				<p class="list-group-item-text"><?php 	echo "Fecha: " . $analisis[$i]['fecha_analisis'] ." - Medico: "; 
-                            echo $analisis[$i]['clinico_analisis'] ." - Paciente: "; 
-                            echo $analisis[$i]['paciente_analisis'] ." - Resultados: "; 
-                            echo $analisis[$i]['resultados_analisis'] ." - Observaciones: ";
-                            echo $analisis[$i]['obser_analisis'] ."";
+				<a 	<?php echo "href=modifica.php?id_turno=".$turnos[$i]['id_turno'];?>
+						 class="list-group-item">
+				<h4 class="list-group-item-heading"> <?php echo $turnos[$i]['id_turno'] ."";?> </h4>
+				<p class="list-group-item-text"><?php 	echo "Fecha: " . $turnos[$i]['fecha_turno'] ." - Horario: "; 
+                            echo $turnos[$i]['horario_turno'] ." - Paciente: "; 
+                            echo $turnos[$i]['paciente_turno'] ." - Clinico: "; 
+                            echo $turnos[$i]['clinico_turno'] ." - Comentarios: ";
+                            echo $turnos[$i]['comentarios_turno'] ."";
 														?></p>		 
 				</a>	</div>
 	<?php  } ?>

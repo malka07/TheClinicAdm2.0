@@ -4,24 +4,10 @@
     require "../metodos.php";
 ?>
 
-<body background="../img/analisis2.jpg">
-  <div class="col-md"><h2>
-		<img border="0" src="../img/atras.png" width="48" height="48" title="Volver al menú" 
-    onclick=location.href='../analisis/'; onKeyPress=location.href='../analisis/'; style='cursor:pointer';/>
-    <label for="boton_atras"><h6>Atrás</h6></label>
-  </h2></div>
-
+  <body class="bg-light">
     <div class="container">
   <div class="py-5 text-center">
-    <div class="col-md"><img class="d-block mx-auto mb-1" src="../img/jdlsa2.png" alt="" width="62" height="62"></div>
-    <div class="col-md"><h5>JDL S.A</h5></div>
-    <p class="lead "><h4><strong>Servicios Médicos e Informáticos</strong></h4></p>
-  <hr>
   <div class="row">
-<<<<<<< HEAD
-  </h2></div>
-
-=======
     <div class="col-sm-2"><h2>
 		<img border="0" src="../img/atras.png" width="48" height="48" title="Volver al menú" 
 							onclick=location.href='javascript:history.go(-1)'; 
@@ -29,25 +15,16 @@
 							style='cursor:pointer';/>
 	</h2>
 	</div>
->>>>>>> c7d1112cd30233d57e38efbd3b7d6f75aa756d85
-    <div class="col-sm-2">
-		<img border="0" src="../img/delete.png" width="48" height="48" title="Eliminar" 
-						<?php echo " onclick=location.href='" 
-												. "cuidado.php?id_analisis=".$_GET['id_analisis'] . "'"; ?>;
-						<?php echo " onKeyPress=location.href='" 
-												. "cuidado.php?id_analisis=".$_GET['id_analisis'] . "'"; ?>												
-						style='cursor:pointer';/>
-            <label for="boton_eliminar"><h6>Eliminar registro</h6></label>
-	
-	</h2>
-	</div>
+    
 	<div class="col-sm-2"></div>
     <div class="col-sm-2"><h2></h2></div>	
 
-  </div>
+  <div class="col-sm-2"><img class="d-block mx-auto mb-1" src="../img/disc.jpg" alt="" width="62" height="62"></div>
+  <div class="col-sm-2"><h2>JDL S.A</h2></div>
+</div>
 
     <div class="col-md-12 order-md-1">
-      <h4 class="mb-4">Modificar Datos de los Análisis</h4>
+      <h4 class="mb-4">Modificar Datos De Los Historiales</h4>
       <form class="needs-validation" novalidate action="modi.php" method="POST">
 	  
 <?php 
@@ -75,7 +52,7 @@
 	  
     <div class="col-md-6 mb-4">
             <label for="fecha_analsis">Fecha</label>
-            <input type="date" class="form-control" name="fecha_analisis" placeholder="" value=<?php echo "'".$analisis[0]['fecha_analisis']."'" ?> required>
+            <input type="date" class="form-control" name="fecha_analsis" placeholder="" value=<?php echo "'".$analisis[0]['fecha_analsis']."'" ?> required>
             <div class="invalid-feedback">
               Faltó Ingresar La Fecha Del Analisis.
             </div>

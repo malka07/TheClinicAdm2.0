@@ -52,6 +52,7 @@
   <p class="lead "><h4><strong>Servicios Médicos e Informáticos</strong></h4></p>
   <hr>
   <div class="row">
+<<<<<<< HEAD
     
 
     <div class="col-sm-1 "><h2>
@@ -59,6 +60,19 @@
 		  onclick=location.href='turnos.php'; onKeyPress=location.href='turnos.php';
 		  style='cursor:pointer';>
       <label for="ingresar_turno"><h6>Ingresar turno</h6></label>
+=======
+    <div class="col-sm-2"><h2>
+		<img border="0" src="../img/atras.png" width="48" height="48" title="Volver al menú" 
+		onclick=location.href='javascript:history.go(-1)'; onKeyPress=location.href='javascript:history.go(-1)'; style='cursor:pointer';/>
+    
+	</h2>
+	</div>
+    <div class="col-sm-2"><h2>
+		<img border="0" src="../img/nuevo.png" width="48" height="48" title="Ingresar Turno" 
+		onclick=location.href='turnos.php'; onKeyPress=location.href='turnos.php';
+		style='cursor:pointer';>
+	
+>>>>>>> c7d1112cd30233d57e38efbd3b7d6f75aa756d85
 	</h2></div>
   
 	<div class="col-sm-1 "><h2>
@@ -111,7 +125,7 @@
 	
 				
 		</div>
-        <a href="../panel/">	 <hr class="mb-4">
+        <a href="javascript:history.go(-1)">	 <hr class="mb-4">
         <button class="btn btn-success btn-lg btn-block" type="submit">Volver</button>
   <footer class="my-5 pt-5 text-muted text-center text-small"></a>
      
