@@ -58,7 +58,11 @@
 		<img border="0" src="../img/add.png" width="48" height="48" title="Ingresar Historial" 
 		onclick=location.href='historiales.php'; onKeyPress=location.href='historiales.php';
 		style='cursor:pointer';>
+<<<<<<< HEAD
     <label for="ingresar_asignacion"><h6>Ingresar Un Historial</h6></label>
+=======
+    <label for="ingresar_historial"><h6>Ingresar historial</h6></label>
+>>>>>>> ba3be31605cced5b86d7a78feb69307b52a13d24
 	</h2></div>
   
 	<div class="col-sm-1 "><h2>

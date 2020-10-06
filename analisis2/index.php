@@ -38,14 +38,14 @@
     <link href="form-validation.css" rel="stylesheet">
   </head>
   <body background="../img/analisis.jpg">
-  <div class="col-md"><h2>
+  <div class="col-md text-light"><h2>
 		<img border="0" src="../img/atras.png" width="42" height="42" title="Volver al menú" 
 		onclick=location.href='javascript:history.go(-1)'; onKeyPress=location.href='javascript:history.go(-1)'; style='cursor:pointer';/>
     <label for="boton_atras"><h6>Atrás</h6></label>
 	</h2></div>
     <div class="container">
     
-  <div class="py-5 text-center">
+  <div class="py-5 text-center text-light">
   
   <div class="col-md"><img class="d-block mx-auto mb-1" src="../img/jdlsa2.png" alt="" width="62" height="62"></div>
   <div class="col-md"><h5>JDL S.A</h5></div>

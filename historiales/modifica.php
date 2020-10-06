@@ -19,7 +19,7 @@
   <p class="lead "><h4><strong>Servicios Médicos e Informáticos</strong></h4></p>
   <hr>
   <div class="row">
-</h2></div>
+  </h2></div>
 
     <div class="col-sm-2">
 		<img border="0" src="../img/delete.png" width="48" height="48" title="Eliminar" 

@@ -8,10 +8,10 @@
 
 </head>
 
-<body>
+<body background="../img/usuarios2.jpg">
 <div class="row">
-    <div class="col-sm-2"><h2>
-		<img border="0" src="../img/atras.png" width="48" height="48" title="Volver al menú" 
+	<div class="col-md"><h2>
+		<img border="0" src="../img/atras.png" width="48" height="48" title="Volver a usuarios" 
 		onclick=location.href='../usuarios/'; onKeyPress=location.href='../usuarios/'; style='cursor:pointer';/>
 	</h2>
 	</div>

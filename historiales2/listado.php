@@ -10,9 +10,15 @@
 
 <body background="../img/historials.jpg">
 <div class="row">
+<<<<<<< HEAD
+	<div class="col-md"><h2>
+		<img border="0" src="../img/atras.png" width="40" height="40" title="Volver a historiales" 
+		onclick=location.href='../historiales/'; onKeyPress=location.href='../historiales/'; style='cursor:pointer';/>
+=======
 <div class="col-md"><h2>
 		<img border="0" src="../img/atras.png" width="40" height="40" title="Volver al menú" 
 		onclick=location.href='javascript:history.go(-1)'; onKeyPress=location.href='javascript:history.go(-1)'; style='cursor:pointer';/>
+>>>>>>> 800042e401d76c4c56305af6a11933c122c3661e
 		
 	</h2></div>
 

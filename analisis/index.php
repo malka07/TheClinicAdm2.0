@@ -51,13 +51,24 @@
   <div class="col-md"><h5>JDL S.A</h5></div>
   <p class="lead "><h4><strong>Servicios Médicos e Informáticos</strong></h4></p>
   <hr>
+<<<<<<< HEAD
   
     <div class="col-sm-2"><h2>
 		<img border="0" src="../img/add.png" width="48" height="48" title="Ingresar Analisis Clinico" 
+=======
+  <div class="row">
+  
+    <div class="col-sm-1"><h2>
+		<img border="0" src="../img/add.png" width="48" height="48" title="Ingresar Análisis clinico" 
+>>>>>>> ba3be31605cced5b86d7a78feb69307b52a13d24
 		onclick=location.href='analisis.php'; onKeyPress=location.href='analisis.php';
     
 		style='cursor:pointer';>
+<<<<<<< HEAD
     <label for="ingresar_turno"><h6>Ingresar Analisis Clinico</h6></label>
+=======
+    <label for="ingresar_analisis"><h6>Ingresar análisis clínico</h6></label>
+>>>>>>> ba3be31605cced5b86d7a78feb69307b52a13d24
 	</h2></div>
   
 	<div class="col-sm-1 "><h2>

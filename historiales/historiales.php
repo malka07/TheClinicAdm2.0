@@ -21,7 +21,7 @@
 </div>
 
     <div class="col-md-12 order-md-1">
-      <h4 class="mb-4">Alta De Historiales</h4>
+      <h4 class="mb-4">Alta de Historiales</h4>
       <form class="needs-validation" novalidate action="grabar.php" method="post">
 	  
 <?php 

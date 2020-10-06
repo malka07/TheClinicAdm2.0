@@ -12,6 +12,7 @@ $sql = "delete from historiales where id_historial=" . $_GET['id_historial'] ;
   <div class="col-md"><h5>JDL S.A</h5></div>
     <p class="lead"><h4><strong>Eliminar Historiales / Servicios</strong></h4></p>
   </div>
+  
  <?php 
   if ($mysqli->query($sql) === TRUE) {
 
