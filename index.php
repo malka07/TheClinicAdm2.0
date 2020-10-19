@@ -36,24 +36,21 @@
     <!-- Custom styles for this template -->
     <link href="form-validation.css" rel="stylesheet">
   </head>
-  <body background="./img/mains.jpg">
+  <body background="./img/mainsc.jpg">
     <div class="container">
-  <div class="py-5 text-center">
+  <div class="py-5 text-center text-light mt-5">
+  <div class="col-md"><img class="d-block mx-auto mb-1" src="./img/jdlsa2.png" alt="" width="62" height="62"></div>
+  <div class="col-md text-white"><h5>JDL S.A</h5></div>
+  <p class="col-md text-white"><h4><strong>Servicios Médicos e Informáticos</strong></h4></p>
+  <hr>
+
   <div class="row">
 
   
-
-
-  <div class="col-sm-2"><img class="d-block mx-auto mb-1" src="./img/jdlsa2.png" alt="" width="62" height="62"></div>
-  <div class="col-sm-3 text-white "><h2>JDL S.A</h2></div>
-
- 
-    <p class="col-sm-5 text-white ">Servicios Medicos E Informaticos.</p>
-
-    <div class="col-md-12 order-md-2">
-      <h4 class="lead text-white ">Login</h4></div>  
+  <div class="col-md order-md-2 mb-1 p-3">
+    <h1 class="lead text-light "><h3>Login</h3></div>  
     
-      </div>
+    </div>
    
 <?php 
    require "conexion.php";
@@ -69,20 +66,21 @@
 ?>
 
 <div class="container">
-      <form class="form-horizontal" action="login.php" method="POST">
+    <div class="d-flex justify-content-center">
+      <form class="form-horizontal " action="login.php" method="POST">
         <div class="form-group">
           
-          <div class="col-sm-10">
+          <div class="col-sm-14">
             <input type="text" class="form-control" name="dni_usuario" placeholder="DNI" required>
           </div>
         </div>
         <div class="form-group">
-          <div class="col-sm-10">
+          <div class="col-sm-14">
             <input type="text" class="form-control" name="contraseña_usuario" placeholder="Contraseña" required>
           </div>
         </div>
       
-        <div class="col-md-6 mb-4">
+        <div class="col-md-6 ">
            <input type="hidden" class="form-control" name="permiso_usuario" required>
            <?php 
 				     $long = count($usuarios);
@@ -95,23 +93,25 @@
 
 
 
-       
+       </div>
 <div class="form-group">
-    <div class="col-sm-offset-2 col-sm-10">
+    <div class="col-sm-offset-2 col-sm-14">
         <button type="submit" class="btn btn-success btn-lg btn-block">Ingresar</button>
     </div>
 </div>
 
 <a href="./ingreso/">	 <hr class="col-sm-offset-2 col-sm-10">
         <button type="button" class="btn btn-success btn-lg btn-block" >Crear Usuario</button>
+        </div>
+  </div>
 
+  </div>
+    <div class="col-sm-3">
+      <h4 class="mb-1"> </h4>
+	</div>
 
   <footer class="my-5 pt-5 text-muted text-center text-small"></a>
-     
-      
-
- 
-    <p class="mb-1 text-white ">&copy; 2020 - JDL S.A</p>
+    <p class="mb-1 text-dark">&copy; 2020 - JDL S.A</p>
    <ul class="list-inline">
       <li class="list-inline-item"><a href="#">Privacidad de Datos</a></li>
       <li class="list-inline-item"><a href="#">Términos de Uso</a></li>
