@@ -8,7 +8,7 @@
   <div class="py-5 text-center">
     <img class="d-block mx-auto mb-4" src="../img/jdlsa.png" alt="" width="72" height="72">
     <h2>JDL S.A</h2>
-    <p class="lead"> Servicios Medicos.</p>
+    <p class="lead"> Servicios Médicos e Informáticos</p>
   </div>
 
 
@@ -56,7 +56,7 @@
     header("Location: ../panel5/");  
   }
   }else{
- echo 'El Usuario O Contraseña Es Incorrecto, <a href="index.php">Vuelva A Intenarlo</a>.<br/>';
+ echo 'El usuario o contraseña es incorrecto, <a href="index.php">Vuelva a intentarlo</a>.<br/>';
  }
 
 

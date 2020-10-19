@@ -46,12 +46,11 @@
 
   <div class="row">
 
-  
   <div class="col-md order-md-2 mb-1 p-3">
     <h1 class="lead text-light "><h3>Login</h3></div>  
-    
     </div>
    
+
 <?php 
    require "conexion.php";
 
@@ -61,13 +60,12 @@
         $usuarios[] = $resultado;
     }   
 
-    
-    
 ?>
+
 
 <div class="container">
     <div class="d-flex justify-content-center">
-      <form class="form-horizontal " action="login.php" method="POST">
+      <form class="form-horizontal" action="login.php" method="POST">
         <div class="form-group">
           
           <div class="col-sm-14">
@@ -76,11 +74,12 @@
         </div>
         <div class="form-group">
           <div class="col-sm-14">
-            <input type="text" class="form-control" name="contraseña_usuario" placeholder="Contraseña" required>
+            <input type="password" class="form-control" name="contraseña_usuario" placeholder="Contraseña" required>
+            <span class="fa fa-fw fa-eye password-icon show-password"></span>
           </div>
         </div>
       
-        <div class="col-md-6 ">
+        <div class="col-md-6">
            <input type="hidden" class="form-control" name="permiso_usuario" required>
            <?php 
 				     $long = count($usuarios);
@@ -90,10 +89,10 @@
 				     echo "</option>";
              }
 				   ?>
+        </div>
 
 
-
-       </div>
+       
 <div class="form-group">
     <div class="col-sm-offset-2 col-sm-14">
         <button type="submit" class="btn btn-success btn-lg btn-block">Ingresar</button>

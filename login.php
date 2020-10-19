@@ -3,13 +3,13 @@
 ?>  
   
   
-  <body class="bg-light">
+  <body class="bg-dark">
     <div class="container">
-  <div class="py-5 text-center">
-    <img class="d-block mx-auto mb-4" src="../img/jdlsa.png" alt="" width="72" height="72">
-    <h2>JDL S.A</h2>
-    <p class="lead"> Servicios Medicos.</p>
-  </div>
+  <div class="py-5 text-center text-light mt-5">
+  <div class="col-md"><img class="d-block mx-auto mb-1" src="./img/jdlsa2.png" alt="" width="62" height="62"></div>
+  <div class="col-md text-white"><h5>JDL S.A</h5></div>
+  <p class="col-md text-white"><h4><strong>Servicios Médicos e Informáticos</strong></h4></p>
+  <hr>
 
 
 <?php
@@ -56,7 +56,7 @@
     header("Location: ../TheClinicAdm2.0/panel5/");  
   }
   }else{
- echo 'El Usuario O Contraseña Es Incorrecto, <a href="index.php">Vuelva A Intenarlo</a>.<br/>';
+ echo 'El usuario o contraseña es incorrecto, <a href="index.php">Vuelva a intentarlo</a>.<br/>';
  }
 
 
