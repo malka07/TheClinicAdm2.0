@@ -4,30 +4,27 @@
     require "../metodos.php";
 ?>
 
-<body background="../img/pacientes2.jpg">
-    <div class="container">
+<body background="../img/pacientes3.jpg">
+<div class="col-sm-2"><h2>
+<img border="0" src="../img/atras.png" width="42" height="42" title="Volver al menú" 
+onclick=location.href='javascript:history.go(-1)'; onKeyPress=location.href='javascript:history.go(-1)'; style='cursor:pointer';/>
+<label for="boton_atras"><h6>Atrás</h6></label>
+</h2></div>
+
+  <div class="container">
  <div class="py-5 text-center">
   <div class="row">
-    <div class="col-sm-2"><h2>
-		<img border="0" src="../img/atras.png" width="48" height="48" title="Volver al menú" 
-		onclick=location.href='javascript:history.go(-1)'; onKeyPress=location.href='javascript:history.go(-1)'; style='cursor:pointer';/>
-	</h2>
-	</div>
-	<div class="col-sm-2"></div>
-    <div class="col-sm-2"></div>	
-    <div class="col-sm-2"></div>	
-  <div class="col-sm-2"><img class="d-block mx-auto mb-1" src="../img/disc.jpg" alt="" width="62" height="62"></div>
-  <div class="col-sm-2"><h2>JDL S.A</h2></div>
-</div>
 
-    <div class="col-md-12 order-md-1">
-      <h4 class="mb-4">Alta De Pacientes</h4>
+  <div class="col-md"><img class="d-block mx-auto mb-1" src="../img/jdlsa.png" alt="" width="62" height="62"></div>
+</div>
+<div class="col-md-12 order-md-1">
+      <h4 class="mb-4 mt-4">Alta de Pacientes</h4>
       <form class="needs-validation" novalidate action="grabar.php" method="post">
+
+ 
 	  
 <?php 
    require "../conexion.php";
-
-  
 
     $sql = "SELECT * from pacientes order by id_paciente";
 	$query = $mysqli->query($sql);
@@ -40,7 +37,6 @@
     while($resultado = $query->fetch_assoc()) {
           $clinicos[] = $resultado;
       }
-     
 
 ?>
 
@@ -48,7 +44,7 @@
             <label for="nombre_paciente">Nombre</label>
             <input type="text" class="form-control" name="nombre_paciente" placeholder="" value="" required>
             <div class="invalid-feedback">
-              Faltó Ingresar El Nombre Del Paciente.
+              Faltó ingresar el nombre del paciente
             </div>
           </div>
      
@@ -57,7 +53,7 @@
             <label for="apellido_paciente">Apellido</label>
             <input type="text" class="form-control" name="apellido_paciente" placeholder="" value="" required>
             <div class="invalid-feedback">
-              Faltó Ingresar El Apellido Del Paciente.
+              Faltó ingresar el apellido del paciente
             </div>
           </div>
 
@@ -65,7 +61,7 @@
             <label for="dni_paciente">D.N.I</label>
             <input type="text" class="form-control" name="dni_paciente" placeholder="" value="" required>
             <div class="invalid-feedback">
-              Faltó Ingresar El DNI Del Paciente.
+              Faltó ingresar el DNI del paciente
             </div>
           </div> 
         
@@ -73,15 +69,15 @@
             <label for="domicilio_paciente">Direccion</label>
             <input type="text" class="form-control" name="domicilio_paciente" placeholder="" value="" required>
             <div class="invalid-feedback">
-              Faltó Ingresar El Domicilio Del Paciente.
+              Faltó ingresar el domicilio del paciente
             </div>
           </div>
 
           <div class="col-md-6 mb-4">
-            <label for="telefono_paciente">Telefono</label>
+            <label for="telefono_paciente">Teléfono</label>
             <input type="text" class="form-control" name="telefono_paciente" placeholder="" value="" required>
             <div class="invalid-feedback">
-              Faltó Ingresar El Telefono Del Paciente.
+              Faltó ingresar el teléfono del paciente
             </div>
           </div>
         
@@ -89,7 +85,7 @@
             <label for="edad_paciente">Edad</label>
             <input type="text" class="form-control" name="edad_paciente" placeholder="" value="" required>
             <div class="invalid-feedback">
-              Faltó Ingresar La Edad Del Paciente.
+              Faltó ingresar la edad del paciente
             </div>
           </div>
   
@@ -97,7 +93,7 @@
             <label for="provincia_paciente">Provincia</label>
             <input type="text" class="form-control" name="provincia_paciente" placeholder="" value="" required>
             <div class="invalid-feedback">
-              Faltó Ingresar La Provincia Del Paciente.
+              Faltó ingresar la provincia del paciente
             </div>
           </div>
 
@@ -105,7 +101,7 @@
             <label for="barrio_paciente">Barrio</label>
             <input type="text" class="form-control" name="barrio_paciente" placeholder="" value="" required>
             <div class="invalid-feedback">
-              Faltó Ingresar El Barrio Del Paciente.
+              Faltó ingresar el barrio del paciente
             </div>
           </div>
            
@@ -113,7 +109,7 @@
             <label for="fech_nac_paciente">Fecha De Nacimiento</label>
             <input type="date" class="form-control" name="fech_nac_paciente" placeholder="" value="" required>
             <div class="invalid-feedback">
-              Faltó Ingresar La Fecha De Nacimiento Del Paciente.
+              Faltó ingresar la fecha de nacimiento del paciente
             </div>
           </div>
        
@@ -121,7 +117,7 @@
             <label for="historia_paciente">Historial Del Paciente</label>
             <input type="text" class="form-control" name="historia_paciente" placeholder="" value="" required>
             <div class="invalid-feedback">
-              Faltó Ingresar Numero De Historial.
+              Faltó ingresar Nro de historial
             </div>
           </div>
 
@@ -129,12 +125,12 @@
             <label for="obra_soc_paciente">Obra Social</label>
             <input type="text" class="form-control" name="obra_soc_paciente" placeholder="" value="" required>
             <div class="invalid-feedback">
-              Faltó Ingresar Una Obra Social Del Paciente.
+              Faltó ingresar una Obra Social del paciente
             </div>
           </div>
 
           <div class="col-md-6 mb-4">
-           <label for="medico_paciente">Medico</label>
+           <label for="medico_paciente">Médico</label>
            <select class="custom-select d-block w-100" name="medico_paciente" required>
            <?php 
 				     $long = count($clinicos);
@@ -148,7 +144,7 @@
 				   ?>
             </select>
             <div class="invalid-feedback">
-              Faltó Seleccionar Un Medico.
+              Faltó seleccionar un médico
             </div>
           </div>
         
@@ -156,7 +152,7 @@
             <label for="email_paciente">Email</label>
             <input type="text" class="form-control" name="email_paciente" placeholder="" value="" required>
             <div class="invalid-feedback">
-              Faltó Ingresar El Email Del Paciente.
+              Faltó ingresar el Email del paciente
             </div>
           </div>
         

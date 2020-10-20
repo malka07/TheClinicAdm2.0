@@ -114,8 +114,8 @@
 				
 				<a 	<?php echo "href=modifica.php?id_recibo=".$recibos[$i]['id_recibo'];?>
 						 class="list-group-item bg-dark">
-				<h4 class="list-group-item-heading "> <?php echo $recibos[$i]['id_recibo'] ."";?> </h4>
-				<p class="list-group-item-text "><?php 	echo "Fecha De Recibo: " . $recibos[$i]['fecha_recibo'] ." - Descripcion: "; 
+				<h4 class="list-group-item-heading text-light"> <?php echo $recibos[$i]['id_recibo'] ."";?> </h4>
+				<p class="list-group-item-text text-light"><?php 	echo "Fecha De Recibo: " . $recibos[$i]['fecha_recibo'] ." - Descripcion: "; 
                             echo $recibos[$i]['descripcion_recibo'] ." - Medico: "; 
                             echo $recibos[$i]['clinico_recibo'] ." - Liquidacion: "; 
                             echo $recibos[$i]['liqui_recibo'] ."";

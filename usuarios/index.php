@@ -36,7 +36,7 @@
 
   <body background="../img/usuarios.jpg">
   <div class="col-md"><h2>
-		<img border="0" src="../img/atras.png" width="48" height="48" title="Volver al menú" 
+		<img border="0" src="../img/atras.png" width="42" height="42" title="Volver al menú" 
 		onclick=location.href='../panel/'; onKeyPress=location.href='../panel/'; style='cursor:pointer';/>
     <label for="boton_atras"><h6>Atrás</h6></label>
 	</h2></div>
@@ -100,7 +100,7 @@
 				<h4 class="list-group-item-heading"> <?php echo $usuarios[$i]['id_usuario'] ."";?> </h4>
 				<p class="list-group-item-text"><?php 	echo "Nombre: " . $usuarios[$i]['nombre_usuario'] ." - Apellido: "; 
                             echo $usuarios[$i]['apellido_usuario'] ." - Edad: "; 
-                            echo $usuarios[$i]['edad_usuario'] ." - Direccion: "; 
+                            echo $usuarios[$i]['edad_usuario'] ." - Dirección: "; 
                             echo $usuarios[$i]['domicilio_usuario'] ." - D.N.I: ";
                             echo $usuarios[$i]['dni_usuario'] ." - Email: ";
                             echo $usuarios[$i]['email_usuario'] ." - Fecha De Nac.: ";

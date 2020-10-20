@@ -78,7 +78,7 @@
   
   </div>
     <div class="col-sm-3">
-      <h4 class="mb-1">Historiales Clinicos</h4>
+      <h4 class="mb-1">Historiales Clínicos</h4>
 	</div>    
 <?php 
    require "../conexion.php";
@@ -101,7 +101,7 @@
 				<a 	<?php echo "href=modifica.php?id_historial=".$historiales[$i]['id_historial'];?>
 						 class="list-group-item bg-dark">
 				<h4 class="list-group-item-heading"> <?php echo $historiales[$i]['id_historial'] ."";?> </h4>
-				<p class="list-group-item-text"><?php 	echo "Fecha: " . $historiales[$i]['fecha_historial'] ." - Medico: "; 
+				<p class="list-group-item-text"><?php 	echo "Fecha: " . $historiales[$i]['fecha_historial'] ." - Médico: "; 
                             echo $historiales[$i]['clinico_historial'] ." - Paciente: "; 
                             echo $historiales[$i]['paciente_historial'] ." - Observaciones: "; 
                             echo $historiales[$i]['observacion_historial'] ." - Diagnostico: ";
@@ -120,7 +120,7 @@
   </div>
 
   <footer class="my-5 pt-5 text-muted text-center text-small">
-    <p class="mb-1">&copy; 2020 - JDL S.A</p>
+    <p class="mb-1 text-dark">&copy; 2020 - JDL S.A</p>
    <ul class="list-inline">
       <li class="list-inline-item"><a href="#">Privacidad de Datos</a></li>
       <li class="list-inline-item"><a href="#">Términos de Uso</a></li>

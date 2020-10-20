@@ -35,7 +35,7 @@
   </head>
   <body background="../img/pacientes.jpg">
   <div class="col-md"><h2>
-		<img border="0" src="../img/atras.png" width="48" height="48" title="Volver al menú" 
+		<img border="0" src="../img/atras.png" width="42" height="42" title="Volver al menú" 
 		onclick=location.href='javascript:history.go(-1)'; onKeyPress=location.href='javascript:history.go(-1)'; style='cursor:pointer';/>
     <label for="boton_atras"><h6>Atrás</h6></label>
 	</h2></div>
@@ -95,16 +95,16 @@
 				
     <a 	
 						 class="list-group-item bg-dark">
-				<h4 class="list-group-item-heading text-info"> <?php echo $pacientes[$i]['id_paciente'] ."";?> </h4>
-				<p class="list-group-item-text text-info"><?php 	echo "Nombre: " . $pacientes[$i]['nombre_paciente'] ." - Apellido: "; 
+				<h4 class="list-group-item-heading text-light"> <?php echo $pacientes[$i]['id_paciente'] ."";?> </h4>
+				<p class="list-group-item-text text-light"><?php 	echo "Nombre: " . $pacientes[$i]['nombre_paciente'] ." - Apellido: "; 
                             echo $pacientes[$i]['apellido_paciente'] ." - D.N.I: "; 
                             echo $pacientes[$i]['dni_paciente'] ." - Domicilio: "; 
-                            echo $pacientes[$i]['domicilio_paciente'] ." - Telefono: "; 
+                            echo $pacientes[$i]['domicilio_paciente'] ." - Teléfono: "; 
                             echo $pacientes[$i]['telefono_paciente'] ." - Edad: "; 
                             echo $pacientes[$i]['edad_paciente'] ." - Provincia: "; 
                             echo $pacientes[$i]['provincia_paciente'] ." - Barrio: "; 
                             echo $pacientes[$i]['barrio_paciente'] ." - Fecha De Nac.: ";
-                            echo $pacientes[$i]['fech_nac_paciente'] ." - N° Historia Clinica: ";
+                            echo $pacientes[$i]['fech_nac_paciente'] ." - N° Historia Clínica: ";
                             echo $pacientes[$i]['historia_paciente'] ." - Obra Social: ";
                             echo $pacientes[$i]['obra_soc_paciente'] ." - Medico: ";
                             echo $pacientes[$i]['medico_paciente'] ." - Email: ";
@@ -124,7 +124,7 @@
   </div>
 
   <footer class="my-5 pt-5 text-muted text-center text-small">
-    <p class="mb-1">&copy; 2020 - JDL S.A</p>
+    <p class="mb-1 text-dark">&copy; 2020 - JDL S.A</p>
    <ul class="list-inline">
       <li class="list-inline-item"><a href="#">Privacidad de Datos</a></li>
       <li class="list-inline-item"><a href="#">Términos de Uso</a></li>

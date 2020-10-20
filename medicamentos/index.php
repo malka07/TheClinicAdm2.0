@@ -38,7 +38,7 @@
   <div class="py-5 text-center">
   <div class="row">
     <div class="col-sm-2"><h2>
-		<img border="0" src="../img/atras.png" width="48" height="48" title="Volver al menú" 
+		<img border="0" src="../img/atras.png" width="42" height="42" title="Volver al menú" 
 		onclick=location.href='../panel/'; onKeyPress=location.href='../panel/'; style='cursor:pointer';/>
 	</h2>
 	</div>
@@ -84,9 +84,9 @@
 		<div class="list-group">
 				
     <a 	<?php echo "href=modifica.php?id_medicamento=".$medicamentos[$i]['id_medicamento'];?>
-						 class="list-group-item">
+						 class="list-group-item bg-dark">
 				<h4 class="list-group-item-heading"> <?php echo $medicamentos[$i]['id_medicamento'] ."";?> </h4>
-        <p class="list-group-item-text"><?php 	echo "Nombre: " . $medicamentos[$i]['nombre_medicamento'] ." - Farmaco: "; 
+        <p class="list-group-item-text"><?php 	echo "Nombre: " . $medicamentos[$i]['nombre_medicamento'] ." - Fármaco: "; 
                             echo $medicamentos[$i]['farmaco_medicamento'] ." - Contenido: "; 
                             echo $medicamentos[$i]['contenido_medicamento'] ." - Formato: "; 
                             echo $medicamentos[$i]['formato_medicamento'] ." - Cantidad: ";

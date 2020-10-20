@@ -17,7 +17,6 @@
   <link href="../css/simple-sidebar.css" rel="stylesheet">
 
 </head>
-
 <body background="../img/background.jpg">
 
   <div class="d-flex" id="wrapper">
@@ -27,7 +26,7 @@
       <div class="sidebar-heading bg-black text-white">Menú de Opciones</div>
       <div class="list-group list-group-flush">
         <a href="../turnos2/" class="list-group-item list-group-item-action bg-dark text-white">Turnos</a>
-        <a href="../analisis2/" class="list-group-item list-group-item-action bg-dark text-white">Analisis Clinicos</a>
+        <a href="../analisis2/" class="list-group-item list-group-item-action bg-dark text-white">Análisis Clínicos</a>
         <a href="../" class="list-group-item list-group-item-action bg-dark text-white">Salir</a>
       </div>
     </div>
@@ -50,7 +49,7 @@
 
       <div class="container-fluid text-white">
         <h1 class="mt-4"><img class="d-block mx-auto mb-4" src="../img/jdlsa.png" alt="" width="75" height="75"></h1>
-        <p>Panel de Control.</p>
+        <p>Panel de Control</p>
         <p>Configuración de datos para control e incorporación de información en la app móvil.</p>
       </div>
     </div>

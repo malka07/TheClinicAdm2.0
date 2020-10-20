@@ -6,7 +6,7 @@
 
 <body background="../img/usuarios2.jpg">
   <div class="col-md"><h2>
-		<img border="0" src="../img/atras.png" width="40" height="40" title="Volver al menú"
+		<img border="0" src="../img/atras.png" width="42" height="42" title="Volver al menú"
           onclick=location.href='../usuarios/'; 
 					onKeyPress=location.href='../usuarios/'; 
 					style='cursor:pointer';/>

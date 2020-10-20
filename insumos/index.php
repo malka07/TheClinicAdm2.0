@@ -38,7 +38,7 @@
   <div class="py-5 text-center">
   <div class="row">
     <div class="col-sm-2"><h2>
-		<img border="0" src="../img/atras.png" width="48" height="48" title="Volver al menú" 
+		<img border="0" src="../img/atras.png" width="42" height="42" title="Volver al menú" 
 		onclick=location.href='../panel/'; onKeyPress=location.href='../panel/'; style='cursor:pointer';/>
 	</h2>
 	</div>
@@ -86,7 +86,7 @@
     <a 	<?php echo "href=modifica.php?id_insumo=".$insumos[$i]['id_insumo'];?>
 						 class="list-group-item">
 				<h4 class="list-group-item-heading"> <?php echo $insumos[$i]['id_insumo'] ."";?> </h4>
-        <p class="list-group-item-text"><?php 	echo "Fecha: " . $insumos[$i]['fecha_insumo'] ." - Descripcion: "; 
+        <p class="list-group-item-text"><?php 	echo "Fecha: " . $insumos[$i]['fecha_insumo'] ." - Descripción: "; 
                             echo $insumos[$i]['descripcion_insumo'] ." - Precio: "; 
                             echo $insumos[$i]['precio_insumo'] ." - Cantidad: "; 
                             echo $insumos[$i]['cantidad_insumo'] ."";

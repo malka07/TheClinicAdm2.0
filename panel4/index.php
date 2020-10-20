@@ -29,7 +29,7 @@
       <div class="sidebar-heading bg-black text-white">Menú de Opciones</div>
       <div class="list-group list-group-flush">
       <a href="../turnos/" class="list-group-item list-group-item-action bg-dark text-white">Turnos</a>
-        <a href="../analisis2/" class="list-group-item list-group-item-action bg-dark text-white">Analisis Clinicos</a>
+        <a href="../analisis2/" class="list-group-item list-group-item-action bg-dark text-white">Análisis Clínicos</a>
         <a href="../pacientes/" class="list-group-item list-group-item-action bg-dark text-white">Pacientes</a>
         <a href="../" class="list-group-item list-group-item-action bg-dark text-white">Salir</a>
       </div>
@@ -48,7 +48,7 @@
       </nav>
 
       <div class="col-sm-2 text-white">
-        <h2 class="mt-4">TheClinicAdm.</h2>
+        <h2 class="mt-4">TheClinicAdm</h2>
 	    </div>
 
       <div class="container-fluid text-white">

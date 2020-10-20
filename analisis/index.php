@@ -39,7 +39,7 @@
   </head>
   <body background="../img/analisis.jpg">
   <div class="col-md text-light"><h2>
-		<img border="0" src="../img/atrasb.png" width="48" height="48" title="Volver al menú" 
+		<img border="0" src="../img/atrasb.png" width="42" height="42" title="Volver al menú" 
 		onclick=location.href='../panel/'; onKeyPress=location.href='../panel/'; style='cursor:pointer';/>
     <label for="boton_atras"><h6>Atrás</h6></label>
 	</h2></div>
@@ -58,7 +58,7 @@
 		onclick=location.href='analisis.php'; onKeyPress=location.href='analisis.php';
     
 		style='cursor:pointer';>
-    <label for="ingresar_turno"><h6>Ingresar Analisis Clinico</h6></label>
+    <label for="ingresar_turno"><h6>Ingresar Análisis</h6></label>
 	</h2></div>
   
 	<div class="col-sm-1 "><h2>
@@ -69,13 +69,11 @@
 	</h2></div>
     <div class="col-sm-2"><h2></h2></div>	
 
-
     </div>
     <div class="col-sm-3">
       <h4 class="mb-1"> </h4>
 	</div>
 
-  
   </div>
     <div class="col-sm-3">
       <h4 class="mb-1 text-light">Análisis Clínicos</h4>
@@ -104,7 +102,7 @@
 				<a 	<?php echo "href=modifica.php?id_analisis=".$analisis[$i]['id_analisis'];?>
 						 class="list-group-item bg-dark">
 				<h4 class="list-group-item-heading"> <?php echo $analisis[$i]['id_analisis'] ."";?> </h4>
-				<p class="list-group-item-text"><?php 	echo "Fecha: " . $analisis[$i]['fecha_analisis'] ." - Medico: "; 
+				<p class="list-group-item-text"><?php 	echo "Fecha: " . $analisis[$i]['fecha_analisis'] ." - Médico: "; 
                             echo $analisis[$i]['clinico_analisis'] ." - Paciente: "; 
                             echo $analisis[$i]['paciente_analisis'] ." - Resultados: "; 
                             echo $analisis[$i]['resultados_analisis'] ." - Observaciones: ";

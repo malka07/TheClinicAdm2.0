@@ -11,10 +11,10 @@
 <body background="../img/usuarios2.jpg">
 <div class="row">
 	<div class="col-md"><h2>
-		<img border="0" src="../img/atras.png" width="48" height="48" title="Volver a usuarios" 
+		<img border="0" src="../img/atras.png" width="42" height="42" title="Volver a usuarios" 
 		onclick=location.href='../usuarios/'; onKeyPress=location.href='../usuarios/'; style='cursor:pointer';/>
-	</h2>
-	</div>
+    <label for="boton_atras"><h6>Atrás</h6></label>
+  </h2></div>
 
 <?php 
 include "../conexion.php";

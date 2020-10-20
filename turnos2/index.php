@@ -39,7 +39,7 @@
   </head>
   <body background="../img/turnos.jpg">
   <div class="col-md"><h2>
-		<img border="0" src="../img/atras.png" width="48" height="48" title="Volver al menú" 
+		<img border="0" src="../img/atras.png" width="42" height="42" title="Volver al menú" 
 		onclick=location.href='javascript:history.go(-1)'; onKeyPress=location.href='javascript:history.go(-1)'; style='cursor:pointer';/>
     <label for="boton_atras"><h6>Atrás</h6></label>
 	</h2></div>
@@ -101,10 +101,10 @@
 				
 				<a 
 						 class="list-group-item bg-dark">
-				<h4 class="list-group-item-heading text-info"> <?php echo $turnos[$i]['id_turno'] ."";?> </h4>
-				<p class="list-group-item-text text-info"><?php 	echo "Fecha: " . $turnos[$i]['fecha_turno'] ." - Horario: "; 
+				<h4 class="list-group-item-heading text-light"> <?php echo $turnos[$i]['id_turno'] ."";?> </h4>
+				<p class="list-group-item-text text-light"><?php 	echo "Fecha: " . $turnos[$i]['fecha_turno'] ." - Horario: "; 
                             echo $turnos[$i]['horario_turno'] ." - Paciente: "; 
-                            echo $turnos[$i]['paciente_turno'] ." - Clinico: "; 
+                            echo $turnos[$i]['paciente_turno'] ." - Médico: "; 
                             echo $turnos[$i]['clinico_turno'] ." - Comentarios: ";
                             echo $turnos[$i]['comentarios_turno'] ."";
 														?></p>		 

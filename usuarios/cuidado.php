@@ -7,7 +7,7 @@
 
 <body background="../img/tek.jpg">
   <div class="col-sm-2"><h2>
-	<img border="0" src="../img/atras.png" width="48" height="48" title="Volver a Usuarios" 
+	<img border="0" src="../img/atras.png" width="42" height="42" title="Volver a Usuarios" 
 		onclick=location.href='../usuarios/'; 
 		onKeyPress=location.href='../usuarios/'; 
 		style='cursor:pointer';/>
