@@ -1,4 +1,7 @@
 <html>
+<?php 
+    require "../metodos.php";
+?>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -36,12 +39,13 @@
     </style>
     <!-- Custom styles for this template -->
     <link href="form-validation.css" rel="stylesheet">
-  </head>
-  <body background="../img/admin2.jpg">
+</head>
+  <body background="../img/admin2.jpg" style="background-size:cover";>
     <div class="container">
   <div class="py-5 text-center">
-  <div class="col-md"><img class="d-block mx-auto mb-1" src="../img/jdlsa2.png" alt="" width="62" height="62"></div>
-  <div class="col-md"><h5>JDL S.A</h5></div>
+  <div class="col-sm-2 mt-2 mb-1 p-2"></div>
+    <div class="col-sm-2"><h2></h2></div>	
+    <div class="col-md"><img class="d-block mx-auto mb-1" src="../img/jdlsa.png" alt="" width="62" height="62"></div>
     <p class="lead"><h4><strong>Ingreso de Recibos y Servicios / Profesiones para la App</strong></h4></p>
   </div>
  
@@ -64,7 +68,7 @@
 if ($mysqli->query($sql) === TRUE) {
 
   echo "  <a href='../admin/'> <div class='col-md-12 order-md-1'>";
-  echo    "<h4 class='mb-4'>Datos guardados correctamente</h4> </a>";
+  echo    "<h4 class='mb-4 col-sm-8 offset-md-1'>Datos guardados correctamente</h4> </a>";
 } else {
   echo "Error: " . $sql . "<br>" . $mysqli->error;
 }
@@ -72,15 +76,18 @@ if ($mysqli->query($sql) === TRUE) {
 $mysqli->close();
 		
 ?>
-<a href="../admin">	 <hr class="mb-4">
-        <button class="btn btn-success btn-lg btn-block" type="submit">Volver</button>
+  <a href="../admin">	 
+  <hr class="mb-4">
+      <DIV ALIGN=center>
+        <button class="btn btn-success btn-lg btn-block col-sm-4" type="submit">Volver</button>
+        </div>
   <footer class="my-5 pt-5 text-muted text-center text-small"></a>
     <p class="mb-1">&copy; 2020 - JDL S.A</p>
     <ul class="list-inline">
       <li class="list-inline-item"><a href="#">Privacidad de Datos</a></li>
       <li class="list-inline-item"><a href="#">Términos de Uso</a></li>
       <li class="list-inline-item"><a href="#">Soporte</a></li>
-    </ul>-->
+    </ul>
   </footer>
 </div>
 

@@ -4,9 +4,9 @@
     require "../metodos.php";
 ?>
 
-<body background="../img/medico2.jpg">
+<body background="../img/medico2.jpg" style="background-size:cover";>
   <div class="col-md"><h2>
-		<img border="0" src="../img/atras.png" width="40" height="40" title="Volver a médicos" 
+		<img border="0" src="../img/atras.png" width="42" height="42" title="Volver a médicos" 
 		onclick=location.href='../clinicos/'; onKeyPress=location.href='../clinicos/'; style='cursor:pointer';/>
     <label for="boton_atras"><h6>Atrás</h6></label>
 	</h2></div>
@@ -57,7 +57,7 @@
             <label for="nombre_clinico">Nombre:</label>
             <input type="text" class="form-control" id="nombre" name="nombre_clinico" placeholder="" value=<?php echo "'".$clinicos[0]['nombre_clinico']."'" ?> required>
             <div class="invalid-feedback">
-              Faltó Ingresar El Nombre Del Medico.
+              Faltó ingresar el nombre del médico
             </div>
           </div>
          
@@ -66,7 +66,7 @@
             <label for="apellido_clinico">Apellido:</label>
             <input type="text" class="form-control" id="apellido" name="apellido_clinico" placeholder="" value=<?php echo "'".$clinicos[0]['apellido_clinico']."'" ?> required>
             <div class="invalid-feedback">
-              Faltó Ingresar El Apellido Del Medico.
+              Faltó ingresar el apellido del médico
             </div>
           </div>
 
@@ -75,7 +75,7 @@
             <label for="edad_clinico">Edad:</label>
             <input type="text" class="form-control" id="edad" name="edad_clinico" placeholder="" value=<?php echo "'".$clinicos[0]['edad_clinico']."'" ?> required>
             <div class="invalid-feedback">
-              Faltó Ingresar La Edad Del Medico.
+              Faltó ingresar la edad del médico
             </div>
           </div>
 
@@ -84,15 +84,15 @@
             <label for="domicilio_clinico">Domicilio:</label>
             <input type="text" class="form-control" id="direccion" name="domicilio_clinico" placeholder="" value=<?php echo "'".$clinicos[0]['domicilio_clinico']."'" ?> required>
             <div class="invalid-feedback">
-              Faltó Ingresar La Domicilio Del Medico.
+              Faltó ingresar el domicilio del médico
             </div>
           </div>
           
           <div class="col-md-6 mb-4">
-            <label for="telefono_clinico">Domicilio:</label>
+            <label for="telefono_clinico">Teléfono:</label>
             <input type="text" class="form-control" id="direccion" name="telefono_clinico" placeholder="" value=<?php echo "'".$clinicos[0]['telefono_clinico']."'" ?> required>
             <div class="invalid-feedback">
-              Faltó Ingresar El Telefono Del Medico.
+              Faltó ingresar el teléfono del médico
             </div>
           </div>
           
@@ -100,15 +100,15 @@
             <label for="fech_nac_clinico">Fecha De Nacimiento:</label>
             <input type="date" class="form-control" id="fecha" name="fech_nac_clinico" placeholder="" value=<?php echo "'".$clinicos[0]['fech_nac_clinico']."'" ?> required>
             <div class="invalid-feedback">
-              Faltó Ingresar La Fecha De Nacimiento Del Medico.
+              Faltó ingresar la fecha de nacimiento del médico
             </div>
           </div>
 
           <div class="col-md-6 mb-4">
-            <label for="email_clinico">Notas:</label>
+            <label for="email_clinico">Email:</label>
             <input type="text" class="form-control" id="email" name="email_clinico" placeholder="" value=<?php echo "'".$clinicos[0]['email_clinico']."'" ?> required>
             <div class="invalid-feedback">
-              Faltó Ingresar El Email Del Clinico.
+              Faltó ingresar el Email Del médico
             </div>
           </div>
 		</div>

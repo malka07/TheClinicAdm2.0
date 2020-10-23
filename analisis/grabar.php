@@ -38,7 +38,7 @@
     <link href="form-validation.css" rel="stylesheet">
 
   </head>
-<body background="../img/analisis2.jpg">
+<body background="../img/analisis2.jpg" style="background-size:cover";>
     <div class="container">
   <div class="py-5 text-center">
   <div class="col-md"><img class="d-block mx-auto mb-1" src="../img/jdlsa2.png" alt="" width="62" height="62"></div>

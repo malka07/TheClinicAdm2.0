@@ -17,7 +17,7 @@
  
 ?>								
 
-<body background="../img/analisis2.jpg">
+<body background="../img/analisis2.jpg" style="background-size:cover";>
     <div class="container">
   <div class="py-5 text-center">
     <img class="d-block mx-auto mb-4" src="../img/jdlsa.png" alt="" width="72" height="72">

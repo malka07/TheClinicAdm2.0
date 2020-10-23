@@ -33,7 +33,7 @@
     <!-- Custom styles for this template -->
     <link href="form-validation.css" rel="stylesheet">
   </head>
-  <body background="../img/medico.jpg">
+  <body background="../img/medico.jpg" style="background-size:cover";>
   <div class="col-md"><h2>
 		<img border="0" src="../img/atras.png" width="42" height="42" title="Volver al menú" 
 		onclick=location.href='../panel/'; onKeyPress=location.href='../panel/'; style='cursor:pointer';/>
@@ -93,7 +93,7 @@
 		<div class="list-group">
 				
     <a 	<?php echo "href=modifica.php?id_clinico=".$clinicos[$i]['id_clinico'];?>
-						 class="list-group-item">
+						 class="list-group-item bg-dark">
 				<h4 class="list-group-item-heading"> <?php echo $clinicos[$i]['id_clinico'] ."";?> </h4>
 				<p class="list-group-item-text"><?php 	echo "Nombre: " . $clinicos[$i]['nombre_clinico'] ." - Apellido: "; 
                             echo $clinicos[$i]['apellido_clinico'] ." - Edad: "; 

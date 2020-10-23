@@ -20,7 +20,7 @@
 
 </head>
 
-<body background="../img/background.jpg">
+<body background="../img/background.jpg" style="background-size:cover";>
 
   <div class="d-flex" id="wrapper">
 

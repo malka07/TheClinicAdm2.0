@@ -4,27 +4,26 @@
     require "../metodos.php";
 ?>
 
-<body background="../img/analisis2.jpg">
-    <div class="container">
-  <div class="py-5 text-center">
-  <div class="row">
-    <div class="col-sm-2"><h2>
-		<img border="0" src="../img/atras.png" width="48" height="48" title="Volver al menú" 
-							onclick=location.href='javascript:history.go(-1)'; 
-							onKeyPress=location.href='javascript:history.go(-1)'; 
-							style='cursor:pointer';/>
-	</h2>
-	</div>
-    
-	<div class="col-sm-2"></div>
-    <div class="col-sm-2"><h2></h2></div>	
+<body background="../img/analisis2.jpg" style="background-size:cover";>
+<div class="col-md"><h2>
+		<img border="0" src="../img/atras.png" width="42" height="42" title="Volver al menú" 
+      onclick=location.href='javascript:history.go(-1)'; 
+			onKeyPress=location.href='javascript:history.go(-1)'; 
+			style='cursor:pointer';/>
+    <label for="boton_atras"><h6>Atrás</h6></label>
+  </h2></div>
 
-  <div class="col-sm-2"><img class="d-block mx-auto mb-1" src="../img/jdlsa2.png" alt="" width="62" height="62"></div>
-  <div class="col-sm-2"><h2>JDL S.A</h2></div>
-</div>
+  <div class="container">
+  <div class="py-5 text-center">
+    <div class="col-md"><img class="d-block mx-auto mb-1" src="../img/jdlsa2.png" alt="" width="62" height="62"></div>
+    <div class="col-md"><h5>JDL S.A</h5></div>
+    <p class="lead "><h4><strong>Servicios Médicos e Informáticos</strong></h4></p>
+  <hr>
+  <div class="row">
+  </h2></div>
 
     <div class="col-md-12 order-md-1">
-      <h4 class="mb-4">Modificar Datos De Los Historiales</h4>
+      <h4 class="mb-4">Modificar datos de los historiales</h4>
       <form class="needs-validation" novalidate action="modi.php" method="POST">
 	  
 <?php 
@@ -51,15 +50,15 @@
 ?>  
 	  
     <div class="col-md-6 mb-4">
-            <label for="fecha_analsis">Fecha</label>
-            <input type="date" class="form-control" name="fecha_analsis" placeholder="" value=<?php echo "'".$analisis[0]['fecha_analsis']."'" ?> required>
+            <label for="fecha_analisis">Fecha</label>
+            <input type="date" class="form-control" name="fecha_analisis" placeholder="" value=<?php echo "'".$analisis[0]['fecha_analisis']."'" ?> required>
             <div class="invalid-feedback">
-              Faltó Ingresar La Fecha Del Analisis.
+              Faltó ingresar ia fecha del análisis
             </div>
           </div>
         
           <div class="col-md-6 mb-4">
-           <label for="clinico_analisis">Medico</label>
+           <label for="clinico_analisis">Médico</label>
            <select class="custom-select d-block w-100" name="clinico_analisis" required>
            <?php 
 				     $long = count($clinicos);
@@ -73,7 +72,7 @@
 				   ?>
             </select>
             <div class="invalid-feedback">
-              Faltó Seleccionar Un Medico.
+              Faltó seleccionar un médico
             </div>
           </div>  
 
@@ -92,7 +91,7 @@
 				   ?>
             </select>
             <div class="invalid-feedback">
-              Faltó Seleccionar Un Paciente.
+              Faltó seleccionar un paciente
             </div>
           </div>  
         
@@ -102,7 +101,7 @@
             <label for="resultados_analisis">Resultados</label>
             <input type="text" class="form-control" name="resultados_analisis" placeholder="" value=<?php echo "'".$analisis[0]['resultados_analisis']."'" ?> required>
             <div class="invalid-feedback">
-              Faltó Ingresar Una Observacion.
+              Faltó ingresar una observación
             </div>
           </div>
       
@@ -112,7 +111,7 @@
             <label for="obser_analisis">Observaciones</label>
             <input type="text" class="form-control" name="obser_analisis" placeholder="" value=<?php echo "'".$analisis[0]['obser_analisis']."'" ?> required>
             <div class="invalid-feedback">
-              Faltó Ingresar El Diagnostico.
+              Faltó ingresar el diagnóstico
             </div>
           </div>
      

@@ -4,13 +4,12 @@
     require "../metodos.php";
 ?>
 
-<body background="../img/admin2.jpg">  
+<body background="../img/admin2.jpg" style="background-size:cover";>  
     <div class="col-sm-2"><h2>
-		<img border="0" src="../img/atras.png" width="48" height="48" title="Volver al menú" 
+		<img border="0" src="../img/atras.png" width="42" height="42" title="Volver al menú" 
     onclick=location.href='../admin/'; onKeyPress=location.href='../admin/'; style='cursor:pointer';/>
     <label for="boton_atras"><h6>Atrás</h6></label>
     </h2></div>
-
 
   <div class="container">
  <div class="py-5 text-center">
@@ -41,18 +40,18 @@
    
 
 ?>
-
+<DIV ALIGN=center>
           <div class="col-md-6 mb-4">
             <label for="fecha_pago">Fecha</label>
             <input type="date" class="form-control" name="fecha_pago" placeholder="" value="" required>
             <div class="invalid-feedback">
-              Faltó Ingresar La Fecha Del Pago.
+              Faltó ingresar la fecha del pago
             </div>
           </div>
         
 
         <div class="col-md-6 mb-4">
-           <label for="descripcion">Descripcion</label>
+           <label for="descripcion">Descripción</label>
            <select class="custom-select d-block w-100" name="descripcion_pago" required>
            <?php 
 				     $long = count($insumos);
@@ -66,7 +65,7 @@
 				   ?>
             </select>
             <div class="invalid-feedback">
-              Faltó Seleccionar Un Insumo.
+              Faltó ingresar una descripción del insumo
             </div>
           </div>
 
@@ -74,20 +73,22 @@
             <label for="cantidad_insumo">Cantidad</label>
             <input type="text" class="form-control" name="cantidad_insumo" placeholder="" value="" required>
             <div class="invalid-feedback">
-              Faltó Ingresar La Cantidad.
+              Faltó ingresar la cantidad
             </div>
           </div>
      
 
           <div class="col-md-6 mb-4">
-            <label for="liqui_pago">Liquidacion</label>
+            <label for="liqui_pago">Monto</label>
             <input type="text" class="form-control" name="liqui_pago" placeholder="" value="" required>
             <div class="invalid-feedback">
-              Faltó Ingresar La liquidacion.
+              Faltó ingresar el monto
             </div>
           </div>
      
-
+      </div>
+  <div class="col-sm-2 mt-2 mb-1 p-2"></div>
+  <div class="col-sm-2"><h2></h2></div>	
      
           <p align="center"> <font face="Verdana" size="5" color="#666666"><u>Insumos</u></font></i></p>
 
@@ -124,9 +125,11 @@
 </div>
     </div>
      <hr class="mb-4">
-        <button class="btn btn-primary btn-lg btn-block" type="submit">Guardar</button>
+     <DIV ALIGN=center>
+        <button class="btn btn-success btn-lg btn-block col-sm-5" type="submit">Guardar</button>
       </form>
     </div>
+  </div>
 
  
   <footer class="my-5 pt-5 text-muted text-center text-small">

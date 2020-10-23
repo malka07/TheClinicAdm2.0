@@ -24,7 +24,7 @@ $sql = "UPDATE clinicos SET nombre_clinico='" . ($_POST['nombre_clinico']) 				.
   <div class="py-5 text-center">
     <img class="d-block mx-auto mb-4" src="../img/jdlsa.png" alt="" width="72" height="72">
     <h2>JDL S.A</h2>
-    <p class="lead">Modificación de Médicos y Servicios / Profesiones</p>
+    <h4 class="mb-4">Modificación de Médicos y Servicios / Profesiones</h4>
   </div>
 
  

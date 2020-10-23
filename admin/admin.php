@@ -4,9 +4,9 @@
     require "../metodos.php";
 ?>
 
-<body background="../img/admin2.jpg">
+<body background="../img/admin2.jpg" style="background-size:cover";>
     <div class="col-sm-2"><h2>
-		<img border="0" src="../img/atras.png" width="48" height="48" title="Volver al menú" 
+		<img border="0" src="../img/atras.png" width="42" height="42" title="Volver al menú" 
     onclick=location.href='../admin/'; onKeyPress=location.href='../admin/'; style='cursor:pointer';/>
     <label for="boton_atras"><h6>Atrás</h6></label>
     </h2></div>
@@ -40,21 +40,21 @@
    
 
 ?>
-
-          <div class="col-md-6 mb-4">
+        <DIV ALIGN=center>
+          <div class="col-md-6 mb-4" >
             <label for="fecha_recibo">Fecha</label>
             <input type="date" class="form-control" name="fecha_recibo" placeholder="" value="" required>
             <div class="invalid-feedback">
-              Faltó ingresar la fecha del Recibo.
+              Faltó ingresar la fecha del recibo
             </div>
           </div>
         
-        
+          
         <div class="col-md-6 mb-4">
             <label for="descripcion_recibo">Descripción</label>
-            <input type="text" class="form-control" name="descripcion_recibo" placeholder="" value="" required>
+            <textarea input type="text" class="form-control" rows="4"  name="descripcion_recibo" placeholder="" value="" required></textarea>
             <div class="invalid-feedback">
-              Faltó Ingresar Una Descripcion.
+              Faltó ingresar una descripción
             </div>
           </div>
 
@@ -73,7 +73,7 @@
 				   ?>
             </select>
             <div class="invalid-feedback">
-              Faltó seleccionar un Médico.
+              Faltó seleccionar un médico
             </div>
           </div>
 
@@ -81,13 +81,14 @@
             <label for="liqui_recibo">Liquidación</label>
             <input type="text" class="form-control" name="liqui_recibo" placeholder="" value="" required>
             <div class="invalid-feedback">
-              Faltó ingresar la liquidación.
+              Faltó ingresar la liquidación
             </div>
           </div>
      
-
-     
-          <p align="center"> <font face="Verdana" size="5" color="#666666"><u>Medicos</u></font></i></p>
+        </div>
+    <div class="col-sm-2 mt-2 mb-1 p-2"></div>
+    <div class="col-sm-2"><h2></h2></div>	
+          <p align="center"> <font face="Verdana" size="5" color="#666666"><u>Médicos</u></font></i></p>
 
 <div align="center">
   <center>
@@ -122,10 +123,11 @@
 </div>
     </div>
      <hr class="mb-4">
-        <button class="btn btn-primary btn-lg btn-block" type="submit">Guardar</button>
+     <DIV ALIGN=center>
+        <button class="btn btn-success btn-lg btn-block col-sm-5" type="submit">Guardar</button>
       </form>
     </div>
-
+  </div>
  
   <footer class="my-5 pt-5 text-muted text-center text-small">
     <p class="mb-1">&copy; 2020 - JDL S.A</p>

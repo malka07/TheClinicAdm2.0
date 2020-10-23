@@ -6,9 +6,9 @@
 ?>
 
 
-<body background="../img/tek.jpg">
+<body background="../img/tek.jpg" style="background-size:cover";>
   <div class="col-sm-2"><h2>
-	<img border="0" src="../img/atras.png" width="48" height="48" title="Volver a Análisis clínicos" 
+	<img border="0" src="../img/atras.png" width="42" height="42" title="Volver a Análisis clínicos" 
 		onclick=location.href='../analisis/'; 
 		onKeyPress=location.href='../analisis/'; 
 		style='cursor:pointer';/>

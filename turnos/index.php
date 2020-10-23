@@ -27,7 +27,7 @@
         -ms-user-select: none;
         user-select: none;
       }
-
+        
       @media (min-width: 768px) {
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
@@ -37,7 +37,7 @@
     <!-- Custom styles for this template -->
     <link href="form-validation.css" rel="stylesheet">
   </head>
-  <body background="../img/turnos.jpg">
+  <body background="../img/turnos.jpg" style="background-size:cover";>
   <div class="col-md"><h2>
 		<img border="0" src="../img/atras.png" width="42" height="42" title="Volver al menú" 
 		onclick=location.href='../panel/'; onKeyPress=location.href='../panel/'; style='cursor:pointer';/>
@@ -58,7 +58,7 @@
 		onclick=location.href='turnos.php'; onKeyPress=location.href='turnos.php';
   
 		style='cursor:pointer';>
-	  <label for="ingresar Turno"><h6>Ingresar Un Turno</h6></label>
+	  <label for="ingresar Turno"><h6>Ingresar Turno</h6></label>
 	</h2></div>
   
 	<div class="col-sm-1 "><h2>

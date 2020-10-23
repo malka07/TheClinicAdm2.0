@@ -37,10 +37,10 @@
     <!-- Custom styles for this template -->
     <link href="form-validation.css" rel="stylesheet">
   </head>
-  <body background="../img/admin.jpg">
+  <body background="../img/admin.jpg" style="background-size:cover";>
 
   <div class="col-md"><h2>
-		<img border="0" src="../img/atras.png" width="48" height="48" title="Volver al menú" 
+		<img border="0" src="../img/atras.png" width="42" height="42" title="Volver al menú" 
 		onclick=location.href='../panel/'; onKeyPress=location.href='../panel/'; style='cursor:pointer';/>
     <label for="boton_atras"><h6>Atrás</h6></label>
 	</h2></div>
@@ -72,7 +72,7 @@
 		<img border="0" src="../img/check.png" width="48" height="48" title="Listado" 
 		onclick=location.href='listado.php'; onKeyPress=location.href='listado.php';
 		style='cursor:pointer';>
-    <label for="descripcion_pago"><h6>Listado en tabla</h6></label>
+    <label for="descripcion_recibo"><h6>Listado en tabla</h6></label>
 	</h2></div>
     <div class="col-sm-2"><h2></h2></div>	
 </div>
@@ -91,9 +91,6 @@
  
  
   
-
-
-
 <?php 
    require "../conexion.php";
 
@@ -114,19 +111,20 @@
 				
 				<a 	<?php echo "href=modifica.php?id_recibo=".$recibos[$i]['id_recibo'];?>
 						 class="list-group-item bg-dark">
-				<h4 class="list-group-item-heading text-light"> <?php echo $recibos[$i]['id_recibo'] ."";?> </h4>
-				<p class="list-group-item-text text-light"><?php 	echo "Fecha De Recibo: " . $recibos[$i]['fecha_recibo'] ." - Descripcion: "; 
-                            echo $recibos[$i]['descripcion_recibo'] ." - Medico: "; 
-                            echo $recibos[$i]['clinico_recibo'] ." - Liquidacion: "; 
+				<h4 class="list-group-item-heading"> <?php echo $recibos[$i]['id_recibo'] ."";?> </h4>
+				<p class="list-group-item-text"><?php 	echo "Fecha De Recibo: " . $recibos[$i]['fecha_recibo'] ." - Descripción: "; 
+                            echo $recibos[$i]['descripcion_recibo'] ." - Médico: "; 
+                            echo $recibos[$i]['clinico_recibo'] ." - Liquidación: "; 
                             echo $recibos[$i]['liqui_recibo'] ."";
 														?></p>		 
 				</a>	</div>
 	<?php  } ?>
 	
 				
-		</div>
+	
         <a href="../panel/">	 <hr class="mb-4">
-        <button class="btn btn-success btn-lg btn-block" type="submit">Volver</button>
+        <DIV ALIGN=center>
+        <button class="btn btn-success btn-lg btn-block col-sm-4" type="submit">Volver</button></div>
   <footer class="my-5 pt-5 text-muted text-center text-small"></a>
      
     </div>

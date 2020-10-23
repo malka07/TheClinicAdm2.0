@@ -4,9 +4,9 @@
     require "../metodos.php";
 ?>
 
-<body background="../img/analisis2.jpg">
+<body background="../img/analisis2.jpg" style="background-size:cover";>
   <div class="col-md"><h2>
-		<img border="0" src="../img/atras.png" width="48" height="48" title="Volver al menú" 
+		<img border="0" src="../img/atras.png" width="42" height="42" title="Volver al menú" 
     onclick=location.href='../analisis/'; onKeyPress=location.href='../analisis/'; style='cursor:pointer';/>
     <label for="boton_atras"><h6>Atrás</h6></label>
   </h2></div>
@@ -67,12 +67,12 @@
             <label for="fecha_analsis">Fecha</label>
             <input type="date" class="form-control" name="fecha_analisis" placeholder="" value=<?php echo "'".$analisis[0]['fecha_analisis']."'" ?> required>
             <div class="invalid-feedback">
-              Faltó Ingresar La Fecha Del Analisis.
+              Faltó ingresar la fecha del análisis
             </div>
           </div>
         
           <div class="col-md-6 mb-4">
-           <label for="clinico_analisis">Medico</label>
+           <label for="clinico_analisis">Médico</label>
            <select class="custom-select d-block w-100" name="clinico_analisis" required>
            <?php 
 				     $long = count($clinicos);
@@ -86,7 +86,7 @@
 				   ?>
             </select>
             <div class="invalid-feedback">
-              Faltó Seleccionar Un Medico.
+              Faltó seleccionar un médico
             </div>
           </div>  
 
@@ -105,7 +105,7 @@
 				   ?>
             </select>
             <div class="invalid-feedback">
-              Faltó Seleccionar Un Paciente.
+              Faltó seleccionar un paciente
             </div>
           </div>  
         
@@ -115,7 +115,7 @@
             <label for="resultados_analisis">Resultados</label>
             <input type="text" class="form-control" name="resultados_analisis" placeholder="" value=<?php echo "'".$analisis[0]['resultados_analisis']."'" ?> required>
             <div class="invalid-feedback">
-              Faltó Ingresar Una Observacion.
+              Faltó ingresar el diagnóstico
             </div>
           </div>
       
@@ -125,7 +125,7 @@
             <label for="obser_analisis">Observaciones</label>
             <input type="text" class="form-control" name="obser_analisis" placeholder="" value=<?php echo "'".$analisis[0]['obser_analisis']."'" ?> required>
             <div class="invalid-feedback">
-              Faltó Ingresar El Diagnostico.
+              Faltó ingresar una observación 
             </div>
           </div>
      

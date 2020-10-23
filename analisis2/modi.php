@@ -17,12 +17,12 @@
  
 ?>								
 
-  <body class="bg-light">
+<body background="../img/analisis2.jpg" style="background-size:cover";>
     <div class="container">
   <div class="py-5 text-center">
-    <img class="d-block mx-auto mb-4" src="../img/disc.jpg" alt="" width="72" height="72">
-    <h2>JDL S.A</h2>
-    <p class="lead">Modificacion De Analisis Clinicos y Servicios / Profesiones.</p>
+  <img class="d-block mx-auto mb-4" src="../img/jdlsa2.png" alt="" width="72" height="72">
+    <h5>JDL S.A</h5>
+    <h4 class="mb-4">Modificación de Análisis Clínicos y Servicios / Profesiones</h4>
   </div>
  
  <?php 

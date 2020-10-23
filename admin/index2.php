@@ -38,10 +38,10 @@
     <link href="form-validation.css" rel="stylesheet">
   </head>
 
-  <body background="../img/admin.jpg">
+  <body background="../img/admin.jpg" style="background-size:cover";>
 
 <div class="col-md"><h2>
-  <img border="0" src="../img/atras.png" width="48" height="48" title="Volver al menú" 
+  <img border="0" src="../img/atras.png" width="42" height="42" title="Volver al menú" 
   onclick=location.href='../panel/'; onKeyPress=location.href='../panel/'; style='cursor:pointer';/>
   <label for="boton_atras"><h6>Atrás</h6></label>
 </h2></div>
@@ -70,7 +70,7 @@
 	</h2></div>
 	<div class="col-sm-1"><h2>
 		<img border="0" src="../img/check.png" width="48" height="48" title="Listado" 
-		onclick=location.href='listado.php'; onKeyPress=location.href='listado.php';
+		onclick=location.href='listado2.php'; onKeyPress=location.href='listado2.php';
 		style='cursor:pointer';>
     <label for="descripcion_pago"><h6>Listado en tabla</h6></label>
 	</h2></div>
@@ -113,9 +113,9 @@
 				<a 	<?php echo "href=modifica2.php?id_pago=".$pagos[$i]['id_pago'];?>
 						 class="list-group-item bg-dark">
 				<h4 class="list-group-item-heading "> <?php echo $pagos[$i]['id_pago'] ."";?> </h4>
-				<p class="list-group-item-text "><?php 	echo "Fecha De Pago: " . $pagos[$i]['fecha_pago'] ." - Descripcion: "; 
+				<p class="list-group-item-text "><?php 	echo "Fecha De Pago: " . $pagos[$i]['fecha_pago'] ." - Descripción: "; 
                             echo $pagos[$i]['descripcion_pago'] ." - Cantidad: "; 
-                            echo $pagos[$i]['cantidad_pago'] ." - Liquidacion: "; 
+                            echo $pagos[$i]['cantidad_pago'] ." - Liquidación: "; 
                             echo $pagos[$i]['liqui_pago'] ."";
 														?></p>		 
 				</a>	</div>
@@ -124,11 +124,13 @@
 				
 		</div>
         <a href="../panel/">	 <hr class="mb-4">
-        <button class="btn btn-success btn-lg btn-block" type="submit">Volver</button>
+        <DIV ALIGN=center>
+        <button class="btn btn-success btn-lg btn-block col-sm-4" type="submit">Volver</button>
   <footer class="my-5 pt-5 text-muted text-center text-small"></a>
      
     </div>
   </div>
+
 
   <footer class="my-5 pt-5 text-muted text-center text-small">
     <p class="mb-1">&copy; 2020 - JDL S.A</p>
