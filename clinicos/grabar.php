@@ -46,7 +46,7 @@
   <div class="py-5 text-center">
   <div class="col-sm-2 mt-2 mb-1 p-2"></div>
     <div class="col-sm-2"><h2></h2></div>	
-    <div class="col-md"><img class="d-block mx-auto mb-1" src="../img/jdlsa2.png" alt="" width="62" height="62"></div>
+    <div class="col-md"><img class="d-block mx-auto mb-1" src="../img/jdlsa.png" alt="" width="62" height="62"></div>
     <p class="lead"><h4><strong>Ingreso de Médicos y Servicios / Profesiones para la App</strong></h4></p>
   </div>
      

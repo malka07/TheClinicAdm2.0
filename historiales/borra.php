@@ -5,13 +5,14 @@
 $sql = "delete from historiales where id_historial=" . $_GET['id_historial'] ;		
 ?>
 
-<body background="../img/historials.jpg">
+  <body background="../img/historials.jpg" style="background-size:cover";>
     <div class="container">
   <div class="py-5 text-center">
   <div class="col-md"><img class="d-block mx-auto mb-1" src="../img/jdlsa2.png" alt="" width="62" height="62"></div>
   <div class="col-md"><h5>JDL S.A</h5></div>
-    <p class="lead"><h4><strong>Eliminar Historiales / Servicios</strong></h4></p>
+  <p class="lead"><h4><strong>Eliminar Historiales / Servicios</strong></h4></p>
   </div>
+  
   
  <?php 
   if ($mysqli->query($sql) === TRUE) {
@@ -27,7 +28,8 @@ $mysqli->close();
 ?>
 
 <a href="../historiales">	 <hr class="mb-4">
-        <button class="btn btn-success btn-lg btn-block" type="submit">Volver</button>
+<DIV ALIGN=center>
+        <button class="btn btn-success btn-lg btn-block col-sm-5" type="submit">Volver</button></div>
   <footer class="my-5 pt-5 text-muted text-center text-small"></a>
     <p class="mb-1">&copy; 2020 - JDL S.A</p>
     <ul class="list-inline">

@@ -7,23 +7,21 @@
 <body background="../img/historials.jpg">
 
     <div class="col-sm-2"><h2>
-		<img border="0" src="../img/atras.png" width="48" height="48" title="Volver al menú" 
+		<img border="0" src="../img/atras.png" width="42" height="42" title="Volver al menú" 
 		onclick=location.href='javascript:history.go(-1)'; onKeyPress=location.href='javascript:history.go(-1)'; style='cursor:pointer';/>
     <label for="boton_atras"><h6>Atrás</h6></label>
-	</h2>
-	</div>
+	</h2></div>
 
   <div class="container">
- <div class="py-5 text-center">
+  <div class="py-5 text-center">
   <div class="row">
 	
-	
   <div class="col-md"><img class="d-block mx-auto mb-1" src="../img/jdlsa.png" alt="" width="62" height="62"></div>
-
-</div>
+  </div>
 
     <div class="col-md-12 order-md-1">
-      <h4 class="mb-4">Alta De Historiales Clinicos</h4>
+    <div class="col-md-12 order-md-1">
+      <h4 class="mb-4">Alta de Historiales Clínicos</h4>
       <form class="needs-validation" novalidate action="grabar.php" method="post">
 	  
 <?php 
@@ -49,17 +47,17 @@
 
         
 ?>
-
+<DIV ALIGN=center>
           <div class="col-md-6 mb-4">
             <label for="fecha_historial">Fecha</label>
             <input type="date" class="form-control" name="fecha_historial" placeholder="" value="" required>
             <div class="invalid-feedback">
-              Faltó Ingresar La Fecha Del Historial.
+              Faltó ingresar la fecha del historial
             </div>
           </div>
         
           <div class="col-md-6 mb-4">
-           <label for="clinico">Medico</label>
+           <label for="clinico">Médico</label>
            <select class="custom-select d-block w-100" name="id_clinico" required>
            <?php 
 				     $long = count($clinicos);
@@ -73,7 +71,7 @@
 				   ?>
             </select>
             <div class="invalid-feedback">
-              Faltó Seleccionar Un Medico.
+              Faltó seleccionar un médico
             </div>
           </div>  
 
@@ -92,7 +90,7 @@
 				   ?>
             </select>
             <div class="invalid-feedback">
-              Faltó Seleccionar Un Paciente.
+              Faltó seleccionar un paciente
             </div>
           </div>  
         
@@ -102,7 +100,7 @@
             <label for="observacion_historial">Observaciones</label>
             <input type="text" class="form-control" name="observacion_historial" placeholder="" value="" required>
             <div class="invalid-feedback">
-              Faltó Ingresar Una Observacion.
+              Faltó ingresar una observación
             </div>
           </div>
       
@@ -112,13 +110,13 @@
             <label for="diagnostico_historial">Diagnostico</label>
             <input type="text" class="form-control" name="diagnostico_historial" placeholder="" value="" required>
             <div class="invalid-feedback">
-              Faltó Ingresar El Diagnostico.
+             Faltó ingresar el diagnóstico
             </div>
           </div>
      
 
      
-          <p align="center"> <font face="Verdana" size="5" color="#666666"><u>Medicos</u></font></i></p>
+          <p align="center"> <font face="Verdana" size="5" color="#666666"><u>Médicos</u></font></i></p>
 
 <div align="center">
   <center>
@@ -153,7 +151,8 @@
 </div>
     </div>
      <hr class="mb-4">
-        <button class="btn btn-primary btn-lg btn-block" type="submit">Guardar</button>
+     <DIV ALIGN=center>
+        <button class="btn btn-success btn-lg btn-block col-sm-5" type="submit">Guardar</button>
       </form>
     </div>
 

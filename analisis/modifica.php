@@ -8,7 +8,7 @@
   <meta name="GENERATOR" content="Microsoft FrontPage 5.0">
   <meta name="ProgId" content="FrontPage.Editor.Document">
   <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-  <title>Listado De Recibos</title>
+  <title>Listado De Análisis</title>
 </head>
 
 <body background="../img/analisis2.jpg" style="background-size:cover";>
@@ -20,9 +20,10 @@
 
   <div class="container">
   <div class="py-5 text-center">
+
     <div class="col-md"><img class="d-block mx-auto mb-1" src="../img/jdlsa2.png" alt="" width="62" height="62"></div>
     <div class="col-md"><h5>JDL S.A</h5></div>
-    <p class="lead "><h4><strong>Servicios Médicos e Informáticos</strong></h4></p>
+    <p class="lead"><h4><strong>Servicios Médicos e Informáticos</strong></h4></p>
   <hr>
   <div class="row">
   </h2></div>

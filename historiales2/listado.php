@@ -1,4 +1,7 @@
 ﻿<html>
+<?php 
+    require "../metodos.php";
+?>
 <head>
 <meta http-equiv="Content-Language" content="es">
 <meta name="GENERATOR" content="Microsoft FrontPage 5.0">
@@ -7,14 +10,15 @@
 <title>Listado De Historiales</title>
 
 </head>
-
 <body background="../img/historials.jpg">
-<div class="row">
-<div class="col-md"><h2>
-		<img border="0" src="../img/atras.png" width="40" height="40" title="Volver al menú" 
+
+	<div class="col-md"><h2>
+		<img border="0" src="../img/atras.png" width="42" height="42" title="Volver al menú" 
 		onclick=location.href='javascript:history.go(-1)'; onKeyPress=location.href='javascript:history.go(-1)'; style='cursor:pointer';/>
-		
+		<label for="boton_atras"><h6>Atrás</h6></label>
 	</h2></div>
+	<div class="col-md-12 order-md-1"><br/>
+	<div class="col-md-12 order-md-1"><br/>
 
 <?php 
 include "../conexion.php";
@@ -34,10 +38,10 @@ $sql = "SELECT * from historiales order by id_historial";
       <td width="10%" height="35"><p align="center"><font face="Verdana" size="4" >Item</font></i></td>
       <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >ID</font></i></td>
 	  <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Fecha</font></i></td>
-	  <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Medico</font></i></td>	  
+	  <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Médico</font></i></td>	  
 	  <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Paciente</font></i></td>	  
       <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Observaciones</font></i></td>	    
-	  <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Diagnostico</font></i></td>	
+	  <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Diagnóstico</font></i></td>	
 	  </tr>
 
 

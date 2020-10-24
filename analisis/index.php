@@ -39,14 +39,13 @@
   </head>
   
   <body background="../img/analisis.jpg" style="background-size:cover";>
-
   <div class="col-md text-light"><h2>
 		<img border="0" src="../img/atrasb.png" width="42" height="42" title="Volver al menú" 
 		onclick=location.href='../panel/'; onKeyPress=location.href='../panel/'; style='cursor:pointer';/>
     <label for="boton_atras"><h6>Atrás</h6></label>
-	</h2></div>
-    <div class="container">
-    
+  </h2></div>
+  
+  <div class="container">  
   <div class="py-5 text-center text-light">
   
   <div class="col-md"><img class="d-block mx-auto mb-1" src="../img/jdlsa2.png" alt="" width="62" height="62"></div>
@@ -63,7 +62,7 @@
     <label for="ingresar_turno"><h6>Ingresar Análisis</h6></label>
 	</h2></div>
   
-  	<div class="col-sm-1 "><h2>
+  	<div class="col-sm-1"><h2>
 		<img border="0" src="../img/check.png" width="48" height="48" title="Listado" 
 		onclick=location.href='listado.php'; onKeyPress=location.href='listado.php';
 		style='cursor:pointer';>
