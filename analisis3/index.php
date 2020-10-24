@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <title>JDL S.A - Historiales Clinicos</title>
+    <title>JDL S.A - Análisis Clinicos</title>
 
     
 
@@ -38,6 +38,7 @@
     <link href="form-validation.css" rel="stylesheet">
   </head>
   <body background="../img/analisis.jpg" style="background-size:cover";>
+
   <div class="col-md text-light"><h2>
 		<img border="0" src="../img/atrasb.png" width="42" height="42" title="Volver al menú" 
 		onclick=location.href='javascript:history.go(-1)'; onKeyPress=location.href='javascript:history.go(-1)'; style='cursor:pointer';/>
@@ -68,16 +69,14 @@
 	</h2></div>
     <div class="col-sm-2"><h2></h2></div>	
 
-
     </div>
     <div class="col-sm-3">
       <h4 class="mb-1"> </h4>
 	</div>
 
-  
   </div>
-    <div class="col-sm-3 text-light">
-      <h4 class="mb-1">Análisis Clínicos</h4>
+    <div class="col-sm-3">
+      <h4 class="mb-1 text-light">Análisis Clínicos</h4>
 	</div>  
 <?php 
    require "../conexion.php";
@@ -112,7 +111,8 @@
 				
 		</div>
         <a href="javascript:history.go(-1)">	 <hr class="mb-4">
-        <button class="btn btn-success btn-lg btn-block" type="submit">Volver</button>
+        <DIV ALIGN=center>
+        <button class="btn btn-success btn-lg btn-block col-sm-4" type="submit">Volver</button>
   <footer class="my-5 pt-5 text-muted text-center text-small"></a>
      
     </div>

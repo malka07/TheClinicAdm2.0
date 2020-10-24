@@ -38,8 +38,7 @@ $mysqli->close();
 
 ?>
 
-  <a href="../admin">	 
-  <hr class="mb-4">
+  <a href="../admin">	<hr class="mb-4">
     <DIV ALIGN=center>
         <button class="btn btn-success btn-lg btn-block col-sm-5" type="submit">Volver</button>
         </div>

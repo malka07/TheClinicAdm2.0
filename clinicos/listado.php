@@ -1,4 +1,7 @@
 ﻿<html>
+<?php 
+    require "../metodos.php";
+?>
 <head>
 <meta http-equiv="Content-Language" content="es">
 <meta name="GENERATOR" content="Microsoft FrontPage 5.0">
@@ -7,12 +10,15 @@
 <title>Listado De Medicos</title>
 
 </head>
-<body background="../img/medico2.jpg">
-<div class="row">
+<body background="../img/medico2.jpg" style="background-size:cover";>
+
 	<div class="col-md"><h2>
-		<img border="0" src="../img/atras.png" width="48" height="48" title="Volver a médicos" 
+		<img border="0" src="../img/atras.png" width="42" height="42" title="Volver a médicos" 
     onclick=location.href='../clinicos/'; onKeyPress=location.href='../clinicos/'; style='cursor:pointer';/>
+    <label for="boton_atras"><h6>Atrás</h6></label>
 	</h2></div>
+	<div class="col-md-12 order-md-1"><br/>
+	<div class="col-md-12 order-md-1"><br/>
 
 
 <?php 
@@ -36,7 +42,7 @@ $sql = "SELECT * from clinicos order by id_clinico";
       <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Apellido</font></i></td>
       <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Edad</font></i></td> 
       <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Domicilio</font></i></td>
-      <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Telefono</font></i></td>
+      <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Teléfono</font></i></td>
       <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Fecha De Nacimiento</font></i></td>
       <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Email</font></i></td>
 	  </tr>

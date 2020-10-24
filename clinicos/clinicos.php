@@ -4,22 +4,22 @@
     require "../metodos.php";
 ?>
 
-<body background="../img/medico2.jpg">
+<body background="../img/medico2.jpg" style="background-size:cover";>
 
     <div class="col-sm-2"><h2>
 		<img border="0" src="../img/atras.png" width="48" height="48" title="Volver al menú" 
     onclick=location.href='../clinicos/'; onKeyPress=location.href='../clinicos/'; style='cursor:pointer';/>
     <label for="boton_atras"><h6>Atrás</h6></label>
-	</h2>
-	</div>
+  </h2></div>
+  
   <div class="container">
  <div class="py-5 text-center">
   <div class="row">
 	
   <div class="col-md"><img class="d-block mx-auto mb-1" src="../img/jdlsa.png" alt="" width="62" height="62"></div>
-
 </div>
 
+    <div class="col-md-12 order-md-1">
     <div class="col-md-12 order-md-1">
       <h4 class="mb-4">Alta de Médicos</h4>
       <form class="needs-validation" novalidate action="grabar.php" method="post">
@@ -37,12 +37,12 @@
    
 
 ?>
-
+<DIV ALIGN=center>
           <div class="col-md-6 mb-4">
             <label for="nombre_clinico">Nombre</label>
             <input type="text" class="form-control" name="nombre_clinico" placeholder="" value="" required>
             <div class="invalid-feedback">
-              Faltó Ingresar El Nombre Del Medico.
+              Faltó ingresar el nombre del médico
             </div>
           </div>
      
@@ -51,7 +51,7 @@
             <label for="apellido_clinico">Apellido</label>
             <input type="text" class="form-control" name="apellido_clinico" placeholder="" value="" required>
             <div class="invalid-feedback">
-              Faltó Ingresar El Apellido Del Medico.
+              Faltó ingresar el apellido del médico
             </div>
           </div>
       
@@ -60,7 +60,7 @@
             <label for="edad_clinico">Edad</label>
             <input type="text" class="form-control" name="edad_clinico" placeholder="" value="" required>
             <div class="invalid-feedback">
-              Faltó Ingresar La Edad Del Medico.
+              Faltó ingresar la edad del médico
             </div>
           </div>
   
@@ -69,15 +69,15 @@
             <label for="domicilio_clinico">Domicilio</label>
             <input type="text" class="form-control" name="domicilio_clinico" placeholder="" value="" required>
             <div class="invalid-feedback">
-              Faltó Ingresar El Domicilio Del Medico.
+              Faltó ingresar el domicilio del médico
             </div>
           </div>
 
           <div class="col-md-6 mb-4">
-            <label for="telefono_clinico">Telefono</label>
+            <label for="telefono_clinico">Teléfono</label>
             <input type="text" class="form-control" name="telefono_clinico" placeholder="" value="" required>
             <div class="invalid-feedback">
-              Faltó Ingresar El Telefono Del Medico.
+              Faltó ingresar el teléfono del médico
             </div>
           </div>
         
@@ -86,7 +86,7 @@
             <label for="fech_nac_clinico">Fecha De Nacimiento</label>
             <input type="date" class="form-control" name="fech_nac_clinico" placeholder="" value="" required>
             <div class="invalid-feedback">
-              Faltó Ingresar La Fecha De Nacimiento Del Medico.
+              Faltó ingresar la fecha de nacimiento del médico
             </div>
           </div>
        
@@ -95,18 +95,16 @@
             <label for="email_clinico">Email</label>
             <input type="text" class="form-control" name="email_clinico" placeholder="" value="" required>
             <div class="invalid-feedback">
-              Faltó Ingresar El Email Del Medico.
+              Faltó ingresar el Email del médico
             </div>
           </div>
         
 
-  
-     
-
 </div>
     </div>
      <hr class="mb-4">
-        <button class="btn btn-primary btn-lg btn-block" type="submit">Guardar</button>
+     <DIV ALIGN=center>
+        <button class="btn btn-success btn-lg btn-block col-sm-5" type="submit">Guardar</button>
       </form>
     </div>
 

@@ -3,13 +3,18 @@
 <?php 
     require "../metodos.php";
 ?>
+<head>
+  <meta http-equiv="Content-Language" content="es">
+  <meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+  <meta name="ProgId" content="FrontPage.Editor.Document">
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <title>Listado De Recibos</title>
+</head>
 
 <body background="../img/analisis2.jpg" style="background-size:cover";>
-<div class="col-md"><h2>
+  <div class="col-md"><h2>
 		<img border="0" src="../img/atras.png" width="42" height="42" title="Volver al menú" 
-      onclick=location.href='javascript:history.go(-1)'; 
-			onKeyPress=location.href='javascript:history.go(-1)'; 
-			style='cursor:pointer';/>
+      onclick=location.href='javascript:history.go(-1)'; onKeyPress=location.href='javascript:history.go(-1)'; style='cursor:pointer';/>
     <label for="boton_atras"><h6>Atrás</h6></label>
   </h2></div>
 
@@ -23,7 +28,10 @@
   </h2></div>
 
     <div class="col-md-12 order-md-1">
-      <h4 class="mb-4">Modificar datos de los historiales</h4>
+    <div class="col-sm-2"></div>
+    <div class="col-sm-2"><h2></h2></div>	
+  </div>
+      <h4 class="mb-4">Modificar datos de los Análisis</h4>
       <form class="needs-validation" novalidate action="modi.php" method="POST">
 	  
 <?php 
@@ -48,7 +56,7 @@
 	
 	echo "<input type='hidden' name='id_analisis' value=" .$_GET['id_analisis'] .">"; 
 ?>  
-	  
+	  <DIV ALIGN=center>
     <div class="col-md-6 mb-4">
             <label for="fecha_analisis">Fecha</label>
             <input type="date" class="form-control" name="fecha_analisis" placeholder="" value=<?php echo "'".$analisis[0]['fecha_analisis']."'" ?> required>
@@ -119,7 +127,8 @@
 
 		</div>
         <hr class="mb-4">
-        <button class="btn btn-primary btn-lg btn-block" type="submit">Modificar</button>
+        <DIV ALIGN=center>
+        <button class="btn btn-success btn-lg btn-block col-sm-5" type="submit">Modificar</button>
       </form>
     </div>
   </div>

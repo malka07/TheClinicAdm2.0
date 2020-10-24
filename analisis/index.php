@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <title>JDL S.A - Historiales Clinicos</title>
+    <title>JDL S.A - Análisis Clínicos</title>
 
     
 
@@ -37,7 +37,9 @@
     <!-- Custom styles for this template -->
     <link href="form-validation.css" rel="stylesheet">
   </head>
+  
   <body background="../img/analisis.jpg" style="background-size:cover";>
+
   <div class="col-md text-light"><h2>
 		<img border="0" src="../img/atrasb.png" width="42" height="42" title="Volver al menú" 
 		onclick=location.href='../panel/'; onKeyPress=location.href='../panel/'; style='cursor:pointer';/>
@@ -49,19 +51,19 @@
   
   <div class="col-md"><img class="d-block mx-auto mb-1" src="../img/jdlsa2.png" alt="" width="62" height="62"></div>
   <div class="col-md"><h5>JDL S.A</h5></div>
-  <p class="lead "><h4><strong>Servicios Médicos e Informáticos</strong></h4></p>
+  <p class="lead"><h4><strong>Servicios Médicos e Informáticos</strong></h4></p>
   <hr>
   <div class="row">
+
   
     <div class="col-sm-1"><h2>
 		<img border="0" src="../img/add.png" width="48" height="48" title="Ingresar Análisis clinico" 
 		onclick=location.href='analisis.php'; onKeyPress=location.href='analisis.php';
-    
 		style='cursor:pointer';>
     <label for="ingresar_turno"><h6>Ingresar Análisis</h6></label>
 	</h2></div>
   
-	<div class="col-sm-1 "><h2>
+  	<div class="col-sm-1 "><h2>
 		<img border="0" src="../img/check.png" width="48" height="48" title="Listado" 
 		onclick=location.href='listado.php'; onKeyPress=location.href='listado.php';
 		style='cursor:pointer';>
@@ -75,7 +77,7 @@
 	</div>
 
   </div>
-    <div class="col-sm-3">
+  <div class="col-md-12 order-md-1">
       <h4 class="mb-1 text-light">Análisis Clínicos</h4>
 	</div>    
 
@@ -114,7 +116,8 @@
 				
 		</div>
         <a href="javascript:history.go(-1)">	 <hr class="mb-4">
-        <button class="btn btn-success btn-lg btn-block" type="submit">Volver</button>
+        <DIV ALIGN=center>
+        <button class="btn btn-success btn-lg btn-block col-sm-4" type="submit">Volver</button>
   <footer class="my-5 pt-5 text-muted text-center text-small"></a>
      
     </div>

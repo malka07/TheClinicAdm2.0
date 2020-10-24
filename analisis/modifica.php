@@ -3,6 +3,13 @@
 <?php 
     require "../metodos.php";
 ?>
+<head>
+  <meta http-equiv="Content-Language" content="es">
+  <meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+  <meta name="ProgId" content="FrontPage.Editor.Document">
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <title>Listado De Recibos</title>
+</head>
 
 <body background="../img/analisis2.jpg" style="background-size:cover";>
   <div class="col-md"><h2>
@@ -11,7 +18,7 @@
     <label for="boton_atras"><h6>Atrás</h6></label>
   </h2></div>
 
-    <div class="container">
+  <div class="container">
   <div class="py-5 text-center">
     <div class="col-md"><img class="d-block mx-auto mb-1" src="../img/jdlsa2.png" alt="" width="62" height="62"></div>
     <div class="col-md"><h5>JDL S.A</h5></div>
@@ -20,7 +27,7 @@
   <div class="row">
   </h2></div>
 
-    <div class="col-sm-2">
+    <div class="col-sm-2 offset-md-1">
 		<img border="0" src="../img/delete.png" width="48" height="48" title="Eliminar" 
 						<?php echo " onclick=location.href='" 
 												. "cuidado.php?id_analisis=".$_GET['id_analisis'] . "'"; ?>;
@@ -29,17 +36,17 @@
 						style='cursor:pointer';/>
             <label for="boton_eliminar"><h6>Eliminar registro</h6></label>
 	
-	</h2>
-	</div>
+	</h2></div>
 	<div class="col-sm-2"></div>
     <div class="col-sm-2"><h2></h2></div>	
-
   </div>
 
     <div class="col-md-12 order-md-1">
-      <h4 class="mb-4">Modificar Datos de los Análisis</h4>
+    <DIV ALIGN=center>
+      <h4 class="mb-4">Modificar datos de los Análisis</h4>
       <form class="needs-validation" novalidate action="modi.php" method="POST">
-	  
+      </div>
+
 <?php 
    require "../conexion.php";
     $sql = "SELECT * from analisis where id_analisis = " . $_GET['id_analisis'];
@@ -62,7 +69,8 @@
 	
 	echo "<input type='hidden' name='id_analisis' value=" .$_GET['id_analisis'] .">"; 
 ?>  
-	  
+
+	      <DIV ALIGN=center>
     <div class="col-md-6 mb-4">
             <label for="fecha_analsis">Fecha</label>
             <input type="date" class="form-control" name="fecha_analisis" placeholder="" value=<?php echo "'".$analisis[0]['fecha_analisis']."'" ?> required>
@@ -133,7 +141,8 @@
 
 		</div>
         <hr class="mb-4">
-        <button class="btn btn-primary btn-lg btn-block" type="submit">Modificar</button>
+        <DIV ALIGN=center>
+        <button class="btn btn-success btn-lg btn-block col-sm-5" type="submit">Modificar</button>
       </form>
     </div>
   </div>

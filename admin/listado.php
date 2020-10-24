@@ -12,10 +12,10 @@
 </head>
 <body background="../img/admin2.jpg" style="background-size:cover";>
 
-    <div class="col-sm-2"><h2>
-		<img border="0" src="../img/atras.png" width="42" height="42" title="Volver al menú" 
-		onclick=location.href='../admin/'; onKeyPress=location.href='../admin/'; style='cursor:pointer';/>
-		<label for="boton_atras"><h6>Atrás</h6></label>
+<div class="col-sm-2"><h2>
+	<img border="0" src="../img/atras.png" width="42" height="42" title="Volver al menú" 
+	onclick=location.href='../admin/'; onKeyPress=location.href='../admin/'; style='cursor:pointer';/>
+	<label for="boton_atras"><h6>Atrás</h6></label>
 	</h2></div>
 	<div class="col-md-12 order-md-1"><br/>
 	<div class="col-md-12 order-md-1"><br/>

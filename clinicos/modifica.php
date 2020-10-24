@@ -9,19 +9,18 @@
 		<img border="0" src="../img/atras.png" width="42" height="42" title="Volver a médicos" 
 		onclick=location.href='../clinicos/'; onKeyPress=location.href='../clinicos/'; style='cursor:pointer';/>
     <label for="boton_atras"><h6>Atrás</h6></label>
-	</h2></div>
-    <div class="container">
-    
-  <div class="py-5 text-center">
+  </h2></div>
   
+  <div class="container">
+  <div class="py-5 text-center">
   <div class="col-md"><img class="d-block mx-auto mb-1" src="../img/jdlsa2.png" alt="" width="62" height="62"></div>
   <div class="col-md"><h5>JDL S.A</h5></div>
   <p class="lead "><h4><strong>Servicios Médicos e Informáticos</strong></h4></p>
   <hr>
   <div class="row">
-</h2></div>
+  </h2></div>
 
-    <div class="col-sm-2">
+    <div class="col-sm-2 offset-md-1">
 		<img border="0" src="../img/delete.png" width="48" height="48" title="Eliminar" 
             <?php echo " onclick=location.href='" 
 												. "cuidado.php?id_clinico=".$_GET['id_clinico'] . "'"; ?>;
@@ -30,13 +29,13 @@
 						style='cursor:pointer';/>
             <label for="boton_eliminar"><h6>Eliminar registro</h6></label>
 	
-	</h2>
-	</div>
+	</h2></div>
 	<div class="col-sm-2"></div>
     <div class="col-sm-2"><h2></h2></div>	
 </div>
 
     <div class="col-md-12 order-md-1">
+    <DIV ALIGN=center>
       <h4 class="mb-4">Modificar datos del Médico</h4>
       <form class="needs-validation" novalidate action="modi.php" method="POST">
 
@@ -52,7 +51,7 @@
      
 	echo "<input type='hidden' name='id_clinico' value=" .$_GET['id_clinico'] .">"; 
 ?>  
-	  
+	      <DIV ALIGN=center>
           <div class="col-md-6 mb-4">
             <label for="nombre_clinico">Nombre:</label>
             <input type="text" class="form-control" id="nombre" name="nombre_clinico" placeholder="" value=<?php echo "'".$clinicos[0]['nombre_clinico']."'" ?> required>
@@ -111,9 +110,11 @@
               Faltó ingresar el Email Del médico
             </div>
           </div>
-		</div>
+    </div>
+    
         <hr class="mb-4">
-        <button class="btn btn-primary btn-lg btn-block" type="submit">Modificar</button>
+        <DIV ALIGN=center>
+        <button class="btn btn-success btn-lg btn-block col-sm-5" type="submit">Modificar</button>
       </form>
     </div>
   </div>

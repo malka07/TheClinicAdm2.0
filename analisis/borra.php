@@ -13,6 +13,7 @@ $sql = "delete from analisis where id_analisis=" . $_GET['id_analisis'] ;
   <p class="lead"><h4><strong>Eliminar Análisis Clínicos / Servicios</strong></h4></p>
   </div>
 
+
  <?php 
   if ($mysqli->query($sql) === TRUE) {
 
@@ -27,7 +28,8 @@ $mysqli->close();
 ?>
 
 <a href="../analisis">	 <hr class="mb-4">
-        <button class="btn btn-success btn-lg btn-block" type="submit">Volver</button>
+<DIV ALIGN=center>
+        <button class="btn btn-success btn-lg btn-block col-sm-5" type="submit">Volver</button></div>
   <footer class="my-5 pt-5 text-muted text-center text-small"></a>
     <p class="mb-1">&copy; 2020 - JDL S.A</p>
 

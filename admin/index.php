@@ -55,10 +55,9 @@
   <div class="row">
     
 
-    <div class="col-sm-1 "><h2>
+    <div class="col-sm-1"><h2>
 		<img border="0" src="../img/add.png" width="48" height="48" title="Ingresar Recibo De Sueldo" 
-		onclick=location.href='admin.php'; onKeyPress=location.href='admin.php';
-		style='cursor:pointer';>
+		onclick=location.href='admin.php'; onKeyPress=location.href='admin.php'; style='cursor:pointer';>
     <label for="descripcion_recibo"><h6>Ingresar Recibo Sueldo</h6></label>
 	</h2></div>
   

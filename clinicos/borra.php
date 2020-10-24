@@ -5,7 +5,7 @@
 $sql = "delete from clinicos where id_clinico=" . $_GET['id_clinico'] ;		
 ?>
 
-<body background="../img/medico2.jpg">
+<body background="../img/medico2.jpg" style="background-size:cover";>
     <div class="container">
   <div class="py-5 text-center">
   <div class="col-md"><img class="d-block mx-auto mb-1" src="../img/jdlsa2.png" alt="" width="62" height="62"></div>
@@ -28,7 +28,8 @@ $mysqli->close();
 ?>
 
 <a href="../clinicos">	 <hr class="mb-4">
-        <button class="btn btn-success btn-lg btn-block" type="submit">Volver</button>
+<DIV ALIGN=center>
+        <button class="btn btn-success btn-lg btn-block col-sm-5" type="submit">Volver</button></div>
   <footer class="my-5 pt-5 text-muted text-center text-small"></a>
     <p class="mb-1">&copy; 2020 - JDL S.A</p>
 

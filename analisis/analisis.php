@@ -20,7 +20,8 @@
 </div>
 
     <div class="col-md-12 order-md-1">
-      <h4 class="mb-4">Alta de análisis clínicos</h4>
+    <div class="col-md-12 order-md-1">
+      <h4 class="mb-4">Alta de Análisis Clínicos</h4>
       <form class="needs-validation" novalidate action="grabar.php" method="post">
 	  
 <?php 
@@ -46,7 +47,7 @@
 
         
 ?>
-
+<DIV ALIGN=center>
           <div class="col-md-6 mb-4">
             <label for="fecha_analisis">Fecha</label>
             <input type="date" class="form-control" name="fecha_analisis" placeholder="" value="" required>
@@ -109,7 +110,7 @@
             <label for="obser_analisis">Diagnóstico</label>
             <input type="text" class="form-control" name="obser_analisis" placeholder="" value="" required>
             <div class="invalid-feedback">
-              Faltó ingresar una observación
+              Faltó ingresar un diagnóstico
             </div>
           </div>
      
@@ -150,7 +151,8 @@
 </div>
     </div>
      <hr class="mb-4">
-        <button class="btn btn-primary btn-lg btn-block" type="submit">Guardar</button>
+     <DIV ALIGN=center>
+        <button class="btn btn-success btn-lg btn-block col-sm-5" type="submit">Guardar</button>
       </form>
     </div>
 
