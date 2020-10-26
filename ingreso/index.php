@@ -38,7 +38,7 @@
     }
 
 ?>
-
+<DIV ALIGN=center>
           <div class="col-md-6 mb-4">
             <label for="nombre">Nombre</label>
             <input type="text" class="form-control" name="nombre_usuario" placeholder="" value="" required>
