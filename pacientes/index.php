@@ -52,7 +52,7 @@
 		<img border="0" src="../img/add.png" width="48" height="48" title="Ingresar Paciente" 
 		onclick=location.href='pacientes.php'; onKeyPress=location.href='pacientes.php';
 		style='cursor:pointer';>
-    <label for="ingresar_paciente"><h6>Ingresar turno</h6></label>
+    <label for="ingresar_paciente"><h6>Ingresar Paciente</h6></label>
 	</h2></div>
   
 	<div class="col-sm-1 "><h2>

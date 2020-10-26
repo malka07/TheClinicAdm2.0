@@ -38,10 +38,10 @@ onclick=location.href='../pacientes/'; onKeyPress=location.href='../pacientes/';
     while($resultado = $query->fetch_assoc()) {
           $clinicos[] = $resultado;
       }
-     
+
 
 ?>
-
+<DIV ALIGN=center>
           <div class="col-md-6 mb-4">
             <label for="nombre_paciente">Nombre</label>
             <input type="text" class="form-control" name="nombre_paciente" placeholder="" value="" required>
@@ -116,8 +116,8 @@ onclick=location.href='../pacientes/'; onKeyPress=location.href='../pacientes/';
           </div>
        
           <div class="col-md-6 mb-4">
-            <label for="historia_paciente">Historial Del Paciente</label>
-            <input type="text" class="form-control" name="historia_paciente" placeholder="" value="" required>
+           
+            <input type="hidden" class="form-control" name="historia_paciente" placeholder="" value=<?php echo "'".$pacientes[0]['id_paciente']."'" ?> required>
             <div class="invalid-feedback">
               Faltó Ingresar Numero De Historial.
             </div>
