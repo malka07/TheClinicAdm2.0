@@ -41,8 +41,11 @@ onclick=location.href='../pacientes/'; onKeyPress=location.href='../pacientes/';
     while($resultado = $query->fetch_assoc()) {
           $clinicos[] = $resultado;
       }
-     
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 294beb5d28ab0aec058721a8d4658b6690c79d11
 ?>
 <DIV ALIGN=center>
           <div class="col-md-6 mb-4">
@@ -119,8 +122,13 @@ onclick=location.href='../pacientes/'; onKeyPress=location.href='../pacientes/';
           </div>
        
           <div class="col-md-6 mb-4">
+<<<<<<< HEAD
             <label for="historia_paciente">Nro historia clínica</label>
             <input type="text" class="form-control" name="historia_paciente" placeholder="" value="" required>
+=======
+           
+            <input type="hidden" class="form-control" name="historia_paciente" placeholder="" value=<?php echo "'".$pacientes[0]['id_paciente']."'" ?> required>
+>>>>>>> 294beb5d28ab0aec058721a8d4658b6690c79d11
             <div class="invalid-feedback">
               Faltó ingresar número de historial
             </div>
