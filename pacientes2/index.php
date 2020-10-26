@@ -33,7 +33,7 @@
     <!-- Custom styles for this template -->
     <link href="form-validation.css" rel="stylesheet">
   </head>
-  <body background="../img/pacientes.jpg">
+  <body background="../img/pacientes.jpg" style="background-size:cover";>
   <div class="col-md"><h2>
 		<img border="0" src="../img/atras.png" width="42" height="42" title="Volver al menú" 
 		onclick=location.href='javascript:history.go(-1)'; onKeyPress=location.href='javascript:history.go(-1)'; style='cursor:pointer';/>
@@ -45,25 +45,24 @@
   
   <div class="col-md"><img class="d-block mx-auto mb-1" src="../img/jdlsa2.png" alt="" width="62" height="62"></div>
   <div class="col-md"><h5>JDL S.A</h5></div>
-  <p class="lead "><h4><strong>Servicios Médicos e Informáticos</strong></h4></p>
+  <p class="lead"><h4><strong>Servicios Médicos e Informáticos</strong></h4></p>
   <hr>
   <div class="row">
 
+
     <div class="col-sm-1"><h2>
 		<img border="0" src="../img/add.png" width="48" height="48" title="Ingresar Paciente" 
-		onclick=location.href='pacientes2.php'; onKeyPress=location.href='pacientes2.php';
-		style='cursor:pointer';>
-    <label for="ingresar_paciente"><h6>Ingresar turno</h6></label>
+		onclick=location.href='pacientes2.php'; onKeyPress=location.href='pacientes2.php';	style='cursor:pointer';>
+    <label for="ingresar_paciente"><h6>Ingresar paciente</h6></label>
 	</h2></div>
   
-	<div class="col-sm-1 "><h2>
+	  <div class="col-sm-1"><h2>
     <img border="0" src="../img/check.png" width="48" height="48" title="Listado" 
 		onclick=location.href='listado.php'; onKeyPress=location.href='listado.php';
 		style='cursor:pointer';>
     <label for="listado_tabla"><h6>Listado en tabla</h6></label>
-	</h2></div>
+    </h2></div>
     <div class="col-sm-2"><h2></h2></div>	
-
 
     </div>
     <div class="col-sm-3">

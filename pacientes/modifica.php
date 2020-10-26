@@ -4,24 +4,24 @@
     require "../metodos.php";
 ?>
 
-<body background="../img/pacientes2.jpg">
+<body background="../img/pacientes2.jpg" style="background-size:cover";>
   <div class="col-md"><h2>
-		<img border="0" src="../img/atras.png" width="40" height="40" title="Volver al menú"
+		<img border="0" src="../img/atras.png" width="42" height="42" title="Volver al menú"
     onclick=location.href='../pacientes/'; onKeyPress=location.href='../pacientes/'; style='cursor:pointer';/>
     <label for="boton_atras"><h6>Atrás</h6></label>
 	</h2></div>
 
     <div class="container">
   <div class="py-5 text-center">
+
   <div class="col-md"><img class="d-block mx-auto mb-1" src="../img/jdlsa2.png" alt="" width="62" height="62"></div>
   <div class="col-md"><h5>JDL S.A</h5></div>
   <p class="lead "><h4><strong>Servicios Médicos e Informáticos</strong></h4></p>
   <hr>
   <div class="row">
-  </h2>
-	</div>
+  </h2></div>
 
-    <div class="col-sm-2">
+    <div class="col-sm-2 offset-md-1">
 		<img border="0" src="../img/delete.png" width="48" height="48" title="Eliminar" 
     <?php echo " onclick=location.href='" 
 												. "cuidado.php?id_paciente=".$_GET['id_paciente'] . "'"; ?>;
@@ -31,11 +31,12 @@
             <label for="boton_eliminar"><h6>Eliminar registro</h6></label>
 	
 	</h2>	</div>
-
-  <div class="col-sm-2"><h2></h2></div>
+	<div class="col-sm-2"></div>
+  <div class="col-sm-2"><h2></h2></div>	
 </div>
 
     <div class="col-md-12 order-md-1">
+    <DIV ALIGN=center>
       <h4 class="mb-4">Modificar datos de los pacientes</h4>
       <form class="needs-validation" novalidate action="modi.php" method="POST">
 
@@ -61,99 +62,99 @@
   
 ?>  
 	  
-        
+    <DIV ALIGN=center> 
           <div class="col-md-6 mb-4">
-            <label for="nombre_paciente">Nombre:</label>
+            <label for="nombre_paciente">Nombre</label>
             <input type="text" class="form-control" id="nombre" name="nombre_paciente" placeholder="" value=<?php echo "'".$pacientes[0]['nombre_paciente']."'" ?> required>
             <div class="invalid-feedback">
-              Faltó Ingresar El Nombre Del Paciente.
+              Faltó ingresar el nombre del paciente
             </div>
           </div>
          
          
           <div class="col-md-6 mb-4">
-            <label for="apellido_paciente">Apellido:</label>
+            <label for="apellido_paciente">Apellido</label>
             <input type="text" class="form-control" id="apellido" name="apellido_paciente" placeholder="" value=<?php echo "'".$pacientes[0]['apellido_paciente']."'" ?> required>
             <div class="invalid-feedback">
-              Faltó Ingresar El Apellido Del Paciente.
+              Faltó ingresar el apellido del paciente
             </div>
           </div>
 
           <div class="col-md-6 mb-4">
-            <label for="dni_paciente">DNI:</label>
+            <label for="dni_paciente">DNI</label>
             <input type="text" class="form-control" id="dni" name="dni_paciente" placeholder="" value=<?php echo "'".$pacientes[0]['dni_paciente']."'" ?> required>
             <div class="invalid-feedback">
-              Faltó Ingresar El DNI Del Paciente.
+              Faltó ingresar el DNI del paciente
             </div>
           </div>
 
           <div class="col-md-6 mb-4">
-            <label for="domicilio_paciente">Domicilio:</label>
+            <label for="domicilio_paciente">Domicilio</label>
             <input type="text" class="form-control" id="domicilio" name="domicilio_paciente" placeholder="" value=<?php echo "'".$pacientes[0]['domicilio_paciente']."'" ?> required>
             <div class="invalid-feedback">
-              Faltó Ingresar El Domicilio Del Paciente.
+              Faltó ingresar el domicilio del paciente
             </div>
           </div>
                
           <div class="col-md-6 mb-4">
-            <label for="telefono_paciente">Telefono:</label>
+            <label for="telefono_paciente">Teléfono</label>
             <input type="text" class="form-control" id="apellido" name="telefono_paciente" placeholder="" value=<?php echo "'".$pacientes[0]['telefono_paciente']."'" ?> required>
             <div class="invalid-feedback">
-              Faltó Ingresar El Telefono Del Paciente.
+              Faltó ingresar el teléfono del paciente
             </div>
           </div> 
          
           <div class="col-md-6 mb-4">
-            <label for="edad_paciente">Edad:</label>
+            <label for="edad_paciente">Edad</label>
             <input type="text" class="form-control" id="edad" name="edad_paciente" placeholder="" value=<?php echo "'".$pacientes[0]['edad_paciente']."'" ?> required>
             <div class="invalid-feedback">
-              Faltó Ingresar La Edad Del Paciente.
+              Faltó ingresar la edad del paciente
             </div>
           </div>
 
           <div class="col-md-6 mb-4">
-            <label for="provincia_paciente">Provincia:</label>
+            <label for="provincia_paciente">Provincia</label>
             <input type="text" class="form-control" id="edad" name="provincia_paciente" placeholder="" value=<?php echo "'".$pacientes[0]['provincia_paciente']."'" ?> required>
             <div class="invalid-feedback">
-              Faltó Ingresar La Provincia Del Paciente.
+              Faltó ingresar la provincia del paciente
             </div>
           </div>
 
           <div class="col-md-6 mb-4">
-            <label for="barrio_paciente">Barrio:</label>
+            <label for="barrio_paciente">Barrio</label>
             <input type="text" class="form-control" id="edad" name="barrio_paciente" placeholder="" value=<?php echo "'".$pacientes[0]['barrio_paciente']."'" ?> required>
             <div class="invalid-feedback">
-              Faltó Ingresar La Barrio Del Paciente.
+              Faltó ingresar el barrio del paciente
             </div>
           </div>
          
                     
           <div class="col-md-6 mb-4">
-            <label for="fech_nac_paciente">Fecha De Nacimiento:</label>
+            <label for="fech_nac_paciente">Fecha De Nacimiento</label>
             <input type="date" class="form-control" id="fecha_nac" name="fech_nac_paciente" placeholder="" value=<?php echo "'".$pacientes[0]['fech_nac_paciente']."'" ?> required>
             <div class="invalid-feedback">
-              Faltó Ingresar La Fecha De Nacimiento Del Paciente.
+              Faltó ingresar la fecha de nacimiento del paciente
             </div>
           </div>
 
           <div class="col-md-6 mb-4">
-            <label for="historia_paciente">Historia Clinica:</label>
+            <label for="historia_paciente">Nro historia clínica</label>
             <input type="text" class="form-control" id="notas" name="historia_paciente" placeholder="" value=<?php echo "'".$pacientes[0]['historia_paciente']."'" ?> required>
             <div class="invalid-feedback">
-              Faltó Ingresar Alguna Historia Clinica.
+              Faltó ingresar número de historial
             </div>
           </div>
           
           <div class="col-md-6 mb-4">
-            <label for="obra_soc_paciente">Obra Social:</label>
+            <label for="obra_soc_paciente">Obra Social</label>
             <input type="text" class="form-control" id="fecha_nac" name="obra_soc_paciente" placeholder="" value=<?php echo "'".$pacientes[0]['obra_soc_paciente']."'" ?> required>
             <div class="invalid-feedback">
-              Faltó Ingresar La Obra Social Del Paciente.
+              Faltó ingresar la obra social del paciente
             </div>
           </div>
 
           <div class="col-md-6 mb-4">
-           <label for="medico">Clinico</label>
+           <label for="medico">Clínico</label>
            <select class="custom-select d-block w-100" name="medico_paciente" required>
            <?php 
 				     $long = count($clinicos);
@@ -167,21 +168,22 @@
 				   ?>
             </select>
             <div class="invalid-feedback">
-              Faltó Seleccionar Un Clinico De Cabecera.
+              Faltó seleccionar un clínico de cabecera
             </div>
           </div>
 
           <div class="col-md-6 mb-4">
-            <label for="email_paciente">Email:</label>
+            <label for="email_paciente">Email</label>
             <input type="text" class="form-control" id="fecha_nac" name="email_paciente" placeholder="" value=<?php echo "'".$pacientes[0]['email_paciente']."'" ?> required>
             <div class="invalid-feedback">
-              Faltó Ingresar El Email Del Paciente.
+              Faltó ingresar el Email del paciente
             </div>
           </div>
 
 		</div>
         <hr class="mb-4">
-        <button class="btn btn-primary btn-lg btn-block" type="submit">Modificar</button>
+        <DIV ALIGN=center>
+        <button class="btn btn-success btn-lg btn-block col-sm-5" type="submit">Modificar</button>
       </form>
     </div>
   </div>
