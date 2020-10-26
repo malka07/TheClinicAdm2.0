@@ -37,7 +37,7 @@
     <div class="col-md-12 order-md-1">
     <DIV ALIGN=center>
       <h4 class="mb-4">Modificar datos de pagos a proveedores</h4>
-      <form class="needs-validation" novalidate action="modi.php" method="POST">
+      <form class="needs-validation" novalidate action="modi2.php" method="POST">
       </div>
     
       
@@ -67,15 +67,25 @@
             </div>
           </div>
       
-
           <div class="col-md-6 mb-4">
-            <label for="descripcion_pago">Descripción</label>
-            <input type="text" class="form-control" id="descripcion" name="descripcion_pago" placeholder="" value=<?php echo "'".$pagos[0]['descripcion_pago']."'" ?> required>
+           <label for="descripcion_pago">Descripción</label>
+           <select class="custom-select d-block w-100" name="descripcion_pago" required>
+           <?php 
+				     $long = count($insumos);
+				     for($i=0; $i< $long; $i++){
+				     echo "<option";
+				     echo " value=" .$insumos[$i]['descripcion_insumo'] ."," .$insumos[$i]['cantidad_insumo'] . ">";
+                 echo $insumos[$i]['descripcion_insumo'];
+               
+				     echo "</option>";
+             }
+				   ?>
+            </select>
             <div class="invalid-feedback">
-              Faltó ingresar una descripción del pago
+              Faltó ingresar una descripción del Pago
             </div>
           </div>
-          
+
           <div class="col-md-6 mb-4">
             <label for="cantidad_pago">Cantidad</label>
             <input type="text" class="form-control" id="cantidad" name="cantidad_pago" placeholder="" value=<?php echo "'".$pagos[0]['cantidad_pago']."'" ?> required>

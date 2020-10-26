@@ -20,7 +20,7 @@
 
     <div class="col-md-12 order-md-1">
       <h4 class="mb-4">Alta De Pagos a Proveedores</h4>
-      <form class="needs-validation" novalidate action="grabar.php" method="post">
+      <form class="needs-validation" novalidate action="grabar2.php" method="post">
 
 
 <?php 
@@ -37,6 +37,8 @@
 	while($resultado = $query->fetch_assoc()) {
         $insumos[] = $resultado;
     }
+
+    
    
 
 ?>
@@ -57,27 +59,27 @@
 				     $long = count($insumos);
 				     for($i=0; $i< $long; $i++){
 				     echo "<option";
-				     echo " value=" .$insumos[$i]['descripcion_insumo'] ."," .$clinicos[$i]['cantidad_insumo'] .">";
+				     echo " value=" .$insumos[$i]['descripcion_insumo'] ."," .$insumos[$i]['cantidad_insumo'] . ">";
                  echo $insumos[$i]['descripcion_insumo'];
-               
+                 
 				     echo "</option>";
              }
 				   ?>
             </select>
             <div class="invalid-feedback">
-              Faltó ingresar una descripción del insumo
+              Faltó ingresar una descripción del Pago
             </div>
           </div>
 
           <div class="col-md-6 mb-4">
-            <label for="cantidad_insumo">Cantidad</label>
-            <input type="text" class="form-control" name="cantidad_insumo" placeholder="" value="" required>
+            <label for="cantidad_pago">Cantidad</label>
+            <input type="text" class="form-control" name="cantidad_pago" placeholder="" value="" required>
             <div class="invalid-feedback">
               Faltó ingresar la cantidad
             </div>
           </div>
-     
 
+          
           <div class="col-md-6 mb-4">
             <label for="liqui_pago">Monto</label>
             <input type="text" class="form-control" name="liqui_pago" placeholder="" value="" required>
@@ -85,43 +87,7 @@
               Faltó ingresar el monto
             </div>
           </div>
-     
-      </div>
-  <div class="col-sm-2 mt-2 mb-1 p-2"></div>
-  <div class="col-sm-2"><h2></h2></div>	
-     
-          <p align="center"> <font face="Verdana" size="5" color="#666666"><u>Insumos</u></font></i></p>
-
-<div align="center">
-  <center>
- <table border="1" cellpadding="0" cellspacing="0"  bordercolor="#CCCCCC" style="border-collapse: collapse" width="90%">
   
-  <tr>
-      <td width="10%" height="35"><p align="center"><font face="Verdana" size="4" >Item</font></i></td>
-      <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >ID</font></i></td>
-	  <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Nombre</font></i></td>
-	  <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Cantidad</font></i></td>	  
-	  
-
-	  </tr>
-
-
-	<?php $long = count($insumos);
-				for($i=0; $i< $long; $i++){		 
-				?>
-
-  <tr>
-    <td width="10%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $i+1;?></font></i></td>	
-    <td width="20%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $insumos[$i]['id_insumo'];?></font></i></td>
-	<td width="20%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $insumos[$i]['descripcion_insumo'];?></font></i></td>
-	<td width="20%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $insumos[$i]['cantidad_insumo'];?></font></i></td>
-	
-	</tr>
-
-  <?php  } ?>
-  </table>
-  </center>
-
 </div>
     </div>
      <hr class="mb-4">

@@ -3,15 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: sql205.byetcluster.com
-<<<<<<< HEAD
--- Tiempo de generación: 05-10-2020 a las 22:40:07
-=======
-<<<<<<< HEAD
--- Tiempo de generación: 05-10-2020 a las 18:17:00
-=======
--- Tiempo de generación: 05-10-2020 a las 22:33:04
->>>>>>> 709cd8c1f57f91ac1d76faee5df4ff05e228caea
->>>>>>> c7d1112cd30233d57e38efbd3b7d6f75aa756d85
+-- Tiempo de generación: 25-10-2020 a las 20:43:42
 -- Versión del servidor: 5.6.48-88.0
 -- Versión de PHP: 7.2.22
 

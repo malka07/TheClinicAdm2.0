@@ -77,7 +77,7 @@
 
           <div class="col-md-6 mb-4">
             <label for="descripcion_recibo">Descripción</label>
-            <textarea input type="text" class="form-control" id="descripcion" rows="4" name="descripcion_recibo" placeholder="" value=<?php echo "'".$recibos[0]['descripcion_recibo']."'" ?> required></textarea>
+            <textarea type="text" class="form-control" id="descripcion" rows="4" name="descripcion_recibo" placeholder="" value=<?php echo "'".$recibos[0]['descripcion_recibo']."'" ?> required></textarea>
             <div class="invalid-feedback">
               Faltó ingresar una descripción del recibo
             </div>
@@ -85,7 +85,7 @@
       
 
           <div class="col-md-6 mb-4">
-           <label for="medico">Médico</label>
+           <label for="clinico_recibo">Médico</label>
            <select class="custom-select d-block w-100" name="clinico_recibo" required>
            <?php 
 				     $long = count($clinicos);

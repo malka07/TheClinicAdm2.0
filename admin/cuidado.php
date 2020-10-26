@@ -36,7 +36,6 @@
         <button class="btn btn-warning btn-lg btn-block col-sm-5" type="button">Si, deseo eliminar el Recibo / servicio</button>
   <footer class="my-5 pt-5 text-muted text-center text-small"></a>
     <p class="mb-1">&copy; 2020 - JDL S.A</p>
-
   </footer>
 </div>
 </div>

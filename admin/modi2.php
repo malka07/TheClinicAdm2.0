@@ -28,7 +28,7 @@
  <?php 
   if ($mysqli->query($sql) === TRUE) {
 
-  echo "  <a href='../admin/'> <div class='col-md-12 order-md-1'>";
+  echo "  <a href='../admin/index2.php'> <div class='col-md-12 order-md-1'>";
   echo    "<h4 class='mb-4'>Datos modificados correctamente</h4> </a>";
 } else {
   echo "Error: " . $sql . "<br>" . $mysqli->error;
@@ -38,7 +38,7 @@ $mysqli->close();
 
 ?>
 
-  <a href="../admin">	 
+  <a href="../admin/index2.php">	 
   <hr class="mb-4">
     <DIV ALIGN=center>
         <button class="btn btn-success btn-lg btn-block col-sm-5" type="submit">Volver</button>
