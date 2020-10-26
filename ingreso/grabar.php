@@ -1,11 +1,14 @@
 <html>
+<?php 
+    require "../metodos.php";
+?>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v4.0.1">
-    <title>JDL S.A - Materiales</title>
+    <title>JDL S.A - TheClinicAdm</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/checkout/">
 
@@ -37,17 +40,16 @@
     <!-- Custom styles for this template -->
     <link href="form-validation.css" rel="stylesheet">
   </head>
-  <body background="../img/usuarios2.jpg">
+  <body background="../img/usuarios2.jpg" style="background-size:cover";>
     <div class="container">
   <div class="py-5 text-center">
-  <div class="col-md"><img class="d-block mx-auto mb-1" src="../img/jdlsa2.png" alt="" width="62" height="62"></div>
-  <div class="col-md"><h5>JDL S.A</h5></div>
+  <div class="col-sm-2 mt-2 mb-1 p-2"></div>
+    <div class="col-sm-2"><h2></h2></div>	
+    <div class="col-md"><img class="d-block mx-auto mb-1" src="../img/jdlsa.png" alt="" width="62" height="62"></div>
     <p class="lead"><h4><strong>Ingreso de Usuarios y Servicios / Profesiones para la App</strong></h4></p>
   </div>
 
     
-      
-	  
 <?php
  require "../conexion.php";
  $sql = "insert into usuarios(
@@ -79,7 +81,8 @@ $mysqli->close();
 		
 ?>
 <a href="../">	 <hr class="mb-4">
-        <button class="btn btn-success btn-lg btn-block" type="submit">Volver</button>
+<DIV ALIGN=center>
+        <button class="btn btn-success btn-lg btn-block  col-sm-4" type="submit">Volver</button>
   <footer class="my-5 pt-5 text-muted text-center text-small"></a>
     <p class="mb-1">&copy; 2020 - JDL S.A</p>
     <ul class="list-inline">

@@ -44,12 +44,12 @@
       </nav>
 
       <div class="col-sm-2 text-white">
-        <h2 class="mt-4">TheClinicAdm.</h2>
+        <h2 class="mt-4">TheClinicAdm</h2>
 	    </div>
 
       <div class="container-fluid text-white">
         <h1 class="mt-4"><img class="d-block mx-auto mb-4" src="../img/jdlsa.png" alt="" width="75" height="75"></h1>
-        <p>Panel de Control</p>
+        <h5 class="mt-4">Panel de Control</h5>
         <p>Configuración de datos para control e incorporación de información en la app móvil.</p>
       </div>
     </div>

@@ -1,4 +1,7 @@
 ﻿<html>
+<?php 
+    require "../metodos.php";
+?>
 <head>
 <meta http-equiv="Content-Language" content="es">
 <meta name="GENERATOR" content="Microsoft FrontPage 5.0">
@@ -7,14 +10,15 @@
 <title>Listado De Pacientes</title>
 
 </head>
+<body background="../img/pacientes2.jpg" style="background-size:cover";>
 
-<body background="../img/pacientes2.jpg">
-<div class="row">
-    <div class="col-sm-2"><h2>
-		<img border="0" src="../img/atras.png" width="48" height="48" title="Volver al menú" 
+<div class="col-md"><h2>
+		<img border="0" src="../img/atras.png" width="42" height="42" title="Volver al menú" 
 		onclick=location.href='javascript:history.go(-1)'; onKeyPress=location.href='javascript:history.go(-1)'; style='cursor:pointer';/>
-	</h2>
-	</div>
+    <label for="boton_atras"><h6>Atrás</h6></label>
+	</h2></div>
+	<div class="col-md-12 order-md-1"><br/>
+	<div class="col-md-12 order-md-1"><br/>
 
 <?php 
 include "../conexion.php";
@@ -37,14 +41,14 @@ $sql = "SELECT * from pacientes order by id_paciente";
       <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Apellido</font></i></td>
       <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >DNI</font></i></td> 
       <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Domicilio</font></i></td>
-      <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Telefono</font></i></td>
+      <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Teléfono</font></i></td>
       <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Edad</font></i></td>
       <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Provincia</font></i></td>
       <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Barrio</font></i></td>
       <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Fecha De Nacimiento</font></i></td>
-      <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Hsitoria Clinica</font></i></td>
+      <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Hsitoria Clínica</font></i></td>
       <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Obra Social</font></i></td>
-      <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Medico</font></i></td>
+      <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Médico</font></i></td>
       <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Email</font></i></td>
 	  </tr>
 

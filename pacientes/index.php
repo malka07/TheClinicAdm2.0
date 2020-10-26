@@ -6,6 +6,8 @@
     <meta name="description" content="">
     <title>JDL S.A - TheClinicAdm</title>
 
+
+
     <!-- Bootstrap core CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
@@ -33,7 +35,7 @@
     <!-- Custom styles for this template -->
     <link href="form-validation.css" rel="stylesheet">
   </head>
-  <body background="../img/pacientes.jpg">
+  <body background="../img/pacientes.jpg" style="background-size:cover";>
   <div class="col-md"><h2>
 		<img border="0" src="../img/atras.png" width="42" height="42" title="Volver al menú" 
 		onclick=location.href='../panel/'; onKeyPress=location.href='../panel/'; style='cursor:pointer';/>
@@ -42,27 +44,27 @@
     <div class="container">
     
   <div class="py-5 text-center">
+
   <div class="col-md"><img class="d-block mx-auto mb-1" src="../img/jdlsa2.png" alt="" width="62" height="62"></div>
   <div class="col-md"><h5>JDL S.A</h5></div>
-  <p class="lead "><h4><strong>Servicios Médicos e Informáticos</strong></h4></p>
+  <p class="lead"><h4><strong>Servicios Médicos e Informáticos</strong></h4></p>
   <hr>
   <div class="row">
 
+
     <div class="col-sm-1"><h2>
 		<img border="0" src="../img/add.png" width="48" height="48" title="Ingresar Paciente" 
-		onclick=location.href='pacientes.php'; onKeyPress=location.href='pacientes.php';
-		style='cursor:pointer';>
-    <label for="ingresar_paciente"><h6>Ingresar turno</h6></label>
+		onclick=location.href='pacientes.php'; onKeyPress=location.href='pacientes.php'; style='cursor:pointer';>
+    <label for="ingresar_paciente"><h6>Ingresar paciente</h6></label>
 	</h2></div>
   
-	<div class="col-sm-1 "><h2>
+	  <div class="col-sm-1"><h2>
     <img border="0" src="../img/check.png" width="48" height="48" title="Listado" 
 		onclick=location.href='listado.php'; onKeyPress=location.href='listado.php';
 		style='cursor:pointer';>
     <label for="listado_tabla"><h6>Listado en tabla</h6></label>
 	</h2></div>
     <div class="col-sm-2"><h2></h2></div>	
-
 
     </div>
     <div class="col-sm-3">
@@ -118,7 +120,8 @@
 				
 		</div>
         <a href="../panel/">	 <hr class="mb-4">
-        <button class="btn btn-success btn-lg btn-block" type="submit">Volver</button>
+        <DIV ALIGN=center>
+        <button class="btn btn-success btn-lg btn-block col-sm-4" type="submit">Volver</button>
   <footer class="my-5 pt-5 text-muted text-center text-small"></a>
      
     </div>

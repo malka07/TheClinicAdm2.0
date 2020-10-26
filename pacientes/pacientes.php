@@ -4,7 +4,8 @@
     require "../metodos.php";
 ?>
 
-<body background="../img/pacientes2.jpg">
+<body background="../img/pacientes2.jpg" style="background-size:cover";>
+
 <div class="col-sm-2"><h2>
 <img border="0" src="../img/atras.png" width="42" height="42" title="Volver al menú" 
 onclick=location.href='../pacientes/'; onKeyPress=location.href='../pacientes/'; style='cursor:pointer';/>
@@ -12,12 +13,14 @@ onclick=location.href='../pacientes/'; onKeyPress=location.href='../pacientes/';
 </h2></div>
 
   <div class="container">
- <div class="py-5 text-center">
+  <div class="py-5 text-center">
   <div class="row">
 
   <div class="col-md"><img class="d-block mx-auto mb-1" src="../img/jdlsa.png" alt="" width="62" height="62"></div>
-</div>
-<div class="col-md-12 order-md-1">
+  </div>
+
+    <div class="col-md-12 order-md-1">
+    <div class="col-md-12 order-md-1">
       <h4 class="mb-4 mt-4">Alta de Pacientes</h4>
       <form class="needs-validation" novalidate action="grabar.php" method="post">
 
@@ -41,12 +44,12 @@ onclick=location.href='../pacientes/'; onKeyPress=location.href='../pacientes/';
      
 
 ?>
-
+<DIV ALIGN=center>
           <div class="col-md-6 mb-4">
             <label for="nombre_paciente">Nombre</label>
             <input type="text" class="form-control" name="nombre_paciente" placeholder="" value="" required>
             <div class="invalid-feedback">
-              Faltó Ingresar El Nombre Del Paciente.
+              Faltó ingresar el nombre del paciente
             </div>
           </div>
      
@@ -55,7 +58,7 @@ onclick=location.href='../pacientes/'; onKeyPress=location.href='../pacientes/';
             <label for="apellido_paciente">Apellido</label>
             <input type="text" class="form-control" name="apellido_paciente" placeholder="" value="" required>
             <div class="invalid-feedback">
-              Faltó Ingresar El Apellido Del Paciente.
+              Faltó ingresar el apellido del paciente
             </div>
           </div>
 
@@ -63,23 +66,23 @@ onclick=location.href='../pacientes/'; onKeyPress=location.href='../pacientes/';
             <label for="dni_paciente">D.N.I</label>
             <input type="text" class="form-control" name="dni_paciente" placeholder="" value="" required>
             <div class="invalid-feedback">
-              Faltó Ingresar El DNI Del Paciente.
+              Faltó ingresar el DNI del paciente
             </div>
           </div> 
         
           <div class="col-md-6 mb-4">
-            <label for="domicilio_paciente">Direccion</label>
+            <label for="domicilio_paciente">Domicilio</label>
             <input type="text" class="form-control" name="domicilio_paciente" placeholder="" value="" required>
             <div class="invalid-feedback">
-              Faltó Ingresar El Domicilio Del Paciente.
+              Faltó ingresar el domicilio del paciente
             </div>
           </div>
 
           <div class="col-md-6 mb-4">
-            <label for="telefono_paciente">Telefono</label>
+            <label for="telefono_paciente">Teléfono</label>
             <input type="text" class="form-control" name="telefono_paciente" placeholder="" value="" required>
             <div class="invalid-feedback">
-              Faltó Ingresar El Telefono Del Paciente.
+              Faltó ingresar el teléfono del paciente
             </div>
           </div>
         
@@ -87,7 +90,7 @@ onclick=location.href='../pacientes/'; onKeyPress=location.href='../pacientes/';
             <label for="edad_paciente">Edad</label>
             <input type="text" class="form-control" name="edad_paciente" placeholder="" value="" required>
             <div class="invalid-feedback">
-              Faltó Ingresar La Edad Del Paciente.
+              Faltó ingresar la edad del paciente
             </div>
           </div>
   
@@ -95,7 +98,7 @@ onclick=location.href='../pacientes/'; onKeyPress=location.href='../pacientes/';
             <label for="provincia_paciente">Provincia</label>
             <input type="text" class="form-control" name="provincia_paciente" placeholder="" value="" required>
             <div class="invalid-feedback">
-              Faltó Ingresar La Provincia Del Paciente.
+              Faltó ingresar la provincia del paciente
             </div>
           </div>
 
@@ -103,23 +106,23 @@ onclick=location.href='../pacientes/'; onKeyPress=location.href='../pacientes/';
             <label for="barrio_paciente">Barrio</label>
             <input type="text" class="form-control" name="barrio_paciente" placeholder="" value="" required>
             <div class="invalid-feedback">
-              Faltó Ingresar El Barrio Del Paciente.
+              Faltó ingresar el barrio del paciente
             </div>
           </div>
            
           <div class="col-md-6 mb-4">
-            <label for="fech_nac_paciente">Fecha De Nacimiento</label>
+            <label for="fech_nac_paciente">Fecha de nacimiento</label>
             <input type="date" class="form-control" name="fech_nac_paciente" placeholder="" value="" required>
             <div class="invalid-feedback">
-              Faltó Ingresar La Fecha De Nacimiento Del Paciente.
+              Faltó ingresar la fecha de nacimiento del paciente
             </div>
           </div>
        
           <div class="col-md-6 mb-4">
-            <label for="historia_paciente">Historial Del Paciente</label>
+            <label for="historia_paciente">Nro historia clínica</label>
             <input type="text" class="form-control" name="historia_paciente" placeholder="" value="" required>
             <div class="invalid-feedback">
-              Faltó Ingresar Numero De Historial.
+              Faltó ingresar número de historial
             </div>
           </div>
 
@@ -127,12 +130,12 @@ onclick=location.href='../pacientes/'; onKeyPress=location.href='../pacientes/';
             <label for="obra_soc_paciente">Obra Social</label>
             <input type="text" class="form-control" name="obra_soc_paciente" placeholder="" value="" required>
             <div class="invalid-feedback">
-              Faltó Ingresar Una Obra Social Del Paciente.
+              Faltó ingresar una obra social del paciente
             </div>
           </div>
 
           <div class="col-md-6 mb-4">
-           <label for="medico_paciente">Medico</label>
+           <label for="medico_paciente">Médico</label>
            <select class="custom-select d-block w-100" name="medico_paciente" required>
            <?php 
 				     $long = count($clinicos);
@@ -146,7 +149,7 @@ onclick=location.href='../pacientes/'; onKeyPress=location.href='../pacientes/';
 				   ?>
             </select>
             <div class="invalid-feedback">
-              Faltó Seleccionar Un Medico.
+              Faltó seleccionar un médico
             </div>
           </div>
         
@@ -154,22 +157,19 @@ onclick=location.href='../pacientes/'; onKeyPress=location.href='../pacientes/';
             <label for="email_paciente">Email</label>
             <input type="text" class="form-control" name="email_paciente" placeholder="" value="" required>
             <div class="invalid-feedback">
-              Faltó Ingresar El Email Del Paciente.
+              Faltó ingresar el Email del paciente
             </div>
           </div>
         
 
-  
-     
-
 </div>
     </div>
      <hr class="mb-4">
-        <button class="btn btn-primary btn-lg btn-block" type="submit">Guardar</button>
+     <DIV ALIGN=center>
+        <button class="btn btn-success btn-lg btn-block col-sm-5" type="submit">Guardar</button>
       </form>
     </div>
 
- 
   <footer class="my-5 pt-5 text-muted text-center text-small">
     <p class="mb-1">&copy; 2020 - JDL S.A</p>
     <ul class="list-inline">

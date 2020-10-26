@@ -39,7 +39,7 @@
 	
 	</h2></div>
 	<div class="col-sm-2"></div>
-    <div class="col-sm-2"><h2></h2></div>	
+  <div class="col-sm-2"><h2></h2></div>	
 </div>
 
     <div class="col-md-12 order-md-1">
