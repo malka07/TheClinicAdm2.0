@@ -58,7 +58,7 @@
         
           <div class="col-md-6 mb-4">
            <label for="clinico_analisis">Médico</label>
-           <select class="custom-select d-block w-100" name="id_clinico" required>
+           <select class="custom-select d-block w-100" name="clinico_analisis" required>
            <?php 
 				     $long = count($clinicos);
 				     for($i=0; $i< $long; $i++){
@@ -76,8 +76,8 @@
           </div>  
 
           <div class="col-md-6 mb-4">
-           <label for="paciente">Paciente</label>
-           <select class="custom-select d-block w-100" name="id_paciente" required>
+           <label for="paciente_analisis">Paciente</label>
+           <select class="custom-select d-block w-100" name="paciente_analisis" required>
            <?php 
 				     $long = count($pacientes);
 				     for($i=0; $i< $long; $i++){
