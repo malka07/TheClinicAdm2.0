@@ -30,7 +30,7 @@
       <div class="list-group list-group-flush">
       <a href="../turnos/" class="list-group-item list-group-item-action bg-dark text-white">Turnos</a>
         <a href="../analisis2/" class="list-group-item list-group-item-action bg-dark text-white">Análisis Clínicos</a>
-        <a href="../pacientes/" class="list-group-item list-group-item-action bg-dark text-white">Pacientes</a>
+        <a href="../pacientes3/" class="list-group-item list-group-item-action bg-dark text-white">Pacientes</a>
         <a href="../" class="list-group-item list-group-item-action bg-dark text-white">Salir</a>
       </div>
     </div>
