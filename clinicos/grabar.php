@@ -54,7 +54,7 @@
 <?php
  require "../conexion.php";
  $sql = "insert into clinicos(
-  nombre_clinico,apellido_clinico,edad_clinico,domicilio_clinico,telefono_clinico,fech_nac_clinico,email_clinico)
+  nombre_clinico,apellido_clinico,edad_clinico,domicilio_clinico,telefono_clinico,fech_nac_clinico,email_clinico,esp_clinico)
   values" 
   . "('".$_POST['nombre_clinico'] 	. "'," 
   . "'" .$_POST['apellido_clinico'] 	. "',"
@@ -62,7 +62,8 @@
   . "'" .$_POST['domicilio_clinico'] 	. "',"
   . "'" .$_POST['telefono_clinico'] 	. "',"
   . "'" .$_POST['fech_nac_clinico'] 	. "',"
-  . "'" .$_POST['email_clinico'] 	. "' "	
+  . "'" .$_POST['email_clinico'] 	. "'," 
+  . "'" .$_POST['esp_clinico'] 	. "' "	
   . ")";
   
 // echo $sql;

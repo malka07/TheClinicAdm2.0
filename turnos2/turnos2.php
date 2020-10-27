@@ -111,7 +111,7 @@
         
         <div class="col-md-6 mb-4">
             <label for="comentarios_turno">Comentarios</label>
-            <input type="text" class="form-control" name="comentarios_turno" placeholder="" value="" required>
+            <textarea input type="text" class="form-control" name="comentarios_turno" placeholder="" value="" required></textarea>
             <div class="invalid-feedback">
               Faltó ingresar un comentario
             </div>
@@ -139,7 +139,7 @@
 
 	<?php $long = count($clinicos);
 				for($i=0; $i< $long; $i++){		 
-				?>
+		?>
 
   <tr>
     <td width="10%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $i+1;?></font></i></td>	

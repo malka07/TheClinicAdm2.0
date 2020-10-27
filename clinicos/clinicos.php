@@ -107,12 +107,12 @@
         
         <div class="col-md-6 mb-4">
            <label for="esp_clinico">Especialidad</label>
-           <select class="custom-select d-block w-100" name="id_esp_clinicos" required>
+           <select class="custom-select d-block w-100" name="esp_clinico" required>
            <?php 
 				     $long = count($especialidades);
 				     for($i=0; $i< $long; $i++){
 				     echo "<option";
-             echo " value=" .$especialidades[$i]['id_esp_clinicos'].",".$especialidades[$i]['nombre_especialidad'] .">";				
+             echo " value=" .$especialidades[$i]['nombre_especialidad'] .">";				
                  echo $especialidades[$i]['nombre_especialidad'];
               
 				     echo "</option>";
