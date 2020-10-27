@@ -95,10 +95,10 @@
 				?>
 		<div class="list-group">
 				
-				<a 	<?php echo "href=modifica.php?id_analisis=".$analisis[$i]['id_analisis'];?>
+				<a 	
 						 class="list-group-item bg-dark">
-				<h4 class="list-group-item-heading"> <?php echo $analisis[$i]['id_analisis'] ."";?> </h4>
-				<p class="list-group-item-text"><?php 	echo "Fecha: " . $analisis[$i]['fecha_analisis'] ." - Médico: "; 
+				<h4 class="list-group-item-heading text-light"> <?php echo $analisis[$i]['id_analisis'] ."";?> </h4>
+				<p class="list-group-item-text text-light"><?php 	echo "Fecha: " . $analisis[$i]['fecha_analisis'] ." - Médico: "; 
                             echo $analisis[$i]['clinico_analisis'] ." - Paciente: "; 
                             echo $analisis[$i]['paciente_analisis'] ." - Resultados: "; 
                             echo $analisis[$i]['resultados_analisis'] ." - Observaciones: ";
