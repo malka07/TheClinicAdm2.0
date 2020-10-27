@@ -28,7 +28,7 @@
 						<?php echo " onKeyPress=location.href='" 
 												. "cuidado.php?id_paciente=".$_GET['id_paciente'] . "'"; ?>												
 						style='cursor:pointer';/>
-            <label for="boton_eliminar"><h6>Eliminar registro</h6></label>
+            <label for="boton_eliminar"><h6>Eliminar Paciente</h6></label>
 	
 	</h2>	</div>
 	<div class="col-sm-2"></div>
@@ -138,8 +138,8 @@
           </div>
 
           <div class="col-md-6 mb-4">
-            <label for="historia_paciente">Nro historia clínica</label>
-            <input type="text" class="form-control" id="notas" name="historia_paciente" placeholder="" value=<?php echo "'".$pacientes[0]['historia_paciente']."'" ?> required>
+           
+            <input type="hidden" class="form-control" id="notas" name="historia_paciente" placeholder="" value=<?php echo "'".$pacientes[0]['historia_paciente']."'" ?> required>
             <div class="invalid-feedback">
               Faltó ingresar número de historial
             </div>
