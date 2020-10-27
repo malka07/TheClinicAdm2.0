@@ -43,32 +43,31 @@
 		onclick=location.href='../panel/'; onKeyPress=location.href='../panel/'; style='cursor:pointer';/>
     <label for="boton_atras"><h6>Atrás</h6></label>
 	</h2></div>
-    <div class="container">
-    
+
+  <div class="container">
   <div class="py-5 text-center">
   
   <div class="col-md"><img class="d-block mx-auto mb-1" src="../img/jdlsa2.png" alt="" width="62" height="62"></div>
   <div class="col-md"><h5>JDL S.A</h5></div>
-  <p class="lead "><h4><strong>Servicios Médicos e Informáticos</strong></h4></p>
+  <p class="lead"><h4><strong>Servicios Médicos e Informáticos</strong></h4></p>
   <hr>
   <div class="row">
+
 
     <div class="col-sm-1"><h2>
 		<img border="0" src="../img/add.png" width="48" height="48" title="Ingresar Turno" 
 		onclick=location.href='turnos.php'; onKeyPress=location.href='turnos.php';
-  
 		style='cursor:pointer';>
 	  <label for="ingresar Turno"><h6>Ingresar Turno</h6></label>
 	</h2></div>
   
-	<div class="col-sm-1 "><h2>
+	  <div class="col-sm-1"><h2>
     <img border="0" src="../img/check.png" width="48" height="48" title="Listado" 
 		onclick=location.href='listado.php'; onKeyPress=location.href='listado.php';
 		style='cursor:pointer';>
     <label for="listado_tabla"><h6>Listado en tabla</h6></label>
 	</h2></div>
     <div class="col-sm-2"><h2></h2></div>	
-
 
     </div>
     <div class="col-sm-3">
@@ -102,7 +101,7 @@
 				<h4 class="list-group-item-heading"> <?php echo $turnos[$i]['id_turno'] ."";?> </h4>
 				<p class="list-group-item-text"><?php 	echo "Fecha: " . $turnos[$i]['fecha_turno'] ." - Horario: "; 
                             echo $turnos[$i]['horario_turno'] ." - Paciente: "; 
-                            echo $turnos[$i]['paciente_turno'] ." - Clinico: "; 
+                            echo $turnos[$i]['paciente_turno'] ." - Médico: "; 
                             echo $turnos[$i]['clinico_turno'] ." - Comentarios: ";
                             echo $turnos[$i]['comentarios_turno'] ."";
 														?></p>		 
@@ -112,7 +111,8 @@
 				
 		</div>
         <a href="javascript:history.go(-1)">	 <hr class="mb-4">
-        <button class="btn btn-success btn-lg btn-block" type="submit">Volver</button>
+        <DIV ALIGN=center>
+        <button class="btn btn-success btn-lg btn-block col-sm-4" type="submit">Volver</button>
   <footer class="my-5 pt-5 text-muted text-center text-small"></a>
      
     </div>

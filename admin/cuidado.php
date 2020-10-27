@@ -1,5 +1,5 @@
 ﻿<?php
-	 require "../metodos.php";
+	require "../metodos.php";
  $_GET['id_recibo'] ;	
 	echo "<input type='hidden' name='id_recibo' value=" .$_GET['id_recibo'] .">"; 
 

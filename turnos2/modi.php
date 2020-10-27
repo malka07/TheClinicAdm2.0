@@ -17,12 +17,13 @@
  
 ?>								
 
-  <body class="bg-light">
+  <body background="../img/turnos2.jpg" style="background-size:cover";>
     <div class="container">
   <div class="py-5 text-center">
-    <img class="d-block mx-auto mb-4" src="../img/jdlsa.png" alt="" width="72" height="72">
-    <h2>JDL S.A</h2>
-    <p class="lead">Modificacion De Turnos y Servicios / Profesiones.</p>
+  <div class="col-sm-2 mt-2 mb-1 p-2"></div>
+  <div class="col-sm-2"><h2></h2></div>	
+    <img class="d-block mx-auto mb-1" src="../img/jdlsa.png" alt="" width="72" height="72">
+    <p class="lead"><h4><strong>Modificacion de Turnos y Servicios / Profesiones</strong></h4></p>
   </div>
  
  <?php 
@@ -39,7 +40,9 @@ $mysqli->close();
 ?>
 
 <a href="../turnos">	 <hr class="mb-4">
-        <button class="btn btn-success btn-lg btn-block" type="submit">Volver</button>
+<DIV ALIGN=center>
+        <button class="btn btn-success btn-lg btn-block col-sm-5" type="submit">Volver</button>
+        </div>
   <footer class="my-5 pt-5 text-muted text-center text-small"></a>
     <p class="mb-1">&copy; 2020 - JDL S.A</p>
     <ul class="list-inline">

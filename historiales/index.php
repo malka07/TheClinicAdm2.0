@@ -73,7 +73,6 @@
     <div class="col-sm-3">
       <h4 class="mb-1"> </h4>
 	</div>
-
   </div>
     <div class="col-md-12 order-md-1">
       <h4 class="mb-1">Historiales Clínicos</h4>

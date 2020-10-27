@@ -1,4 +1,7 @@
 ﻿<html>
+<?php 
+    require "../metodos.php";
+?>
 <head>
 <meta http-equiv="Content-Language" content="es">
 <meta name="GENERATOR" content="Microsoft FrontPage 5.0">
@@ -8,12 +11,14 @@
 
 </head>
 
-<body background="../img/turnos2.jpg">
-<div class="row">
-    <div class="col-sm-2"><h2>
-		<img border="0" src="../img/atras.png" width="48" height="48" title="Volver al menú" 
+<body background="../img/turnos2.jpg" style="background-size:cover";>
+<div class="col-md"><h2>
+		<img border="0" src="../img/atras.png" width="42" height="42" title="Volver al menú" 
 		onclick=location.href='javascript:history.go(-1)'; onKeyPress=location.href='../turnos/'; style='cursor:pointer';/>
-</h2></div>
+	    <label for="boton_atras"><h6>Atrás</h6></label>
+	</h2></div>
+	<div class="col-md-12 order-md-1"><br/>
+	<div class="col-md-12 order-md-1"><br/>
 
 <?php 
 include "../conexion.php";
@@ -35,7 +40,7 @@ $sql = "SELECT * from turnos order by id_turno";
 	  <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Fecha</font></i></td>
 	  <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Horario</font></i></td>	  
 	  <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Paciente</font></i></td>	  
-      <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Medico</font></i></td>	    
+      <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Médico</font></i></td>	    
 	  <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Comentarios</font></i></td>	
 	  </tr>
 

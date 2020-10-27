@@ -36,8 +36,7 @@
 												. "cuidado.php?id_historial=".$_GET['id_historial'] . "'"; ?>												
 						style='cursor:pointer';/>
             <label for="boton_eliminar"><h6>Eliminar registro</h6></label>
-	
-	</h2></div>
+	    	</h2></div>
 	<div class="col-sm-2"></div>
   <div class="col-sm-2"><h2></h2></div>	
 </div>
@@ -70,7 +69,7 @@
 	
 	echo "<input type='hidden' name='id_historial' value=" .$_GET['id_historial'] .">"; 
 ?>  
-	  	      <DIV ALIGN=center>
+	<DIV ALIGN=center>
     <div class="col-md-6 mb-4">
             <label for="fecha_historial">Fecha</label>
             <input type="date" class="form-control" name="fecha_historial" placeholder="" value=<?php echo "'".$historiales[0]['fecha_historial']."'" ?> required>

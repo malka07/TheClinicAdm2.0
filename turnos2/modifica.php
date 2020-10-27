@@ -3,26 +3,33 @@
 <?php 
     require "../metodos.php";
 ?>
+<head>
+  <meta http-equiv="Content-Language" content="es">
+  <meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+  <meta name="ProgId" content="FrontPage.Editor.Document">
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <title>Listado De Turnos</title>
+</head>
 
-  <body class="bg-light">
-    <div class="container">
+  <body background="../img/turnos2.jpg" style="background-size:cover";>
+  <div class="col-md"><h2>
+		<img border="0" src="../img/atras.png" width="42" height="42" title="Volver al menú" 
+							onclick=location.href='../turnos/'; onKeyPress=location.href='../turnos/'; style='cursor:pointer';/>
+              <label for="boton_atras"><h6>Atrás</h6></label>
+	</h2></div>
+
+  <div class="container">
   <div class="py-5 text-center">
+
+  <div class="col-md"><img class="d-block mx-auto mb-1" src="../img/jdlsa2.png" alt="" width="62" height="62"></div>
+  <div class="col-md"><h5>JDL S.A</h5></div>
+  <p class="lead"><h4><strong>Servicios Médicos e Informáticos</strong></h4></p>
+  <hr>
   <div class="row">
-    <div class="col-sm-2"><h2>
-		<img border="0" src="../img/atras.png" width="48" height="48" title="Volver al menú" 
-							onclick=location.href='../turnos/'; 
-							onKeyPress=location.href='../turnos/'; 
-							style='cursor:pointer';/>
+  </h2></div>
 
-	</div>
-	<div class="col-sm-2"></div>
-    <div class="col-sm-2"><h2></h2></div>	
-
-  <div class="col-sm-2"><img class="d-block mx-auto mb-1" src="../img/jdlsa.png" alt="" width="62" height="62"></div>
-  <div class="col-sm-2"><h2>JDL S.A</h2></div>
-</div>
-
-    <div class="col-md-12 order-md-1">
+  <div class="col-md-12 order-md-1">
+    <DIV ALIGN=center>
       <h4 class="mb-4">Modificar Datos De Los Turnos</h4>
       <form class="needs-validation" novalidate action="modi.php" method="POST">
 	  
@@ -54,12 +61,12 @@
 	
 	echo "<input type='hidden' name='id_turno' value=" .$_GET['id_turno'] .">"; 
 ?>  
-	  
+	  	<DIV ALIGN=center>
     <div class="col-md-6 mb-4">
             <label for="fecha_turno">Fecha</label>
             <input type="date" class="form-control" name="fecha_turno" placeholder="" value=<?php echo "'".$turnos[0]['fecha_turno']."'" ?> required>
             <div class="invalid-feedback">
-              Faltó Ingresar La Fecha Del Turno.
+              Faltó ingresar la fecha del turno
             </div>
           </div>
           
@@ -78,7 +85,7 @@
 				   ?>
             </select>
             <div class="invalid-feedback">
-              Faltó Seleccionar Un Horario del Turno.
+              Faltó seleccionar un horario del turno
             </div>
           </div>  
 
@@ -87,13 +94,13 @@
             
             <input type="hidden" class="form-control" name="paciente_turno" placeholder="" value=<?php echo "'".$turnos[0]['paciente_turno']."'" ?> required>
             <div class="invalid-feedback">
-              Faltó Ingresar Un Comentario.
+              Faltó ingresar un comentario
             </div>
           </div>
       
         
           <div class="col-md-6 mb-4">
-           <label for="clinico">Medico</label>
+           <label for="clinico">Médico</label>
            <select class="custom-select d-block w-100" name="clinico_turno" required>
            <?php 
 				     $long = count($clinicos);
@@ -107,7 +114,7 @@
 				   ?>
             </select>
             <div class="invalid-feedback">
-              Faltó Seleccionar Un Medico.
+              Faltó seleccionar un médico
             </div>
           </div>  
 
@@ -116,7 +123,7 @@
             <label for="comentarios_turno">Comentarios</label>
             <input type="text" class="form-control" name="comentarios_turno" placeholder="" value=<?php echo "'".$turnos[0]['comentarios_turno']."'" ?> required>
             <div class="invalid-feedback">
-              Faltó Ingresar Un Comentario.
+              Faltó ingresar un comentario
             </div>
           </div>
       
@@ -124,7 +131,8 @@
 
 		</div>
         <hr class="mb-4">
-        <button class="btn btn-primary btn-lg btn-block" type="submit">Modificar</button>
+        <DIV ALIGN=center>
+        <button class="btn btn-success btn-lg btn-block col-sm-5" type="submit">Modificar</button>
       </form>
     </div>
   </div>

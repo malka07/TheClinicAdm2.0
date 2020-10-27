@@ -1,25 +1,26 @@
 ﻿<?php
-	 require "../metodos.php";
+	  require "../metodos.php";
  $_GET['id_turno'] ;	
-	echo "<input type='hidden' name='id_turno' value=" .$_GET['id_turno'] .">"; 
+	  echo "<input type='hidden' name='id_turno' value=" .$_GET['id_turno'] .">"; 
 
 ?>
 
-
-<body background="../img/tek.jpg">
+<body background="../img/tek.jpg" style="background-size:cover";>
   <div class="col-sm-2"><h2>
 		<img border="0" src="../img/atras.png" width="48" height="48" title="Volver al menú" 
 		onclick=location.href='../turnos/'; onKeyPress=location.href='../turnos/'; style='cursor:pointer';/>
-</h2>
-</div>
-    <div class="container">
-	<div class="py-5 text-center">
-  <div class="row">
+    <label for="boton_atras"><h6>Atrás</h6></label>
+	</h2></div>
 
-  <div class="col-sm-2"></div>
+	<div class="container">
+	  <div class="py-5 text-center">
+ 
+	  <div class="col-sm-2"></div>
     <div class="col-sm-2"><h2></h2></div>	
-  <div class="col-sm-0"><img class="d-block mx-auto mb-1" src="../img/jdlsa.png" alt="" width="62" height="62"></div>
-  <div class="col-sm-2"><h3>JDL S.A</h3></div>
+  <div class="col-md"><img class="d-block mx-auto mb-1" src="../img/jdlsa.png" alt="" width="62" height="62"></div>
+  <div class="col-md"><h3>JDL S.A</h3></div>
+  <hr>
+  <div class="row">
 </div>
 	
   <div class="py-5 text-center"><h4>
@@ -31,7 +32,8 @@
  
 <a href="borra.php?id_turno=<?PHP echo $_GET['id_turno']; ?>">	 
 <hr class="mb-4">
-        <button class="btn btn-warning btn-lg btn-block" type="button">Si,Deseo Eliminar El Turno / servicio</button>
+<DIV ALIGN=center>
+        <button class="btn btn-warning btn-lg btn-block col-sm-5" type="button">Si, deseo eliminar el Turno / servicio</button>
   <footer class="my-5 pt-5 text-muted text-center text-small"></a>
     <p class="mb-1">&copy; 2020 - JDL S.A</p>
 
