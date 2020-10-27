@@ -122,7 +122,7 @@
         
         <div class="col-md-6 mb-4">
             <label for="resultados_analisis">Resultados</label>
-            <input type="text" class="form-control" name="resultados_analisis" placeholder="" value=<?php echo "'".$analisis[0]['resultados_analisis']."'" ?> required>
+            <textarea class="form-control" name="resultados_analisis"><?php echo "".$analisis[0]['resultados_analisis']."" ?></textarea>
             <div class="invalid-feedback">
               Faltó ingresar el diagnóstico
             </div>
@@ -132,7 +132,7 @@
 
           <div class="col-md-6 mb-4">
             <label for="obser_analisis">Observaciones</label>
-            <input type="text" class="form-control" name="obser_analisis" placeholder="" value=<?php echo "'".$analisis[0]['obser_analisis']."'" ?> required>
+            <textarea class="form-control" name="obser_analisis"><?php echo "".$analisis[0]['obser_analisis']."" ?></textarea>
             <div class="invalid-feedback">
               Faltó ingresar una observación 
             </div>

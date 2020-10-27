@@ -22,7 +22,7 @@
   <div class="py-5 text-center">
   <div class="col-sm-2 mt-2 mb-1 p-2"></div>
   <div class="col-sm-2"><h2></h2></div>	
-    <img class="d-block mx-auto mb-1" src="../img/jdlsa.png" alt="" width="72" height="72"></div>
+    <img class="d-block mx-auto mb-1" src="../img/jdlsa.png" alt="" width="72" height="72">
     <p class="lead"><h4><strong>Modificacion de Turnos y Servicios / Profesiones</strong></h4></p>
   </div>
 

@@ -91,7 +91,7 @@
 				     $long = count($horarios);
 				     for($i=0; $i< $long; $i++){
 				     echo "<option";
-             echo " value=" .$horarios[$i]['id_horario'] .",".$horarios[$i]['tiempo_horario'] .">";
+             echo " value=" .$horarios[$i]['tiempo_horario'] .">";
                  echo $horarios[$i]['tiempo_horario'];
                  
 				     echo "</option>";
@@ -144,7 +144,7 @@
         
         <div class="col-md-6 mb-4">
             <label for="comentarios_turno">Comentarios</label>
-            <input type="text" class="form-control" name="comentarios_turno" placeholder="" value=<?php echo "'".$turnos[0]['comentarios_turno']."'" ?> required>
+            <textarea type="text" class="form-control" name="comentarios_turno" placeholder="" value=<?php echo "'".$turnos[0]['comentarios_turno']."'" ?> required></textarea>
             <div class="invalid-feedback">
               Faltó ingresar un comentario
             </div>
