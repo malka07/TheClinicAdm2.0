@@ -13,7 +13,7 @@
 
 <body background="../img/analisis2.jpg" style="background-size:cover";>
 <div class="row">
-    <div class="col-sm-2"><h2>
+    <div class="col-md"><h2>
 		<img border="0" src="../img/atras.png" width="42" height="42" title="Volver al menú" 
 		onclick=location.href='javascript:history.go(-1)'; onKeyPress=location.href='javascript:history.go(-1)'; style='cursor:pointer';/>
 	    <label for="boton_atras"><h6>Atrás</h6></label>
