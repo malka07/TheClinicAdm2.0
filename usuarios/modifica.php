@@ -32,8 +32,10 @@
 						style='cursor:pointer';/>
             <label for="boton_eliminar"><h6>Eliminar registro</h6></label>
 	
-	</h2>
-	</div>
+  </h2></div>
+  <div class="container">
+ <div class="py-5 text-center">
+  <div class="row">
 
   <div class="col-sm-2"><h2></h2></div>
 </div>
@@ -62,7 +64,7 @@
 	echo "<input type='hidden' name='id_usuario' value=" .$_GET['id_usuario'] .">"; 
 ?>  
 	  
-        
+    <DIV ALIGN=center>     
           <div class="col-md-6 mb-4">
             <label for="nombre_usuario">Nombre:</label>
             <input type="text" class="form-control" id="nombre" name="nombre_usuario" placeholder="" value=<?php echo "'".$usuarios[0]['nombre_usuario']."'" ?> required>
@@ -159,7 +161,8 @@
 
 		</div>
         <hr class="mb-4">
-        <button class="btn btn-primary btn-lg btn-block" type="submit">Modificar</button>
+        <DIV ALIGN=center>
+        <button class="btn btn-primary btn-lg btn-block col-4" type="submit">Modificar</button>
       </form>
     </div>
   </div>

@@ -39,7 +39,7 @@
     }
 
 ?>
-
+<DIV ALIGN=center>
           <div class="col-md-6 mb-4">
             <label for="nombre">Nombre</label>
             <input type="text" class="form-control" name="nombre_usuario" placeholder="" value="" required>
@@ -141,7 +141,8 @@
 </div>
     </div>
      <hr class="mb-4">
-        <button class="btn btn-primary btn-lg btn-block" type="submit">Guardar</button>
+     <DIV ALIGN=center>
+        <button class="btn btn-primary btn-lg btn-block col-4" type="submit">Guardar</button>
       </form>
     </div>
 

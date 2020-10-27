@@ -115,7 +115,8 @@
 				
 		</div>
         <a href="../panel/">	 <hr class="mb-4">
-        <button class="btn btn-success btn-lg btn-block" type="submit">Volver</button>
+        <DIV ALIGN=center>
+        <button class="btn btn-success btn-lg btn-block col-sm-4" type="submit">Volver</button>
   <footer class="my-5 pt-5 text-muted text-center text-small"></a>
      
     </div>
