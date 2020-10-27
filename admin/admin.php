@@ -52,7 +52,7 @@
           
         <div class="col-md-6 mb-4">
             <label for="descripcion_recibo">Descripción</label>
-            <textarea input type="text" class="form-control" rows="4"  name="descripcion_recibo" placeholder="" value="" required></textarea>
+            <textarea type="text" class="form-control" rows="4"  name="descripcion_recibo" placeholder="" value="" required></textarea>
             <div class="invalid-feedback">
               Faltó ingresar una descripción
             </div>

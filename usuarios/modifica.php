@@ -135,7 +135,7 @@
 
           <div class="col-md-6 mb-4">
             <label for="notas_usuario">Notas:</label>
-            <input type="text" class="form-control" id="notas" name="notas_usuario" placeholder="" value=<?php echo "'".$usuarios[0]['notas_usuario']."'" ?> required>
+            <textarea class="form-control" id="notas" name="notas_usuario"><?php echo "".$usuarios[0]['notas_usuario']."" ?></textarea> 
             <div class="invalid-feedback">
               Faltó ingresar alguna nota
             </div>

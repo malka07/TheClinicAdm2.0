@@ -54,14 +54,9 @@
 
     <div class="col-sm-1"><h2>
 		<img border="0" src="../img/add.png" width="48" height="48" title="Ingresar Paciente" 
-<<<<<<< HEAD
-		onclick=location.href='pacientes.php'; onKeyPress=location.href='pacientes.php'; style='cursor:pointer';>
-    <label for="ingresar_paciente"><h6>Ingresar paciente</h6></label>
-=======
 		onclick=location.href='pacientes.php'; onKeyPress=location.href='pacientes.php';
 		style='cursor:pointer';>
     <label for="ingresar_paciente"><h6>Ingresar Paciente</h6></label>
->>>>>>> 294beb5d28ab0aec058721a8d4658b6690c79d11
 	</h2></div>
   
 	  <div class="col-sm-1"><h2>

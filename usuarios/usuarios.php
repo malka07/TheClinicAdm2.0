@@ -114,7 +114,7 @@
         
         <div class="col-md-6 mb-4">
             <label for="notas">Notas</label>
-            <input type="text" class="form-control" name="notas_usuario" placeholder="" value="" required>
+            <textarea class="form-control" name="notas_usuario> placeholder="" value="" required></textarea>
             <div class="invalid-feedback">
               Faltó ingresar alguna nota adicional
             </div>

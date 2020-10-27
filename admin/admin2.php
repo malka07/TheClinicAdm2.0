@@ -52,22 +52,11 @@
           </div>
         
 
-        <div class="col-md-6 mb-4">
-           <label for="descripcion">Descripción</label>
-           <select class="custom-select d-block w-100" name="descripcion_pago" required>
-           <?php 
-				     $long = count($insumos);
-				     for($i=0; $i< $long; $i++){
-				     echo "<option";
-				     echo " value=" .$insumos[$i]['descripcion_insumo'] ."," .$insumos[$i]['cantidad_insumo'] . ">";
-                 echo $insumos[$i]['descripcion_insumo'];
-                 
-				     echo "</option>";
-             }
-				   ?>
-            </select>
+          <div class="col-md-6 mb-4">
+            <label for="descripcion_pago">Descripcion</label>
+            <textarea class="form-control" name="descripcion_pago" placeholder="" value="" required></textarea>
             <div class="invalid-feedback">
-              Faltó ingresar una descripción del Pago
+              Faltó ingresar una Descripcion Del Pago 
             </div>
           </div>
 
