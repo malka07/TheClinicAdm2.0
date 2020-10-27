@@ -4,19 +4,23 @@
     require "../metodos.php";
 ?>
 
-<body background="../img/usuarios2.jpg">
+<body background="../img/usuarios2.jpg" style="background-size:cover";>
+
 <div class="col-sm-2"><h2>
 <img border="0" src="../img/atras.png" width="42" height="42" title="Volver al menú" 
     onclick=location.href='../usuarios/'; onKeyPress=location.href='../usuarios/'; style='cursor:pointer';/>
     <label for="boton_atras"><h6>Atrás</h6></label>
 </h2></div>
+
   <div class="container">
  <div class="py-5 text-center">
   <div class="row">
 
   <div class="col-md"><img class="d-block mx-auto mb-1" src="../img/jdlsa.png" alt="" width="62" height="62"></div>
 </div>
+
 <div class="col-md-12 order-md-1">
+    <div class="col-md-12 order-md-1">
       <h4 class="mb-4">Alta de Usuarios</h4>
       <form class="needs-validation" novalidate action="grabar.php" method="post">
 
@@ -39,7 +43,7 @@
     }
 
 ?>
-
+<DIV ALIGN=center>
           <div class="col-md-6 mb-4">
             <label for="nombre">Nombre</label>
             <input type="text" class="form-control" name="nombre_usuario" placeholder="" value="" required>
@@ -91,7 +95,7 @@
           </div>
 
            <div class="col-md-6 mb-4">
-            <label for="domicilio">Direccion</label>
+            <label for="domicilio">Dirección</label>
             <input type="text" class="form-control" name="domicilio_usuario" placeholder="" value="" required>
             <div class="invalid-feedback">
               Faltó ingresar la dirección del usuario
@@ -103,7 +107,7 @@
             <label for="fecha_nac">Fecha De Nacimiento</label>
             <input type="date" class="form-control" name="fecha_nac_usuario" placeholder="" value="" required>
             <div class="invalid-feedback">
-              Faltó ingresar la fecha de nacimiento del usuario Integrante.
+              Faltó ingresar la fecha de nacimiento del usuario
             </div>
           </div>
        
@@ -141,7 +145,8 @@
 </div>
     </div>
      <hr class="mb-4">
-        <button class="btn btn-primary btn-lg btn-block" type="submit">Guardar</button>
+     <DIV ALIGN=center>
+        <button class="btn btn-success btn-lg btn-block col-sm-5" type="submit">Guardar</button>
       </form>
     </div>
 

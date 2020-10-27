@@ -22,16 +22,13 @@ $sql = "UPDATE usuarios SET nombre_usuario='" . ($_POST['nombre_usuario']) 				.
  
 ?>								
 
-<body background="../img/turnos2.jpg">
+<body background="../img/turnos2.jpg" style="background-size:cover";>
 <div class="container">
   <div class="py-5 text-center">
-  <div class="col-md"><img class="d-block mx-auto mb-1" src="../img/jdlsa2.png" alt="" width="62" height="62"></div>
-  <div class="col-md"><h5>JDL S.A</h5></div>
-    <p class="lead"><h4><strong>Modificacion de Usuarios y Servicios / Profesiones</strong></h4></p>
-  </div>
-  <div class="container">
-  <div class="py-5 text-center">
-    <p class="lead"></p>
+  <div class="col-sm-2 mt-2 mb-1 p-2"></div>
+    <div class="col-sm-2"><h2></h2></div>	
+    <img class="d-block mx-auto mb-1" src="../img/jdlsa.png" alt="" width="72" height="72"></div>
+    <p class="lead"><h4><strong>Modificación de Usuarios y Servicios / Profesiones</strong></h4></p>
   </div> 
 
  
@@ -49,7 +46,9 @@ $mysqli->close();
 ?>
 
 <a href="../usuarios">	 <hr class="mb-4">
-        <button class="btn btn-success btn-lg btn-block" type="submit">Volver</button>
+<DIV ALIGN=center>
+        <button class="btn btn-success btn-lg btn-block col-sm-5" type="submit">Volver</button>
+        </div>
   <footer class="my-5 pt-5 text-muted text-center text-small"></a>
     <p class="mb-1">&copy; 2020 - JDL S.A</p>
     <ul class="list-inline">

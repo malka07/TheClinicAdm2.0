@@ -10,8 +10,8 @@
 <title>Listado de Historiales</title>
 
 </head>
-<body background="../img/historials.jpg" style="background-size:cover";>
 
+<body background="../img/historials.jpg" style="background-size:cover";>
 	<div class="col-md"><h2>
 		<img border="0" src="../img/atras.png" width="42" height="42" title="Volver a historiales" 
 		onclick=location.href='../historiales/'; onKeyPress=location.href='../historiales/'; style='cursor:pointer';/>

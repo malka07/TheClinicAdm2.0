@@ -1,4 +1,7 @@
 ﻿<html>
+<?php 
+    require "../metodos.php";
+?>
 <head>
 <meta http-equiv="Content-Language" content="es">
 <meta name="GENERATOR" content="Microsoft FrontPage 5.0">
@@ -8,13 +11,14 @@
 
 </head>
 
-<body background="../img/usuarios2.jpg">
-<div class="row">
-	<div class="col-md"><h2>
+<body background="../img/usuarios2.jpg" style="background-size:cover";>
+<div class="col-md"><h2>
 		<img border="0" src="../img/atras.png" width="42" height="42" title="Volver a usuarios" 
 		onclick=location.href='../usuarios/'; onKeyPress=location.href='../usuarios/'; style='cursor:pointer';/>
     <label for="boton_atras"><h6>Atrás</h6></label>
-  </h2></div>
+    </h2></div>
+	<div class="col-md-12 order-md-1"><br/>
+	<div class="col-md-12 order-md-1"><br/>
 
 <?php 
 include "../conexion.php";

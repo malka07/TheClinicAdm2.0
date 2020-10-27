@@ -43,7 +43,7 @@
 
     <div class="col-md-12 order-md-1">
     <DIV ALIGN=center>
-      <h4 class="mb-4">Modificar Datos de los Historiales</h4>
+      <h4 class="mb-4">Modificar datos de los historiales</h4>
       <form class="needs-validation" novalidate action="modi.php" method="POST">
       </div>
       
