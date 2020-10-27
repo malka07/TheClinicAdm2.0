@@ -157,7 +157,7 @@
     </div>
     <a href="javascript:history.go(-1)">	 <hr class="mb-4">
      <DIV ALIGN=center>
-        <button class="btn btn-primary btn-lg btn-block col-sm-4" type="submit">Guardar</button>
+        <button class="btn btn-success btn-lg btn-block col-sm-4" type="submit">Guardar</button>
       </form>
     </div>
 
