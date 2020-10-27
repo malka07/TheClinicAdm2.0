@@ -98,7 +98,7 @@
         
         <div class="col-md-6 mb-4">
             <label for="resultados_analisis">Resultados</label>
-            <input type="text" class="form-control" name="resultados_analisis" placeholder="" value="" required>
+            <textarea type="text" class="form-control" name="resultados_analisis" placeholder="" value="" required></textarea>
             <div class="invalid-feedback">
               Faltó ingresar un resultado
             </div>
@@ -108,7 +108,7 @@
 
           <div class="col-md-6 mb-4">
             <label for="obser_analisis">Diagnóstico</label>
-            <input type="text" class="form-control" name="obser_analisis" placeholder="" value="" required>
+            <textarea type="text" class="form-control" name="obser_analisis" placeholder="" value="" required></textarea>
             <div class="invalid-feedback">
               Faltó ingresar una observación
             </div>

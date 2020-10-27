@@ -98,7 +98,7 @@
         
         <div class="col-md-6 mb-4">
             <label for="observacion_historial">Observaciones</label>
-            <input type="text" class="form-control" name="observacion_historial" placeholder="" value="" required>
+            <textarea input type="text" class="form-control" name="observacion_historial" placeholder="" value="" required></textarea>
             <div class="invalid-feedback">
               Faltó ingresar una observación
             </div>
@@ -108,7 +108,7 @@
 
           <div class="col-md-6 mb-4">
             <label for="diagnostico_historial">Diagnostico</label>
-            <input type="text" class="form-control" name="diagnostico_historial" placeholder="" value="" required>
+            <textarea input type="text" class="form-control" name="diagnostico_historial" placeholder="" value="" required></textarea>
             <div class="invalid-feedback">
              Faltó ingresar el diagnóstico
             </div>

@@ -116,8 +116,8 @@ onclick=location.href='javascript:history.go(-1)'; onKeyPress=location.href='jav
           </div>
        
           <div class="col-md-6 mb-4">
-            <label for="historia_paciente">Nro historia clínica</label>
-            <input type="text" class="form-control" name="historia_paciente" placeholder="" value="" required>
+         
+            <input type="hidden" class="form-control" name="historia_paciente" placeholder="" value="" required>
             <div class="invalid-feedback">
               Faltó ingresar número de historial
             </div>
