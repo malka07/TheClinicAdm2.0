@@ -37,7 +37,7 @@
 
   <div class="col-md"><h2>
 		<img border="0" src="../img/atras.png" width="42" height="42" title="Volver al menú" 
-		onclick=location.href='../panel/'; onKeyPress=location.href='../panel/'; style='cursor:pointer';/>
+		onclick=location.href='javascript:history.go(-1)'; onKeyPress=location.href='javascript:history.go(-1)'; style='cursor:pointer';/>
     <label for="boton_atras"><h6>Atrás</h6></label>
 	</h2></div>
     <div class="container">
@@ -106,7 +106,7 @@
 	
 				
 		</div>
-        <a href="../panel/">	 <hr class="mb-4">
+        <a href="javascript:history.go(-1)">	 <hr class="mb-4">
         <DIV ALIGN=center>
         <button class="btn btn-success btn-lg btn-block col-sm-4" type="submit">Volver</button>
   <footer class="my-5 pt-5 text-muted text-center text-small"></a>

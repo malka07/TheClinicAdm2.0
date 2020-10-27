@@ -7,8 +7,8 @@
 
 <body background="../img/tek.jpg" style="background-size:cover";>
   <div class="col-sm-2"><h2>
-		<img border="0" src="../img/atras.png" width="48" height="48" title="Volver a Clínicos" 
-			  onclick=location.href='../clinicos/'; onKeyPress=location.href='../clinicos/'; style='cursor:pointer';/>
+		<img border="0" src="../img/atras.png" width="48" height="48" title="Volver" 
+			  onclick=location.href='javascript:history.go(-1)'; onKeyPress=location.href='javascript:history.go(-1)'; style='cursor:pointer';/>
         <label for="boton_atras"><h6>Atrás</h6></label>
     </h2></div>
     

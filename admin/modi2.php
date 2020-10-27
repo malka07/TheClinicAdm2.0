@@ -38,7 +38,7 @@ $mysqli->close();
 
 ?>
 
-  <a href="../admin/index2.php">	 
+  <a href="javascript:history.go(-1)">	 
   <hr class="mb-4">
     <DIV ALIGN=center>
         <button class="btn btn-success btn-lg btn-block col-sm-5" type="submit">Volver</button>
