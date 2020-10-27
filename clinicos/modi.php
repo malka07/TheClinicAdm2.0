@@ -13,7 +13,8 @@ $sql = "UPDATE clinicos SET nombre_clinico='" . ($_POST['nombre_clinico']) 				.
     "domicilio_clinico='" 		. $_POST['domicilio_clinico']									."'," .			
     "telefono_clinico='" 		. $_POST['telefono_clinico']									."'," .			
     "fech_nac_clinico='" 		. $_POST['fech_nac_clinico']									."'," .			
-		"email_clinico='" 	. $_POST['email_clinico']								."'" .			
+    "email_clinico='" 		. $_POST['email_clinico']									."'," .			
+		"esp_clinico='" 	. $_POST['esp_clinico']								."'" .			
 		" where id_clinico =" . ($_POST['id_clinico']) ;							
             
  

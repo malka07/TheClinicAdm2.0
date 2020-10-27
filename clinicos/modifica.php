@@ -48,6 +48,12 @@
    while($resultado = $query->fetch_assoc()) {
          $clinicos[] = $resultado;
      }  
+
+     $sql = "SELECT * from especialidades order by id_esp_clinicos";
+     $query = $mysqli->query($sql);
+     while($resultado = $query->fetch_assoc()) {
+           $especialidades[] = $resultado;
+       }  
      
 	echo "<input type='hidden' name='id_clinico' value=" .$_GET['id_clinico'] .">"; 
 ?>  
@@ -111,6 +117,25 @@
             </div>
           </div>
     </div>
+
+    <div class="col-md-6 mb-4">
+           <label for="esp_clinico">Especialidad</label>
+           <select class="custom-select d-block w-100" name="id_esp_clinicos" required>
+           <?php 
+				     $long = count($especialidades);
+				     for($i=0; $i< $long; $i++){
+				     echo "<option";
+             echo " value=" .$especialidades[$i]['id_esp_clinicos'].",".$especialidades[$i]['nombre_especialidad'] .">";				
+                 echo $especialidades[$i]['nombre_especialidad'];
+              
+				     echo "</option>";
+             }
+				   ?>
+            </select>
+            <div class="invalid-feedback">
+              Faltó seleccionar un permiso
+            </div>
+          </div>    
     
         <hr class="mb-4">
         <DIV ALIGN=center>
