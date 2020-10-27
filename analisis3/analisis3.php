@@ -115,44 +115,12 @@
           </div>
      
 
-     
-          <p align="center"> <font face="Verdana" size="5" color="#666666"><u>Medicos</u></font></i></p>
-
-<div align="center">
-  <center>
- <table border="1" cellpadding="0" cellspacing="0"  bordercolor="#CCCCCC" style="border-collapse: collapse" width="90%">
-  
-  <tr>
-      <td width="10%" height="35"><p align="center"><font face="Verdana" size="4" >Item</font></i></td>
-      <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >ID</font></i></td>
-	  <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Nombre</font></i></td>
-	  <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Apellido</font></i></td>	  
-	  
-
-	  </tr>
-
-
-	<?php $long = count($clinicos);
-				for($i=0; $i< $long; $i++){		 
-				?>
-
-  <tr>
-    <td width="10%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $i+1;?></font></i></td>	
-    <td width="20%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $clinicos[$i]['id_clinico'];?></font></i></td>
-	<td width="20%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $clinicos[$i]['nombre_clinico'];?></font></i></td>
-	<td width="20%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $clinicos[$i]['apellido_clinico'];?></font></i></td>
-	
-	</tr>
-
-  <?php  } ?>
-  </table>
-  </center>
 
 </div>
     </div>
-     <hr class="mb-4">
+    <a href="javascript:history.go(-1)">	 <hr class="mb-4">
      <DIV ALIGN=center>
-        <button class="btn btn-success btn-lg btn-block col-sm-5" type="submit">Guardar</button>
+        <button class="btn btn-success btn-lg btn-block col-sm-4" type="submit">Guardar</button>
       </form>
     </div>
 

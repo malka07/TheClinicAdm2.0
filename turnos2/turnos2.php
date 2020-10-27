@@ -132,7 +132,7 @@
       <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >ID</font></i></td>
 	  <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Nombre</font></i></td>
 	  <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Apellido</font></i></td>	  
-	  
+    <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Especialidad</font></i></td>	  
 
 	  </tr>
 
@@ -146,7 +146,7 @@
     <td width="20%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $clinicos[$i]['id_clinico'];?></font></i></td>
 	<td width="20%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $clinicos[$i]['nombre_clinico'];?></font></i></td>
 	<td width="20%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $clinicos[$i]['apellido_clinico'];?></font></i></td>
-	
+	<td width="20%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $clinicos[$i]['esp_clinico'];?></font></i></td>
 	</tr>
 
   <?php  } ?>
@@ -155,8 +155,9 @@
 
 </div>
     </div>
-     <hr class="mb-4">
-        <button class="btn btn-primary btn-lg btn-block" type="submit">Guardar</button>
+    <a href="javascript:history.go(-1)">	 <hr class="mb-4">
+     <DIV ALIGN=center>
+        <button class="btn btn-primary btn-lg btn-block col-sm-4" type="submit">Guardar</button>
       </form>
     </div>
 

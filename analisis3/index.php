@@ -58,7 +58,7 @@
 		<img border="0" src="../img/add.png" width="48" height="48" title="Ingresar Análisis" 
 		onclick=location.href='analisis3.php'; onKeyPress=location.href='analisis3.php';
 		style='cursor:pointer';>
-    <label for="ingresar_analisis"><h6>Ingresar análisis</h6></label>
+    <label for="ingresar_analisis"><h6>Ingresar Análisis</h6></label>
 	</h2></div>
   
 	<div class="col-sm-1 "><h2>

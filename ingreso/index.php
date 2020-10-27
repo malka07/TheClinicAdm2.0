@@ -120,7 +120,7 @@
         
           <div class="col-md-6 mb-4">
            
-            <input type="hidden" class="form-control" name="permiso_usuario" placeholder="" value="2" required>
+            <input type="hidden" class="form-control" name="permiso_usuario" placeholder="" value="3" required>
             <div class="invalid-feedback">
               Faltó ingresar el permiso del usuario
             </div>
