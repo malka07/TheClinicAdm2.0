@@ -36,7 +36,7 @@
     <!-- Custom styles for this template -->
     <link href="form-validation.css" rel="stylesheet">
     </head>
-  <body background="./img/mainsc.jpg">
+  <body background="./img/mainsc.jpg"  style="background-size:cover";>
     <div class="container">
   <div class="py-5 text-center text-light mt-5">
   <div class="col-md"><img class="d-block mx-auto mb-1" src="./img/jdlsa2.png" alt="" width="62" height="62"></div>
