@@ -3,8 +3,8 @@
 ?>  
   
   
-  <body class="bg-dark">
-    <div class="container">
+  <body background="../img/usuarios.jpg" style="background-size:cover";>
+  <div class="container">
   <div class="py-5 text-center text-light mt-5">
   <div class="col-md"><img class="d-block mx-auto mb-1" src="./img/jdlsa2.png" alt="" width="62" height="62"></div>
   <div class="col-md text-white"><h5>JDL S.A</h5></div>
@@ -18,7 +18,7 @@
  
   $dni_usuario = $_POST['dni_usuario'];
   $contraseña_usuario = $_POST['contraseña_usuario'];
-  //$permiso_login = $_POST['permiso_login']; 
+  
 
   $consulta = mysqli_query ($mysqli, "SELECT * FROM usuarios WHERE dni_usuario = '$dni_usuario' AND contraseña_usuario = '$contraseña_usuario'");
 
@@ -56,7 +56,7 @@
     header("Location: ../TheClinicAdm2.0/panel5/");  
   }
   }else{
- echo 'El usuario o contraseña es incorrecto, <a href="index.php">Vuelva a intentarlo</a>.<br/>';
+      echo '<El usuario o contraseña es incorrecto, <a href="index.php">Vuelva a intentarlo</a>.<br/>';
  }
 
 

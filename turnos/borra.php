@@ -17,7 +17,7 @@ $sql = "delete from turnos where id_turno=" . $_GET['id_turno'] ;
  <?php 
   if ($mysqli->query($sql) === TRUE) {
 
-  echo "  <a href='../turnos/'> <div class='col-md-12 order-md-1'>";
+  echo "  <a href='javascript:history.go(-4)'> <div class='col-md-12 order-md-1'>";
   echo    "<h4 class='mb-4'>Turno Eliminado Correctamente</h4> </a>";
 } else {
   echo "Error: " . $sql . "<br>" . $mysqli->error;
@@ -27,7 +27,7 @@ $mysqli->close();
 
 ?>
 
-<a href="../turnos/">	 <hr class="mb-4">
+<a href="javascript:history.go(-4)">	 <hr class="mb-4">
 <DIV ALIGN=center>
         <button class="btn btn-success btn-lg btn-block col-sm-5" type="submit">Volver</button>
   <footer class="my-5 pt-5 text-muted text-center text-small"></a>

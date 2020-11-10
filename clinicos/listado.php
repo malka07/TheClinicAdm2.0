@@ -51,6 +51,7 @@ $sql = "SELECT * from clinicos order by id_clinico";
       <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Teléfono</font></i></td>
       <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Fecha De Nacimiento</font></i></td>
       <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Email</font></i></td>
+      <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Especialidad</font></i></td>
 	  </tr>
 
 
@@ -68,7 +69,7 @@ $sql = "SELECT * from clinicos order by id_clinico";
     <td width="20%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $clinicos[$i]['telefono_clinico'];?></font></i></td>
     <td width="20%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $clinicos[$i]['fech_nac_clinico'];?></font></i></td>
     <td width="20%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $clinicos[$i]['email_clinico'];?></font></i></td>
-
+    <td width="20%" height="35">  <p align="center"><font face="Verdana" size="4" ><?php echo $clinicos[$i]['esp_clinico'];?></font></i></td>
 	</tr>
 
   <?php  } ?>

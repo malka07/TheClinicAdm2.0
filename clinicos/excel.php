@@ -25,7 +25,7 @@
     $objPHPExcel->getActiveSheet()->setCellValue('F1', 'Teléfono');
     $objPHPExcel->getActiveSheet()->setCellValue('G1', 'Fecha de nacim');
     $objPHPExcel->getActiveSheet()->setCellValue('H1', 'Email');
-
+    $objPHPExcel->getActiveSheet()->setCellValue('I1', 'Especialidad');
     while($row = $resultado->fetch_assoc()) 
         {
             $objPHPExcel->getActiveSheet()->setCellValue('A'.$fil, $row['id_clinico']);
@@ -36,7 +36,7 @@
             $objPHPExcel->getActiveSheet()->setCellValue('F'.$fil, $row['telefono_clinico']);
             $objPHPExcel->getActiveSheet()->setCellValue('G'.$fil, $row['fech_nac_clinico']);
             $objPHPExcel->getActiveSheet()->setCellValue('H'.$fil, $row['email_clinico']);
- 
+            $objPHPExcel->getActiveSheet()->setCellValue('I'.$fil, $row['esp_clinico']);
 
             $fil++;
         }           
