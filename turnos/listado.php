@@ -29,7 +29,13 @@ $sql = "SELECT * from turnos order by id_turno";
     }
 ?>
 <p align="center"> <font face="Verdana" size="5" color="#666666"><u>Listado De Turnos</u></font></i></p>
-
+<div class="row">
+    <div class="col-sm-1 offset-md-2"><h2>
+		<img border="0" src="../img/disq.png" width="48" height="48" title="Guardar" 
+		onclick=location.href='excel.php'    onKeyPress=location.href="excel.php"  style='cursor:pointer';/>
+		<label for="boton_guardar"><h6>Guardar </h6></label>
+	</h2></div>
+    <div class="col-md-12 order-md-1"><br/>
 <div align="center">
   <center>
  <table border="1" cellpadding="0" cellspacing="0"  bordercolor="#CCCCCC" style="border-collapse: collapse" width="90%">

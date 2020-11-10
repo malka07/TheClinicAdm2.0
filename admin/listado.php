@@ -44,7 +44,7 @@ $sql = "SELECT * from recibos order by id_recibo";
   <tr>
       <td width="10%" height="35"><p align="center"><font face="Verdana" size="4" >Item</font></i></td>
       <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >ID</font></i></td>
-	  <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Fecha Del Recibo</font></i></td>
+	  <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Fecha del Recibo</font></i></td>
 	  <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Descripción</font></i></td>	  
 	  <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Médico</font></i></td>	  
       <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Liquidación</font></i></td>	    

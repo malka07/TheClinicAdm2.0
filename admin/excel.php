@@ -11,7 +11,7 @@
     $objPHPExcel = new PHPExcel();
     $objPHPExcel->getProperties()
            ->setCreator("GR5")
-           ->setDescription("Lista De Recibos");
+           ->setDescription("Lista de Recibos");
 
 
     $objPHPExcel->setActiveSheetIndex(0);

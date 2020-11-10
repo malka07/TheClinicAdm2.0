@@ -1,6 +1,7 @@
 ﻿<html>
 <?php 
-    require "../metodos.php";
+	require "../metodos.php";
+	
 ?>
 <head>
 <meta http-equiv="Content-Language" content="es">
@@ -11,15 +12,14 @@
 
 </head>
 <body background="../img/admin2.jpg" style="background-size:cover";>
+
 <div class="col-sm-2"><h2>
-		<img border="0" src="../img/atras.png" width="42" height="42" title="Volver al menú" 
-		onclick=location.href='javascript:history.go(-1)'; onKeyPress=location.href='javascript:history.go(-1)'; style='cursor:pointer';/>
-		<label for="boton_atras"><h6>Atrás</h6></label>
+	<img border="0" src="../img/atras.png" width="42" height="42" title="Volver al menú" 
+	onclick=location.href='javascript:history.go(-1)'; onKeyPress=location.href='javascript:history.go(-1)'; style='cursor:pointer';/>
+	<label for="boton_atras"><h6>Atrás</h6></label>
 	</h2></div>
 	<div class="col-md-12 order-md-1"><br/>
 	<div class="col-md-12 order-md-1"><br/>
-
-
 
 <?php 
 include "../conexion.php";
@@ -33,7 +33,7 @@ $sql = "SELECT * from pagos order by id_pago";
 <div class="row">
     <div class="col-sm-1 offset-md-2"><h2>
 		<img border="0" src="../img/disq.png" width="48" height="48" title="Guardar" 
-		onclick=location.href='../archivo/'; onKeyPress=location.href='../archivo/'; style='cursor:pointer';/>
+		onclick=location.href='excel2.php' onKeyPress=location.href="excel2.php" style='cursor:pointer';/>
 		<label for="boton_guardar"><h6>Guardar </h6></label>
 	</h2></div>
     <div class="col-md-12 order-md-1"><br/>
@@ -44,14 +44,14 @@ $sql = "SELECT * from pagos order by id_pago";
   <tr>
       <td width="10%" height="35"><p align="center"><font face="Verdana" size="4" >Item</font></i></td>
       <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >ID</font></i></td>
-	  <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Fecha de pago</font></i></td>
+	  <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Fecha del pago</font></i></td>
 	  <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Descripción</font></i></td>	  
-	  
+	  <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Cantidad</font></i></td>
       <td width="20%" height="35"><p align="center"><font face="Verdana" size="4" >Monto</font></i></td>	    
 	  </tr>
 
 
-	<?php $long = count($recibos);
+	<?php $long = count($pagos);
 				for($i=0; $i< $long; $i++){		 
 				?>
 
