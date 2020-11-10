@@ -68,7 +68,7 @@
     $query = $mysqli->query($sql2);
     while($resultado = $query->fetch_assoc()) {
         if($_POST['fecha_turno']==$resultado['fecha_turno'] && $_POST['horario_turno']==$resultado['horario_turno']){
-          echo "Horario Ya Tomado Vuelva A Ingresar Otro Horario"; 
+          echo "<h4 class='mb-4'>Horario ya tomado. Vuelva a ingresar otro horario </h4>"; 
           $fehor=TRUE;
         }
     } 

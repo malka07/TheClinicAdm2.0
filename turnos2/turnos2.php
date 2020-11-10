@@ -56,7 +56,7 @@
 <DIV ALIGN=center>
           <div class="col-md-6 mb-4">
             <label for="fecha_turno">Fecha</label>
-            <input type="date" class="form-control" name="fecha_turno" placeholder="" value="" required>
+            <input type="date" class="form-control" name="fecha_turno" min=<?php $hoy=date("Y-m-d"); echo $hoy;?> placeholder="" value="" required>
             <div class="invalid-feedback">
               Faltó ingresar la fecha del turno
             </div>
@@ -69,7 +69,7 @@
 				     $long = count($horarios);
 				     for($i=0; $i< $long; $i++){
 				     echo "<option";
-             echo " value=" .$horarios[$i]['id_horario'] .",".$horarios[$i]['tiempo_horario'] .">";
+             echo " value=" .$horarios[$i]['tiempo_horario'] .">";
                  echo $horarios[$i]['tiempo_horario'];
                  
 				     echo "</option>";
@@ -121,7 +121,7 @@
      
 
      
-          <p align="center"> <font face="Verdana" size="5" color="#666666"><u>Medicos</u></font></i></p>
+          <p align="center"> <font face="Verdana" size="5" color="#666666"><u>Médicos</u></font></i></p>
 
 <div align="center">
   <center>

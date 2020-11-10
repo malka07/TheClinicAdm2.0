@@ -78,7 +78,7 @@
 	<DIV ALIGN=center>
     <div class="col-md-6 mb-4">
             <label for="fecha_turno">Fecha</label>
-            <input type="date" class="form-control" name="fecha_turno" placeholder="" value=<?php echo "'".$turnos[0]['fecha_turno']."'" ?> required>
+            <input type="date" class="form-control" name="fecha_turno" min=<?php $hoy=date("Y-m-d"); echo $hoy;?> placeholder="" value=<?php echo "'".$turnos[0]['fecha_turno']."'" ?> required>
             <div class="invalid-feedback">
               Faltó ingresar la fecha del turno
             </div>

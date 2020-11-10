@@ -17,7 +17,7 @@
  
 ?>								
 
-  <body background="../img/turnos2.jpg" style="background-size:cover";>
+<body background="../img/turnos2.jpg" style="background-size:cover";>
     <div class="container">
   <div class="py-5 text-center">
   <div class="col-sm-2 mt-2 mb-1 p-2"></div>
@@ -27,19 +27,33 @@
   </div>
  
  <?php 
-  if ($mysqli->query($sql) === TRUE) {
 
-  echo "  <a href='../turnos/'> <div class='col-md-12 order-md-1'>";
-  echo    "<h4 class='mb-4'>Datos modificados correctamente</h4> </a>";
-} else {
-  echo "Error: " . $sql . "<br>" . $mysqli->error;
-}
+  $fehor=FALSE;
+  $sql2 = "SELECT fecha_turno, horario_turno, paciente_turno, clinico_turno, comentarios_turno FROM turnos ";
+  $query = $mysqli->query($sql2);
+  while($resultado = $query->fetch_assoc()) {
+      if($_POST['fecha_turno']==$resultado['fecha_turno'] && $_POST['horario_turno']==$resultado['horario_turno']){
+        echo "<h4 class='mb-4'>Horario Ya Tomado Vuelva A Ingresar Otro Horario</h4>"; 
+        $fehor=TRUE;
+      }
+  } 
+ 
+  if($fehor==FALSE){
+    $mysqli->query($sql);
+    echo "  <a href='../turnos/'> <div class='col-md-12 order-md-1'>";
+    echo    "<h4 class='mb-4'>Datos guardados correctamente</h4> </a>";
+  }
+  else{
+    echo "Error: " . $sql . "<br>" . $mysqli->error;
+  }
+
+       
 
 $mysqli->close();
 
 ?>
 
-<a href="../turnos">	 <hr class="mb-4">
+<a href="../turnos2">	 <hr class="mb-4">
 <DIV ALIGN=center>
         <button class="btn btn-success btn-lg btn-block col-sm-5" type="submit">Volver</button>
         </div>
