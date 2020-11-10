@@ -1,6 +1,7 @@
 ﻿<html>
 <?php 
-    require "../metodos.php";
+	require "../metodos.php";
+	
 ?>
 <head>
 <meta http-equiv="Content-Language" content="es">
@@ -32,7 +33,7 @@ $sql = "SELECT * from recibos order by id_recibo";
 <div class="row">
     <div class="col-sm-1 offset-md-2"><h2>
 		<img border="0" src="../img/disq.png" width="48" height="48" title="Guardar" 
-		onclick=location.href='../archivo/'; onKeyPress=location.href='../archivo/'; style='cursor:pointer';/>
+		onclick=location.href='excel.php'    onKeyPress=location.href="excel.php"  style='cursor:pointer';/>
 		<label for="boton_guardar"><h6>Guardar </h6></label>
 	</h2></div>
     <div class="col-md-12 order-md-1"><br/>

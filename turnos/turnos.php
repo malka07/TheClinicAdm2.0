@@ -69,7 +69,7 @@ onclick=location.href='javascript:history.go(-1)'; onKeyPress=location.href='jav
 				     $long = count($horarios);
 				     for($i=0; $i< $long; $i++){
 				     echo "<option";
-             echo " value=" .$horarios[$i]['id_horario'] .",".$horarios[$i]['tiempo_horario'] .">";
+             echo " value=" .$horarios[$i]['tiempo_horario'] .">";
                  echo $horarios[$i]['tiempo_horario'];
                  
 				     echo "</option>";
