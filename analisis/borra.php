@@ -27,7 +27,7 @@ $mysqli->close();
 
 ?>
 
-<a href="../analisis">	 <hr class="mb-4">
+<a href="javascript:history.go(-4)">	 <hr class="mb-4">
 <DIV ALIGN=center>
         <button class="btn btn-success btn-lg btn-block col-sm-5" type="submit">Volver</button></div>
   <footer class="my-5 pt-5 text-muted text-center text-small"></a>

@@ -75,7 +75,7 @@
    
     if($fehor==FALSE){
       $mysqli->query($sql);
-      echo "  <a href='javascript:history.go(-4)'> <div class='col-md-12 order-md-1'>";
+      echo "  <a href='javascript:history.go(-2)'> <div class='col-md-12 order-md-1'>";
       echo    "<h4 class='mb-4'>Datos guardados correctamente</h4> </a>";
     }
     else{
@@ -87,7 +87,7 @@
 $mysqli->close();
 		
 ?>
-<a href="javascript:history.go(-4)">	 <hr class="mb-4">
+<a href="javascript:history.go(-3)">	 <hr class="mb-4">
 <DIV ALIGN=center>
         <button class="btn btn-success btn-lg btn-block col-sm-4" type="submit">Volver</button>
         </div>
