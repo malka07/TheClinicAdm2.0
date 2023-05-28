@@ -59,8 +59,8 @@
     }
 
    
-   header('Content-type: application/vnd.ms-excel;charset=iso8859-15')
-   header('Content-Disposition: attachement; filename=nombre_archivo.xls')
+   header('Content-type: application/vnd.ms-excel;charset=iso8859-15');
+   header('Content-Disposition: attachement; filename=nombre_archivo.xls');
 
   
 ?>
